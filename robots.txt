@@ -1,1 +1,4 @@
-yyy
+User-agent: *
+Allow: /
+
+Sitemap: https://linkliftpro.online/sitemap.xml
