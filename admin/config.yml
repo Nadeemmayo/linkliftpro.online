@@ -2,6 +2,12 @@ backend:
   name: github
   repo: Nadeemmayo/linkliftpro.online
   branch: main
+  base_url: https://linkliftpro-cms-auth.seoinfo89.workers.dev
+  auth_endpoint: auth
+
+site_url: https://linkliftpro.online
+display_url: https://linkliftpro.online
+logo_url: https://linkliftpro.online/favicon.ico
 
 media_folder: "images/uploads"
 public_folder: "/images/uploads"
