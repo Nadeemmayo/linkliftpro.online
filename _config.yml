@@ -1,0 +1,8 @@
+title: LinkLiftPro
+url: https://linkliftpro.online
+baseurl: ""
+permalink: /blog/:title/
+markdown: kramdown
+plugins: []
+exclude:
+  - README.md
