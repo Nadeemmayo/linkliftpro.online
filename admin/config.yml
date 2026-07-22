@@ -20,7 +20,79 @@ collections:
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
 
     fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Featured Image", name: "thumbnail", widget: "image" }
-      - { label: "Body", name: "body", widget: "markdown" }
+      - label: "Title"
+        name: "title"
+        widget: "string"
+
+      - label: "Publish Date"
+        name: "date"
+        widget: "datetime"
+
+      - label: "Author"
+        name: "author"
+        widget: "string"
+        default: "LinkLiftPro Team"
+
+      - label: "Category"
+        name: "category"
+        widget: "select"
+        options:
+          - "SEO"
+          - "Guest Posting"
+          - "Link Building"
+          - "Niche Edits"
+          - "Authority Building"
+          - "E-E-A-T SEO"
+          - "SEO Audit"
+
+      - label: "Tags"
+        name: "tags"
+        widget: "list"
+        required: false
+
+      - label: "Short Description"
+        name: "description"
+        widget: "text"
+        hint: "Write a short summary for Google and the blog card."
+
+      - label: "Meta Title"
+        name: "meta_title"
+        widget: "string"
+        hint: "Keep it around 50 to 60 characters."
+
+      - label: "Meta Description"
+        name: "meta_description"
+        widget: "text"
+        hint: "Keep it around 140 to 160 characters."
+
+      - label: "Focus Keyword"
+        name: "focus_keyword"
+        widget: "string"
+        required: false
+
+      - label: "Canonical URL"
+        name: "canonical_url"
+        widget: "string"
+        required: false
+        hint: "Leave blank unless the article has another preferred URL."
+
+      - label: "Schema Type"
+        name: "schema_type"
+        widget: "select"
+        default: "BlogPosting"
+        options:
+          - "BlogPosting"
+          - "Article"
+          - "NewsArticle"
+
+      - label: "Featured Image"
+        name: "thumbnail"
+        widget: "image"
+
+      - label: "Featured Image Alt Text"
+        name: "thumbnail_alt"
+        widget: "string"
+
+      - label: "Body"
+        name: "body"
+        widget: "markdown"
