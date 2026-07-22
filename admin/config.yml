@@ -101,3 +101,105 @@ collections:
       - label: "Body"
         name: "body"
         widget: "markdown"
+- name: "pages"
+    label: "Website Pages"
+    files:
+      - name: "homepage"
+        label: "Home Page"
+        file: "_data/home.yml"
+
+        fields:
+          - label: "SEO Settings"
+            name: "seo"
+            widget: "object"
+            fields:
+              - { label: "SEO Title", name: "title", widget: "string" }
+              - { label: "SEO Description", name: "description", widget: "text" }
+              - { label: "Canonical URL", name: "canonical_url", widget: "string" }
+
+          - label: "Hero Section"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Small Badge", name: "badge", widget: "string" }
+              - { label: "Heading", name: "heading_before", widget: "string" }
+              - { label: "Highlighted Heading", name: "highlighted_heading", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Primary Button Text", name: "primary_button_text", widget: "string" }
+              - { label: "Primary Button URL", name: "primary_button_url", widget: "string" }
+              - { label: "Secondary Button Text", name: "secondary_button_text", widget: "string" }
+              - { label: "Secondary Button URL", name: "secondary_button_url", widget: "string" }
+              - { label: "Portfolio Button Text", name: "portfolio_button_text", widget: "string" }
+              - { label: "Portfolio Button URL", name: "portfolio_button_url", widget: "string" }
+              - { label: "Niches Button Text", name: "niches_button_text", widget: "string" }
+              - { label: "Niches Button URL", name: "niches_button_url", widget: "string" }
+
+          - label: "Statistics Section"
+            name: "statistics"
+            widget: "object"
+            fields:
+              - { label: "Section Label", name: "section_label", widget: "string" }
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Website Count", name: "website_count", widget: "string" }
+              - { label: "Website Label", name: "website_label", widget: "string" }
+              - { label: "Campaign Count", name: "campaign_count", widget: "string" }
+              - { label: "Campaign Label", name: "campaign_label", widget: "string" }
+              - { label: "Niche Count", name: "niche_count", widget: "string" }
+              - { label: "Niche Label", name: "niche_label", widget: "string" }
+              - { label: "Outreach Count", name: "outreach_count", widget: "string" }
+              - { label: "Outreach Label", name: "outreach_label", widget: "string" }
+              - { label: "Bottom Text", name: "bottom_text", widget: "text" }
+
+          - label: "Founder Section"
+            name: "founder"
+            widget: "object"
+            fields:
+              - { label: "Section Label", name: "section_label", widget: "string" }
+              - { label: "Founder Name", name: "name", widget: "string" }
+              - { label: "Position", name: "position", widget: "string" }
+              - { label: "Founder Image", name: "image", widget: "image" }
+              - { label: "Image Alt Text", name: "image_alt", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "LinkedIn URL", name: "linkedin_url", widget: "string" }
+              - { label: "Facebook URL", name: "facebook_url", widget: "string" }
+              - { label: "WhatsApp URL", name: "whatsapp_url", widget: "string" }
+              - { label: "Email", name: "email", widget: "string" }
+
+          - label: "Services Introduction"
+            name: "services_section"
+            widget: "object"
+            fields:
+              - { label: "Section Label", name: "label", widget: "string" }
+              - { label: "Heading", name: "heading_before", widget: "string" }
+              - { label: "Highlighted Heading", name: "highlighted_heading", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+
+          - label: "Why Choose Us"
+            name: "why_choose"
+            widget: "object"
+            fields:
+              - { label: "Section Label", name: "label", widget: "string" }
+              - { label: "Heading", name: "heading_before", widget: "string" }
+              - { label: "Highlighted Heading", name: "highlighted_heading", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+
+          - label: "Work Process"
+            name: "process"
+            widget: "object"
+            fields:
+              - { label: "Heading", name: "heading_before", widget: "string" }
+              - { label: "Highlighted Heading", name: "highlighted_heading", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+
+          - label: "Final Call To Action"
+            name: "cta"
+            widget: "object"
+            fields:
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Contact Button Text", name: "contact_button_text", widget: "string" }
+              - { label: "Contact Button URL", name: "contact_button_url", widget: "string" }
+              - { label: "Services Button Text", name: "services_button_text", widget: "string" }
+              - { label: "Services Button URL", name: "services_button_url", widget: "string" }
+              - { label: "FAQ Button Text", name: "faq_button_text", widget: "string" }
+              - { label: "FAQ Button URL", name: "faq_button_url", widget: "string" }
