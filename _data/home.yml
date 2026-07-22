@@ -1,83 +1,74 @@
 seo:
-  title: "LinkLiftPro | Premium Link Building & Guest Posting Agency"
-  description: "LinkLiftPro provides premium guest posting, link building, niche edits, authority backlinks, content writing and off-page SEO services worldwide."
-  canonical_url: "https://linkliftpro.online/"
-
+  title: LinkLiftPro | Premium Link Building & Guest Posting mayo
+  description: LinkLiftPro provides premium guest posting, link building, niche
+    edits, authority backlinks, content writing and off-page SEO services
+    worldwide.
+  canonical_url: https://linkliftpro.online/
 hero:
-  badge: "Premium Link Building & Guest Posting"
-  heading_before: "Lift Your Rankings With"
-  highlighted_heading: "Authority Backlinks"
-  description: "LinkLiftPro helps businesses and agencies grow organic visibility with premium guest posting, niche edits, authority backlinks, SEO content and white-hat off-page SEO campaigns."
-
-  primary_button_text: "Explore Services"
-  primary_button_url: "services.html"
-
-  secondary_button_text: "Get Free Consultation"
-  secondary_button_url: "contact.html"
-
-  portfolio_button_text: "🏆 View Portfolio"
-  portfolio_button_url: "portfolio.html"
-
-  niches_button_text: "🚀 Browse All Niches"
-  niches_button_url: "all-niches-sites.html"
-
+  portfolio_button_text: 🏆 View Portfolio
+  badge: Premium Link Building & Guest Posting
+  niches_button_text: 🚀 Browse All Niches
+  secondary_button_url: contact.html
+  secondary_button_text: Get Free Consultation
+  niches_button_url: all-niches-sites.html
+  highlighted_heading: Authority Backlinks
+  portfolio_button_url: portfolio.html
+  heading_before: Lift Your Rankings With
+  description: LinkLiftPro helps businesses and agencies grow organic visibility
+    with premium guest posting, niche edits, authority backlinks, SEO content
+    and white-hat off-page SEO campaigns.
+  primary_button_text: Explore Services
+  primary_button_url: services.html
 statistics:
-  section_label: "Authority Engine"
-  heading: "SEO Growth System"
-
-  website_count: "50K+"
-  website_label: "Websites Access"
-
-  campaign_count: "200+"
-  campaign_label: "Campaigns"
-
-  niche_count: "20+"
-  niche_label: "Niches"
-
-  outreach_count: "Global"
-  outreach_label: "Outreach"
-
-  bottom_text: "Relevant websites, safe anchors, clean reporting and real ranking-focused execution."
-
+  campaign_count: 200+
+  bottom_text: Relevant websites, safe anchors, clean reporting and real
+    ranking-focused execution.
+  heading: SEO Growth System
+  campaign_label: Campaigns
+  website_count: 50K+
+  website_label: Websites Access
+  niche_count: 20+
+  outreach_count: Global
+  section_label: Authority Engine
+  outreach_label: Outreach
+  niche_label: Niches
 founder:
-  section_label: "Meet The Founder"
-  name: "Nadeem Mayo"
-  position: "Founder • LinkLiftPro SEO Agency"
-  image: "https://raw.githubusercontent.com/Nadeemmayo/offpageseoexpert.com/main/WhatsApp%20Image%202026-04-07%20at%205.28.39%20AM.jpeg"
-  image_alt: "Nadeem Mayo"
-  description: "Helping agencies, brands and businesses scale through premium guest posting, authority backlinks, niche edits and strategic off-page SEO campaigns designed for long-term organic growth."
-
-  linkedin_url: "https://www.linkedin.com/in/menadeemmayo"
-  facebook_url: "https://www.facebook.com/share/19aDt6pcgh/"
-  whatsapp_url: "https://wa.me/923074646927"
-  email: "ceo@linkliftpro.online"
-
+  whatsapp_url: https://wa.me/923074646927
+  image_alt: Nadeem Mayo
+  position: Founder • LinkLiftPro SEO Agency
+  name: Nadeem Mayo
+  linkedin_url: https://www.linkedin.com/in/menadeemmayo
+  facebook_url: https://www.facebook.com/share/19aDt6pcgh/
+  section_label: Meet The Founder
+  image: https://raw.githubusercontent.com/Nadeemmayo/offpageseoexpert.com/main/WhatsApp%20Image%202026-04-07%20at%205.28.39%20AM.jpeg
+  email: ceo@linkliftpro.online
+  description: Helping agencies, brands and businesses scale through premium guest
+    posting, authority backlinks, niche edits and strategic off-page SEO
+    campaigns designed for long-term organic growth.
 services_section:
-  label: "Our Premium Services"
-  heading_before: "SEO Services Built For"
-  highlighted_heading: "Authority Growth"
-  description: "Complete off-page SEO, guest posting, content and backlink solutions to grow trust, rankings and organic traffic."
-
+  label: Our Premium Services
+  heading_before: SEO Services Built For
+  highlighted_heading: Authority Growth
+  description: Complete off-page SEO, guest posting, content and backlink
+    solutions to grow trust, rankings and organic traffic.
 why_choose:
-  label: "Why Choose LinkLiftPro"
-  heading_before: "We Build Links That Support"
-  highlighted_heading: "Real SEO Growth"
-  description: "We focus on relevant websites, real traffic, clean metrics, natural anchor strategy and transparent link placement reports."
-
+  label: Why Choose LinkLiftPro
+  heading_before: We Build Links That Support
+  highlighted_heading: Real SEO Growth
+  description: We focus on relevant websites, real traffic, clean metrics, natural
+    anchor strategy and transparent link placement reports.
 process:
-  heading_before: "Simple"
-  highlighted_heading: "Work Process"
-  description: "A clear process for guest posting, link building, SEO audit and authority growth."
-
+  heading_before: Simple
+  highlighted_heading: Work Process
+  description: A clear process for guest posting, link building, SEO audit and
+    authority growth.
 cta:
-  heading: "Ready To Improve Your Website Authority?"
-  description: "Share your website URL and target keywords. We will suggest the best guest posting, link building or SEO growth strategy."
-
-  contact_button_text: "Contact Us"
-  contact_button_url: "contact.html"
-
-  services_button_text: "View Services"
-  services_button_url: "services.html"
-
-  faq_button_text: "Read FAQ"
-  faq_button_url: "FAQs.html"
+  heading: Ready To Improve Your Website Authority?
+  description: Share your website URL and target keywords. We will suggest the
+    best guest posting, link building or SEO growth strategy.
+  contact_button_text: Contact Us
+  contact_button_url: contact.html
+  services_button_text: View Services
+  services_button_url: services.html
+  faq_button_text: Read FAQ
+  faq_button_url: FAQs.html
