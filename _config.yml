@@ -1,8 +1,17 @@
 title: LinkLiftPro
 url: https://linkliftpro.online
 baseurl: ""
+
 permalink: /blog/:title/
+
 markdown: kramdown
+
+collections:
+  portfolio:
+    output: true
+    permalink: /portfolio/:name/
+
 plugins: []
+
 exclude:
   - README.md
