@@ -362,7 +362,8 @@ collections:
               - label: "FAQ Button URL"
                 name: "faq_button_url"
                 widget: "string"
-- name: "portfolio"
+
+  - name: "portfolio"
     label: "Portfolio"
     label_singular: "Project"
     folder: "_portfolio"
