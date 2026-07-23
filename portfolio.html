@@ -1,3 +1,6 @@
+---
+layout: null
+---
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -370,19 +373,19 @@ Explore our portfolio of premium guest posting campaigns, authority backlinks, n
 
 <div class="flex justify-center gap-4 flex-wrap">
 
-<a href="#premium"
+<a href="#portfolio-projects"
 
 class="main-btn">
 
-View Premium Portfolio
+View Portfolio
 
 </a>
 
-<a href="#general"
+<a href="contact.html"
 
 class="outline-btn">
 
-Browse General Portfolio
+Start Project
 
 </a>
 
@@ -465,9 +468,9 @@ Client Satisfaction
 </div>
 
 </section>
-<!-- PORTFOLIO SECTION -->
+<!-- PORTFOLIO SECTION (Dynamic - Decap CMS / Jekyll Collection: site.portfolio) -->
 
-<section class="py-20 px-6 bg-white">
+<section id="portfolio-projects" class="py-20 px-6 bg-white">
 
 <div class="max-w-7xl mx-auto">
 
@@ -493,134 +496,55 @@ A selection of premium guest posting campaigns, authority backlinks and niche-re
 
 </div>
 
+{% assign portfolio_projects = site.portfolio | reverse %}
+
+{% if portfolio_projects.size > 0 %}
+
 <div class="grid lg:grid-cols-2 gap-10">
 
-<!-- PREMIUM -->
+{% for project in portfolio_projects %}
 
-<div id="premium" class="portfolio-card">
+<div class="portfolio-card">
 
 <div class="h-2 bg-gradient-to-r from-red-600 via-yellow-400 to-red-700"></div>
 
 <div class="p-8">
 
-<div class="flex justify-between items-center mb-8">
-
-<div>
-
-<span class="bg-red-100 text-red-700 text-xs font-black uppercase px-4 py-2 rounded-full">
-
-Premium Placements
-
+{% if project.featured %}
+<span class="bg-red-100 text-red-700 text-xs font-black uppercase px-4 py-2 rounded-full inline-block mb-5">
+<i class="fas fa-crown mr-2"></i>Featured
 </span>
+{% endif %}
 
-<h3 class="text-3xl font-black deep-text mt-5">
-
-Top Media Websites
-
-</h3>
-
+{% if project.image %}
+<div class="w-full rounded-2xl overflow-hidden mb-6">
+<img src="{{ project.image | relative_url }}" alt="{{ project.title }}" class="w-full h-56 object-cover">
 </div>
+{% endif %}
 
-<div class="w-20 h-20 rounded-2xl bg-red-50 flex items-center justify-center">
-
-<i class="fas fa-crown text-4xl text-red-600"></i>
-
-</div>
-
-</div>
-
-<p class="text-gray-600 leading-8 mb-8">
-
-Access premium media publications including trusted business websites, finance platforms and high-authority news portals for maximum SEO impact.
-
-</p>
-
-<button onclick="toggleLinks('premiumLinks')"
-
-class="main-btn w-full text-center">
-
-View Premium Websites
-
-</button>
-
-<div id="premiumLinks"
-
-class="hidden mt-8 space-y-4 max-h-[420px] overflow-y-auto custom-scroll">
-
-<a href="https://www.forbes.com/" target="_blank" class="link-item">
-
-Forbes
-
-</a>
-
-<a href="https://finance.yahoo.com/" target="_blank" class="link-item">
-
-Yahoo Finance
-
-</a>
-
-<a href="https://apnews.com/" target="_blank" class="link-item">
-
-AP News
-
-</a>
-
-<a href="https://markets.businessinsider.com/" target="_blank" class="link-item">
-
-Business Insider
-
-</a>
-
-<a href="https://www.benzinga.com/" target="_blank" class="link-item">
-
-Benzinga
-
-</a>
-
-<a href="https://www.livemint.com/" target="_blank" class="link-item">
-
-LiveMint
-
-</a>
-
-<a href="https://www.khaleejtimes.com/" target="_blank" class="link-item">
-
-Khaleej Times
-
-</a>
-
-</div>
-
-</div>
-
-</div>
-<!-- GENERAL PORTFOLIO -->
-
-<div id="general" class="portfolio-card">
-
-<div class="h-2 bg-gradient-to-r from-yellow-400 via-red-600 to-yellow-500"></div>
-
-<div class="p-8">
-
-<div class="flex justify-between items-center mb-8">
+<div class="flex justify-between items-start mb-6">
 
 <div>
 
+{% if project.category %}
 <span class="bg-yellow-100 text-red-700 text-xs font-black uppercase px-4 py-2 rounded-full">
-
-General Placements
-
+{{ project.category }}
 </span>
+{% endif %}
 
 <h3 class="text-3xl font-black deep-text mt-5">
-
-General Authority Websites
-
+{{ project.title }}
 </h3>
+
+{% if project.client %}
+<p class="text-sm font-bold text-gray-500 mt-2 uppercase tracking-wide">
+Client: {{ project.client }}
+</p>
+{% endif %}
 
 </div>
 
-<div class="w-20 h-20 rounded-2xl bg-yellow-50 flex items-center justify-center">
+<div class="w-20 h-20 rounded-2xl bg-red-50 flex items-center justify-center flex-shrink-0">
 
 <i class="fas fa-link text-4xl text-red-600"></i>
 
@@ -628,65 +552,57 @@ General Authority Websites
 
 </div>
 
-<p class="text-gray-600 leading-8 mb-8">
+{% if project.description %}
+<p class="text-gray-600 leading-8 mb-6">
+{{ project.description }}
+</p>
+{% endif %}
 
-Choose from thousands of niche-relevant websites covering business, technology, SaaS, health, finance, crypto, education, travel and many more industries.
+{% if project.content and project.content != "" %}
+<div class="text-gray-600 leading-8 mb-8 prose max-w-none">
+{{ project.content | markdownify }}
+</div>
+{% endif %}
+
+{% if project.url %}
+<a href="{{ project.url }}" target="_blank" rel="noopener" class="main-btn w-full text-center block">
+Visit Project
+</a>
+{% endif %}
+
+</div>
+
+</div>
+
+{% endfor %}
+
+</div>
+
+{% else %}
+
+<div class="max-w-2xl mx-auto text-center portfolio-card p-14">
+
+<div class="w-20 h-20 mx-auto rounded-2xl bg-red-50 flex items-center justify-center mb-6">
+
+<i class="fas fa-briefcase text-4xl text-red-600"></i>
+
+</div>
+
+<h3 class="text-3xl font-black deep-text mb-4">
+
+Portfolio Coming Soon
+
+</h3>
+
+<p class="text-gray-600 leading-8">
+
+We're currently updating our showcase with new premium guest posting campaigns and authority backlink projects. Check back soon!
 
 </p>
 
-<button onclick="toggleLinks('generalLinks')"
-class="main-btn w-full text-center">
-
-View General Websites
-
-</button>
-
-<div id="generalLinks"
-class="hidden mt-8 space-y-4 max-h-[420px] overflow-y-auto custom-scroll">
-
-<a href="https://medium.com/" target="_blank" class="link-item">
-Medium
-</a>
-
-<a href="https://techbullion.com/" target="_blank" class="link-item">
-TechBullion
-</a>
-
-<a href="https://www.digitaljournal.com/" target="_blank" class="link-item">
-Digital Journal
-</a>
-
-<a href="https://www.analyticsinsight.net/" target="_blank" class="link-item">
-Analytics Insight
-</a>
-
-<a href="https://www.bbntimes.com/" target="_blank" class="link-item">
-BBN Times
-</a>
-
-<a href="https://metapress.com/" target="_blank" class="link-item">
-MetaPress
-</a>
-
-<a href="https://www.businesstomark.com/" target="_blank" class="link-item">
-Business To Mark
-</a>
-
-<a href="https://urbanmatter.com/" target="_blank" class="link-item">
-UrbanMatter
-</a>
-
-<a href="https://todaynews.co.uk/" target="_blank" class="link-item">
-Today News
-</a>
-
 </div>
 
-</div>
-
-</div>
-
-</div>
+{% endif %}
 
 </div>
 
@@ -822,12 +738,6 @@ Contact
 </footer>
 
 <script>
-
-function toggleLinks(id){
-
-document.getElementById(id).classList.toggle("hidden");
-
-}
 
 const menuBtn=document.querySelector(".mobile-menu-btn");
 
