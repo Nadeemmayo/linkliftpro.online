@@ -362,7 +362,110 @@ collections:
               - label: "FAQ Button URL"
                 name: "faq_button_url"
                 widget: "string"
+- name: "all_niches"
+        label: "All Niches Page"
+        file: "_data/all_niches.yml"
 
+        fields:
+          - label: "SEO Settings"
+            name: "seo"
+            widget: "object"
+            fields:
+              - label: "SEO Title"
+                name: "title"
+                widget: "string"
+
+              - label: "SEO Description"
+                name: "description"
+                widget: "text"
+
+          - label: "Hero Section"
+            name: "hero"
+            widget: "object"
+            fields:
+              - label: "Small Badge"
+                name: "badge"
+                widget: "string"
+
+              - label: "Heading"
+                name: "heading_before"
+                widget: "string"
+
+              - label: "Highlighted Heading"
+                name: "highlighted_heading"
+                widget: "string"
+
+              - label: "Description"
+                name: "description"
+                widget: "text"
+
+              - label: "Primary Button Text"
+                name: "primary_button_text"
+                widget: "string"
+
+              - label: "Primary Button URL"
+                name: "primary_button_url"
+                widget: "string"
+
+              - label: "Secondary Button Text"
+                name: "secondary_button_text"
+                widget: "string"
+
+              - label: "Secondary Button URL"
+                name: "secondary_button_url"
+                widget: "string"
+
+          - label: "Inventory Section"
+            name: "inventory"
+            widget: "object"
+            fields:
+              - label: "Heading"
+                name: "heading_before"
+                widget: "string"
+
+              - label: "Highlighted Heading"
+                name: "highlighted_heading"
+                widget: "string"
+
+              - label: "Description"
+                name: "description"
+                widget: "text"
+
+              - label: "Search Placeholder"
+                name: "search_placeholder"
+                widget: "string"
+
+          - label: "Call To Action"
+            name: "cta"
+            widget: "object"
+            fields:
+              - label: "Heading"
+                name: "heading"
+                widget: "string"
+
+              - label: "Description"
+                name: "description"
+                widget: "text"
+
+              - label: "Button Text"
+                name: "button_text"
+                widget: "string"
+
+              - label: "Button URL"
+                name: "button_url"
+                widget: "string"
+
+              - label: "Bottom Text"
+                name: "bottom_text"
+                widget: "text"
+
+          - label: "Niches Section"
+            name: "niches_section"
+            widget: "object"
+            fields:
+              - label: "Heading"
+                name: "heading"
+                widget: "string"
   - name: "portfolio"
     label: "Portfolio"
     label_singular: "Project"
