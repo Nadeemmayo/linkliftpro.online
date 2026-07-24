@@ -1,3 +1,7 @@
+---
+layout: null
+permalink: /all-niches-sites.html
+---
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,8 +11,8 @@
 <link rel="canonical" href="https://linkliftpro.online/all-niches-sites.html">
 <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/5968/5968875.png" type="image/png">
 
-<title>All Niche Sites | LinkLiftPro Guest Posting & Backlink Inventory</title>
-<meta name="description" content="Explore all niche guest posting websites, niche edit opportunities, authority backlinks and SEO placements across multiple high demand categories worldwide.">
+<title>{{ site.data.niches_page.seo.title | escape }}</title>
+<meta name="description" content="{{ site.data.niches_page.seo.description | escape }}">
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-GB37RK3Z13"></script>
 <script>
@@ -18,8 +22,8 @@
 
   gtag('config', 'G-GB37RK3Z13');
 </script>
-<meta property="og:title" content="All Niches SEO Sites | LinkLiftPro Guest Posting & Backlinks">
-<meta property="og:description" content="Browse all niche guest posting websites, niche edit opportunities and authority backlink sites for SEO and link building campaigns.">
+<meta property="og:title" content="{{ site.data.niches_page.seo.title | escape }}">
+<meta property="og:description" content="{{ site.data.niches_page.seo.description | escape }}">
 <meta property="og:url" content="https://linkliftpro.online/all-niches-sites.html">
 <meta property="og:type" content="website">
 <meta property="og:image" content="https://linkliftpro.online/preview.jpg">
@@ -366,7 +370,7 @@ font-size:38px!important;
 "@type":"CollectionPage",
 "name":"All Niches",
 "url":"https://linkliftpro.online/all-niches-sites.html",
-"description":"Browse all niche guest posting and backlink websites across multiple categories including SEO, business, technology, health, gaming, travel, SaaS, finance, education and more.",
+"description":"{{ site.data.niches_page.seo.description | escape }}",
 "publisher":{
 "@type":"Organization",
 "name":"LinkLiftPro",
@@ -423,31 +427,31 @@ LINK<span class="gold-text">LIFT</span><span class="red-text">PRO</span>
 <div class="max-w-6xl mx-auto">
 
 <span class="inline-block border border-red-400/30 bg-white/70 text-red-700 text-xs font-black uppercase tracking-[4px] px-5 py-2 rounded-full mb-6">
-Premium Guest Posting Inventory
+{{ site.data.niches_page.hero.badge | escape }}
 </span>
 
 <h1 class="hero-title text-4xl md:text-6xl font-black uppercase leading-tight mb-6 deep-text">
-All <span class="red-text">Niche Sites</span>
+{{ site.data.niches_page.hero.heading_before | escape }} <span class="red-text">{{ site.data.niches_page.hero.highlighted_heading | escape }}</span>
 </h1>
 
 <p class="text-[#5a2b2b] text-lg md:text-xl max-w-3xl mx-auto mb-9">
-Browse premium guest posting websites by niche and choose the most relevant backlink placements for authority, visibility and SEO growth.
+{{ site.data.niches_page.hero.description | escape }}
 </p>
 
 <div class="flex justify-center gap-4 flex-wrap">
-<a href="#inventory" class="main-btn">View Inventory</a>
-<a href="contact.html" class="outline-btn">Get Quote</a>
+<a href="{{ site.data.niches_page.hero.primary_button_url }}" class="main-btn">{{ site.data.niches_page.hero.primary_button_text | escape }}</a>
+<a href="{{ site.data.niches_page.hero.secondary_button_url }}" class="outline-btn">{{ site.data.niches_page.hero.secondary_button_text | escape }}</a>
 </div>
 
 </div>
 </section>
 
 <section class="niche-inventory-section" id="inventory">
-<h2>Premium <span class="red-text">Inventory Table</span></h2>
-<p class="niche-subtitle">Search websites by niche, country, language, traffic, DR, DA and placement availability.</p>
+<h2>{{ site.data.niches_page.inventory.heading_before | escape }} <span class="red-text">{{ site.data.niches_page.inventory.highlighted_heading | escape }}</span></h2>
+<p class="niche-subtitle">{{ site.data.niches_page.inventory.description | escape }}</p>
 
 <div class="niche-search-wrap">
-<input type="text" id="nicheTableSearch" placeholder="Search websites, niche, country, language...">
+<input type="text" id="nicheTableSearch" placeholder="{{ site.data.niches_page.inventory.search_placeholder | escape }}">
 </div>
 
 <div class="niche-table-wrap">
@@ -659,12 +663,12 @@ padding:10px;
 </style>
 
 <section class="cta">
-<h2>1500+ High-Authority Sites</h2>
-<p>Instant access to our complete backlink inventory for bulk guest posting and niche-based link building orders.</p>
-<a href="https://wa.me/923074646927" target="_blank">Contact For Pricing</a>
+<h2>{{ site.data.niches_page.cta.heading | escape }}</h2>
+<p>{{ site.data.niches_page.cta.description | escape }}</p>
+<a href="{{ site.data.niches_page.cta.button_url }}" target="_blank">{{ site.data.niches_page.cta.button_text | escape }}</a>
 
 <p style="margin-top:20px;font-size:15px;opacity:0.9;">
-Access our complete niche-wise database across multiple high-demand categories.
+{{ site.data.niches_page.cta.bottom_text | escape }}
 </p>
 
 <div class="database-buttons">
@@ -693,7 +697,7 @@ Access our complete niche-wise database across multiple high-demand categories.
 </section>
 
 <section class="section">
-<h2>Explore All Niches</h2>
+<h2>{{ site.data.niches_page.niches_section.heading | escape }}</h2>
 
 <div class="niche-wrap">
 <a href="https://docs.google.com/spreadsheets/d/1PzS0V_MzeLtbmC_Xn9WFVNpJtrO7ed61O8KdxY49rsg/edit?gid=0#gid=0" target="_blank" class="niche-pill">Affiliate Marketing</a>
