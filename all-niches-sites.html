@@ -13,15 +13,16 @@ permalink: /all-niches-sites.html
 
 <title>{{ site.data.all_niches.seo.title | escape }}</title>
 <meta name="description" content="{{ site.data.all_niches.seo.description | escape }}">
+
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-GB37RK3Z13"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-GB37RK3Z13');
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-GB37RK3Z13');
 </script>
+
 <meta property="og:title" content="{{ site.data.all_niches.seo.title | escape }}">
 <meta property="og:description" content="{{ site.data.all_niches.seo.description | escape }}">
 <meta property="og:url" content="https://linkliftpro.online/all-niches-sites.html">
@@ -248,6 +249,13 @@ font-weight:900!important;
 color:#dc2626!important;
 }
 
+.empty-inventory{
+text-align:center;
+padding:35px!important;
+color:#5a2b2b!important;
+font-weight:800!important;
+}
+
 .cta{
 background:linear-gradient(135deg,#dc2626,#facc15);
 text-align:center;
@@ -382,6 +390,7 @@ font-size:38px!important;
 }
 }
 </script>
+
 </head>
 
 <body>
@@ -423,6 +432,8 @@ LINK<span class="gold-text">LIFT</span><span class="red-text">PRO</span>
 </div>
 </nav>
 
+
+<!-- HERO -->
 <section class="hero-bg py-24 px-6 text-center">
 <div class="max-w-6xl mx-auto">
 
@@ -431,7 +442,10 @@ LINK<span class="gold-text">LIFT</span><span class="red-text">PRO</span>
 </span>
 
 <h1 class="hero-title text-4xl md:text-6xl font-black uppercase leading-tight mb-6 deep-text">
-{{ site.data.all_niches.hero.heading_before | escape }} <span class="red-text">{{ site.data.all_niches.hero.highlighted_heading | escape }}</span>
+{{ site.data.all_niches.hero.heading_before | escape }}
+<span class="red-text">
+{{ site.data.all_niches.hero.highlighted_heading | escape }}
+</span>
 </h1>
 
 <p class="text-[#5a2b2b] text-lg md:text-xl max-w-3xl mx-auto mb-9">
@@ -439,23 +453,49 @@ LINK<span class="gold-text">LIFT</span><span class="red-text">PRO</span>
 </p>
 
 <div class="flex justify-center gap-4 flex-wrap">
-<a href="{{ site.data.all_niches.hero.primary_button_url }}" class="main-btn">{{ site.data.all_niches.hero.primary_button_text | escape }}</a>
-<a href="{{ site.data.all_niches.hero.secondary_button_url }}" class="outline-btn">{{ site.data.all_niches.hero.secondary_button_text | escape }}</a>
+
+<a href="{{ site.data.all_niches.hero.primary_button_url }}"
+class="main-btn">
+{{ site.data.all_niches.hero.primary_button_text | escape }}
+</a>
+
+<a href="{{ site.data.all_niches.hero.secondary_button_url }}"
+class="outline-btn">
+{{ site.data.all_niches.hero.secondary_button_text | escape }}
+</a>
+
 </div>
 
 </div>
 </section>
 
+
+<!-- DYNAMIC WEBSITE INVENTORY -->
 <section class="niche-inventory-section" id="inventory">
-<h2>{{ site.data.all_niches.inventory.heading_before | escape }} <span class="red-text">{{ site.data.all_niches.inventory.highlighted_heading | escape }}</span></h2>
-<p class="niche-subtitle">{{ site.data.all_niches.inventory.description | escape }}</p>
+
+<h2>
+{{ site.data.all_niches.inventory.heading_before | escape }}
+<span class="red-text">
+{{ site.data.all_niches.inventory.highlighted_heading | escape }}
+</span>
+</h2>
+
+<p class="niche-subtitle">
+{{ site.data.all_niches.inventory.description | escape }}
+</p>
 
 <div class="niche-search-wrap">
-<input type="text" id="nicheTableSearch" placeholder="{{ site.data.all_niches.inventory.search_placeholder | escape }}">
+<input
+type="text"
+id="nicheTableSearch"
+placeholder="{{ site.data.all_niches.inventory.search_placeholder | escape }}"
+>
 </div>
 
 <div class="niche-table-wrap">
+
 <table class="niche-inventory-table" id="nicheInventoryTable">
+
 <thead>
 <tr>
 <th>Websites</th>
@@ -470,47 +510,73 @@ LINK<span class="gold-text">LIFT</span><span class="red-text">PRO</span>
 </thead>
 
 <tbody>
-<tr><td><a href="https://ecoticias.com" target="_blank">ecoticias.com</a></td><td>News</td><td class="metric-cell">72</td><td class="metric-cell">73</td><td>Spain</td><td>Spanish</td><td class="traffic-cell">72.4M</td><td class="price-cell">Quote Available</td></tr>
-<tr><td><a href="https://ilfattoquotidiano.it" target="_blank">ilfattoquotidiano.it</a></td><td>News</td><td class="metric-cell">80</td><td class="metric-cell">90</td><td>Italy</td><td>Italian</td><td class="traffic-cell">70.5M</td><td class="price-cell">Quote Available</td></tr>
-<tr><td><a href="https://hindustantimes.com" target="_blank">hindustantimes.com</a></td><td>News</td><td class="metric-cell">89</td><td class="metric-cell">93</td><td>India</td><td>English</td><td class="traffic-cell">55.6M</td><td class="price-cell">Quote Available</td></tr>
-<tr><td><a href="https://ctvnews.ca" target="_blank">ctvnews.ca</a></td><td>News</td><td class="metric-cell">90</td><td class="metric-cell">91</td><td></td><td>English</td><td class="traffic-cell">27M</td><td class="price-cell">Quote Available</td></tr>
-<tr><td><a href="https://republika.co.id" target="_blank">republika.co.id</a></td><td>News</td><td class="metric-cell">81</td><td class="metric-cell">85</td><td>Indonesia</td><td>Indonesian</td><td class="traffic-cell">25.5M</td><td class="price-cell">Quote Available</td></tr>
-<tr><td><a href="https://latimes.com" target="_blank">latimes.com</a></td><td>News</td><td class="metric-cell">92</td><td class="metric-cell">93</td><td>United States</td><td>English</td><td class="traffic-cell">25M</td><td class="price-cell">Quote Available</td></tr>
-<tr><td><a href="https://allkeyshop.com" target="_blank">allkeyshop.com</a></td><td>News</td><td class="metric-cell">54</td><td class="metric-cell">57</td><td></td><td>English</td><td class="traffic-cell">23.6M</td><td class="price-cell">Quote Available</td></tr>
-<tr><td><a href="https://indiatoday.in" target="_blank">indiatoday.in</a></td><td>News</td><td class="metric-cell">86</td><td class="metric-cell">90</td><td>India</td><td>English</td><td class="traffic-cell">19.5M</td><td class="price-cell">Quote Available</td></tr>
-<tr><td><a href="https://thanhnien.vn" target="_blank">thanhnien.vn</a></td><td>News</td><td class="metric-cell">86</td><td class="metric-cell">66</td><td></td><td>Vietnamese</td><td class="traffic-cell">18.1M</td><td class="price-cell">Quote Available</td></tr>
-<tr><td><a href="https://eonline.com" target="_blank">eonline.com</a></td><td>News</td><td class="metric-cell">85</td><td class="metric-cell">92</td><td></td><td>English</td><td class="traffic-cell">16.8M</td><td class="price-cell">Quote Available</td></tr>
-<tr><td><a href="https://filmibeat.com" target="_blank">filmibeat.com</a></td><td>News</td><td class="metric-cell">72</td><td class="metric-cell">79</td><td></td><td>English</td><td class="traffic-cell">16.7M</td><td class="price-cell">Quote Available</td></tr>
-<tr><td><a href="https://siliconcanals.com" target="_blank">siliconcanals.com</a></td><td>News</td><td class="metric-cell">73</td><td class="metric-cell">50</td><td></td><td>English</td><td class="traffic-cell">15.9M</td><td class="price-cell">Quote Available</td></tr>
-<tr><td><a href="https://heute.at" target="_blank">heute.at</a></td><td>News</td><td class="metric-cell">76</td><td class="metric-cell">70</td><td></td><td>German</td><td class="traffic-cell">15.5M</td><td class="price-cell">Quote Available</td></tr>
-<tr><td><a href="https://adnkronos.com" target="_blank">adnkronos.com</a></td><td>News</td><td class="metric-cell">80</td><td class="metric-cell">85</td><td>Italy</td><td>Italian</td><td class="traffic-cell">14.5M</td><td class="price-cell">Quote Available</td></tr>
-<tr><td><a href="https://timesofisrael.com" target="_blank">timesofisrael.com</a></td><td>News</td><td class="metric-cell">86</td><td class="metric-cell">91</td><td></td><td>English</td><td class="traffic-cell">13.9M</td><td class="price-cell">Quote Available</td></tr>
-<tr><td><a href="https://nova.bg" target="_blank">nova.bg</a></td><td>News</td><td class="metric-cell">74</td><td class="metric-cell">61</td><td>Bulgaria</td><td>Bulgarian</td><td class="traffic-cell">13.3M</td><td class="price-cell">Quote Available</td></tr>
-<tr><td><a href="https://stiripesurse.ro" target="_blank">stiripesurse.ro</a></td><td>News</td><td class="metric-cell">69</td><td class="metric-cell">58</td><td>Romania</td><td>Romanian</td><td class="traffic-cell">13.2M</td><td class="price-cell">Quote Available</td></tr>
-<tr><td><a href="https://oe24.at" target="_blank">oe24.at</a></td><td>News</td><td class="metric-cell">75</td><td class="metric-cell">74</td><td>Austria</td><td>German</td><td class="traffic-cell">13M</td><td class="price-cell">Quote Available</td></tr>
-<tr><td><a href="https://jagranjosh.com" target="_blank">jagranjosh.com</a></td><td>News</td><td class="metric-cell">77</td><td class="metric-cell">71</td><td>India</td><td>English</td><td class="traffic-cell">12.2M</td><td class="price-cell">Quote Available</td></tr>
-<tr><td><a href="https://eurohoops.net" target="_blank">eurohoops.net</a></td><td>News</td><td class="metric-cell">66</td><td class="metric-cell">73</td><td>Turkey</td><td>English</td><td class="traffic-cell">10.7M</td><td class="price-cell">Quote Available</td></tr>
-<tr><td><a href="https://makeuseof.com" target="_blank">makeuseof.com</a></td><td>News</td><td class="metric-cell">87</td><td class="metric-cell">90</td><td></td><td>English</td><td class="traffic-cell">10.6M</td><td class="price-cell">Quote Available</td></tr>
-<tr><td><a href="https://milanofinanza.it" target="_blank">milanofinanza.it</a></td><td>News</td><td class="metric-cell">77</td><td class="metric-cell">78</td><td>Italy</td><td>Italian</td><td class="traffic-cell">10.2M</td><td class="price-cell">Quote Available</td></tr>
-<tr><td><a href="https://futura-sciences.com" target="_blank">futura-sciences.com</a></td><td>News</td><td class="metric-cell">85</td><td class="metric-cell">89</td><td>France</td><td>French</td><td class="traffic-cell">9.7M</td><td class="price-cell">Quote Available</td></tr>
-<tr><td><a href="https://geeky-gadgets.com" target="_blank">geeky-gadgets.com</a></td><td>News</td><td class="metric-cell">74</td><td class="metric-cell">79</td><td>United States</td><td>English</td><td class="traffic-cell">9.4M</td><td class="price-cell">Quote Available</td></tr>
-<tr><td><a href="https://tag24.de" target="_blank">tag24.de</a></td><td>News</td><td class="metric-cell">75</td><td class="metric-cell">75</td><td></td><td></td><td class="traffic-cell">9.2M</td><td class="price-cell">Quote Available</td></tr>
-<tr><td><a href="https://legit.ng" target="_blank">legit.ng</a></td><td>News</td><td class="metric-cell">75</td><td class="metric-cell">85</td><td>Nigeria</td><td>English</td><td class="traffic-cell">9M</td><td class="price-cell">Quote Available</td></tr>
-<tr><td><a href="https://fcinternews.it" target="_blank">fcinternews.it</a></td><td>News</td><td class="metric-cell">56</td><td class="metric-cell">62</td><td></td><td>Italian</td><td class="traffic-cell">8.9M</td><td class="price-cell">Quote Available</td></tr>
-<tr><td><a href="https://cnews.fr" target="_blank">cnews.fr</a></td><td>News</td><td class="metric-cell">79</td><td class="metric-cell">80</td><td>France</td><td>French</td><td class="traffic-cell">8.3M</td><td class="price-cell">Quote Available</td></tr>
-<tr><td><a href="https://economica.net" target="_blank">economica.net</a></td><td>News</td><td class="metric-cell">70</td><td class="metric-cell">57</td><td>Romania</td><td></td><td class="traffic-cell">8.3M</td><td class="price-cell">Quote Available</td></tr>
-<tr><td><a href="https://financialexpress.com" target="_blank">financialexpress.com</a></td><td>News</td><td class="metric-cell">86</td><td class="metric-cell">86</td><td></td><td>English</td><td class="traffic-cell">7.9M</td><td class="price-cell">Quote Available</td></tr>
-<tr><td><a href="https://ottplay.com" target="_blank">ottplay.com</a></td><td>News</td><td class="metric-cell">60</td><td class="metric-cell">45</td><td></td><td>English</td><td class="traffic-cell">7.9M</td><td class="price-cell">Quote Available</td></tr>
-<tr><td><a href="https://dailykos.com" target="_blank">dailykos.com</a></td><td>News</td><td class="metric-cell">79</td><td class="metric-cell">87</td><td>United States</td><td>English</td><td class="traffic-cell">7.5M</td><td class="price-cell">Quote Available</td></tr>
-<tr><td><a href="https://ad-hoc-news.de" target="_blank">ad-hoc-news.de</a></td><td>News</td><td class="metric-cell">71</td><td class="metric-cell">57</td><td>Germany</td><td>German</td><td class="traffic-cell">7.1M</td><td class="price-cell">Quote Available</td></tr>
-<tr><td><a href="https://brightside.me" target="_blank">brightside.me</a></td><td>News</td><td class="metric-cell">75</td><td class="metric-cell">84</td><td></td><td>English</td><td class="traffic-cell">6.9M</td><td class="price-cell">Quote Available</td></tr>
-<tr><td><a href="https://laola1.at" target="_blank">laola1.at</a></td><td>News</td><td class="metric-cell">71</td><td class="metric-cell">70</td><td>Austria</td><td>German</td><td class="traffic-cell">6.8M</td><td class="price-cell">Quote Available</td></tr>
-<tr><td><a href="https://newindianexpress.com" target="_blank">newindianexpress.com</a></td><td>News</td><td class="metric-cell">84</td><td class="metric-cell">85</td><td></td><td>English</td><td class="traffic-cell">6.2M</td><td class="price-cell">Quote Available</td></tr>
-<tr><td><a href="https://gpblog.com" target="_blank">gpblog.com</a></td><td>News</td><td class="metric-cell">57</td><td class="metric-cell">61</td><td>Netherlands</td><td>English</td><td class="traffic-cell">6M</td><td class="price-cell">Quote Available</td></tr>
+
+{% assign inventory = site.website_inventory | sort: "title" %}
+
+{% if inventory.size > 0 %}
+
+{% for website in inventory %}
+
+<tr>
+
+<td>
+<a
+href="{{ website.url | escape }}"
+target="_blank"
+rel="noopener noreferrer">
+{{ website.title | escape }}
+</a>
+</td>
+
+<td>
+{{ website.niche | escape }}
+</td>
+
+<td class="metric-cell">
+{{ website.dr }}
+</td>
+
+<td class="metric-cell">
+{{ website.da }}
+</td>
+
+<td>
+{{ website.country | default: "-" | escape }}
+</td>
+
+<td>
+{{ website.language | default: "-" | escape }}
+</td>
+
+<td class="traffic-cell">
+{{ website.traffic | escape }}
+</td>
+
+<td class="price-cell">
+{{ website.price | escape }}
+</td>
+
+</tr>
+
+{% endfor %}
+
+{% else %}
+
+<tr>
+<td colspan="8" class="empty-inventory">
+Website inventory is being updated.
+</td>
+</tr>
+
+{% endif %}
+
 </tbody>
+
 </table>
+
 </div>
 </section>
+
 
 <style>
 .database-buttons{
@@ -662,10 +728,23 @@ padding:10px;
 }
 </style>
 
+
+<!-- CTA / DATABASE -->
 <section class="cta">
-<h2>{{ site.data.all_niches.cta.heading | escape }}</h2>
-<p>{{ site.data.all_niches.cta.description | escape }}</p>
-<a href="{{ site.data.all_niches.cta.button_url }}" target="_blank">{{ site.data.all_niches.cta.button_text | escape }}</a>
+
+<h2>
+{{ site.data.all_niches.cta.heading | escape }}
+</h2>
+
+<p>
+{{ site.data.all_niches.cta.description | escape }}
+</p>
+
+<a
+href="{{ site.data.all_niches.cta.button_url }}"
+target="_blank">
+{{ site.data.all_niches.cta.button_text | escape }}
+</a>
 
 <p style="margin-top:20px;font-size:15px;opacity:0.9;">
 {{ site.data.all_niches.cta.bottom_text | escape }}
@@ -673,33 +752,50 @@ padding:10px;
 
 <div class="database-buttons">
 
-<a href="https://docs.google.com/spreadsheets/d/1PzS0V_MzeLtbmC_Xn9WFVNpJtrO7ed61O8KdxY49rsg/edit?usp=drivesdk" target="_blank" class="database-btn">
+<a href="https://docs.google.com/spreadsheets/d/1PzS0V_MzeLtbmC_Xn9WFVNpJtrO7ed61O8KdxY49rsg/edit?usp=drivesdk"
+target="_blank"
+class="database-btn">
 🎯 VISIT NICHE DATABASE SET 1
 </a>
 
-<a href="https://docs.google.com/spreadsheets/d/1kktxEtGN5yJ9KjwLe63ZPQFzmvPgxwMB0oUPZeAH9g4/edit?usp=drivesdk" target="_blank" class="database-btn dark">
+<a href="https://docs.google.com/spreadsheets/d/1kktxEtGN5yJ9KjwLe63ZPQFzmvPgxwMB0oUPZeAH9g4/edit?usp=drivesdk"
+target="_blank"
+class="database-btn dark">
 🚀 VISIT NICHE DATABASE SET 2
 </a>
 
-<a href="https://docs.google.com/spreadsheets/d/1I20GICqvUf1FDkpVF5hgrEWD5mW0_T9fzR8qZgJanws/edit?usp=drivesdk" target="_blank" class="database-btn gold">
+<a href="https://docs.google.com/spreadsheets/d/1I20GICqvUf1FDkpVF5hgrEWD5mW0_T9fzR8qZgJanws/edit?usp=drivesdk"
+target="_blank"
+class="database-btn gold">
 💎 VISIT NICHE DATABASE SET 3
 </a>
 
-<a href="https://docs.google.com/spreadsheets/d/1RKt4d46MwTjTm4N-hYdsyzjGVQ1d1zkUUd0F5awD17c/edit?usp=drivesdk" target="_blank" class="database-btn">
+<a href="https://docs.google.com/spreadsheets/d/1RKt4d46MwTjTm4N-hYdsyzjGVQ1d1zkUUd0F5awD17c/edit?usp=drivesdk"
+target="_blank"
+class="database-btn">
 🌟 VISIT NICHE DATABASE SET 4
 </a>
 
-<a href="https://docs.google.com/spreadsheets/d/1nY8wF-qPW7Z_yEfu7QbXU4nDbLo0QveuI8TjReium0Y/edit?usp=drivesdk" target="_blank" class="database-btn home">
+<a href="https://docs.google.com/spreadsheets/d/1nY8wF-qPW7Z_yEfu7QbXU4nDbLo0QveuI8TjReium0Y/edit?usp=drivesdk"
+target="_blank"
+class="database-btn home">
 🏡 VISIT HOME IMPROVEMENT SHEET
 </a>
 
 </div>
+
 </section>
 
+
+<!-- NICHE DATABASE LINKS -->
 <section class="section">
-<h2>{{ site.data.all_niches.niches_section.heading | escape }}</h2>
+
+<h2>
+{{ site.data.all_niches.niches_section.heading | escape }}
+</h2>
 
 <div class="niche-wrap">
+
 <a href="https://docs.google.com/spreadsheets/d/1PzS0V_MzeLtbmC_Xn9WFVNpJtrO7ed61O8KdxY49rsg/edit?gid=0#gid=0" target="_blank" class="niche-pill">Affiliate Marketing</a>
 <a href="https://docs.google.com/spreadsheets/d/1PzS0V_MzeLtbmC_Xn9WFVNpJtrO7ed61O8KdxY49rsg/edit?gid=41460147#gid=41460147" target="_blank" class="niche-pill">Anime</a>
 <a href="https://docs.google.com/spreadsheets/d/1PzS0V_MzeLtbmC_Xn9WFVNpJtrO7ed61O8KdxY49rsg/edit?gid=1381166501#gid=1381166501" target="_blank" class="niche-pill">Architecture</a>
@@ -740,12 +836,15 @@ padding:10px;
 <a href="https://docs.google.com/spreadsheets/d/1PzS0V_MzeLtbmC_Xn9WFVNpJtrO7ed61O8KdxY49rsg/edit?gid=274694340#gid=274694340" target="_blank" class="niche-pill">Dentistry</a>
 <a href="https://docs.google.com/spreadsheets/d/1PzS0V_MzeLtbmC_Xn9WFVNpJtrO7ed61O8KdxY49rsg/edit?gid=1927777900#gid=1927777900" target="_blank" class="niche-pill">Dictionaries</a>
 <a href="https://docs.google.com/spreadsheets/d/1PzS0V_MzeLtbmC_Xn9WFVNpJtrO7ed61O8KdxY49rsg/edit?gid=1218818048#gid=1218818048" target="_blank" class="niche-pill">Diets and Healthy Eating</a>
+
 <a href="https://docs.google.com/spreadsheets/d/1kktxEtGN5yJ9KjwLe63ZPQFzmvPgxwMB0oUPZeAH9g4/edit?gid=0#gid=0" target="_blank" class="niche-pill">Digital Marketing</a>
 <a href="https://docs.google.com/spreadsheets/d/1kktxEtGN5yJ9KjwLe63ZPQFzmvPgxwMB0oUPZeAH9g4/edit?gid=1381166501#gid=1381166501" target="_blank" class="niche-pill">Education</a>
 <a href="https://docs.google.com/spreadsheets/d/1kktxEtGN5yJ9KjwLe63ZPQFzmvPgxwMB0oUPZeAH9g4/edit?gid=1026873680#gid=1026873680" target="_blank" class="niche-pill">Finance</a>
 <a href="https://docs.google.com/spreadsheets/d/1kktxEtGN5yJ9KjwLe63ZPQFzmvPgxwMB0oUPZeAH9g4/edit?gid=1527484432#gid=1527484432" target="_blank" class="niche-pill">Health & Fitness</a>
 <a href="https://docs.google.com/spreadsheets/d/1kktxEtGN5yJ9KjwLe63ZPQFzmvPgxwMB0oUPZeAH9g4/edit?gid=476733979#gid=476733979" target="_blank" class="niche-pill">Home Improvement</a>
+
 <a href="https://docs.google.com/spreadsheets/d/1I20GICqvUf1FDkpVF5hgrEWD5mW0_T9fzR8qZgJanws/edit?gid=490479111#gid=490479111" target="_blank" class="niche-pill">SaaS</a>
+
 <a href="https://docs.google.com/spreadsheets/d/1RKt4d46MwTjTm4N-hYdsyzjGVQ1d1zkUUd0F5awD17c/edit?gid=1208640396#gid=1208640396" target="_blank" class="niche-pill">Technology</a>
 <a href="https://docs.google.com/spreadsheets/d/1RKt4d46MwTjTm4N-hYdsyzjGVQ1d1zkUUd0F5awD17c/edit?gid=1018132826#gid=1018132826" target="_blank" class="niche-pill">Tourism and Travel</a>
 <a href="https://docs.google.com/spreadsheets/d/1RKt4d46MwTjTm4N-hYdsyzjGVQ1d1zkUUd0F5awD17c/edit?gid=1932015910#gid=1932015910" target="_blank" class="niche-pill">Travel</a>
@@ -753,45 +852,63 @@ padding:10px;
 <a href="https://docs.google.com/spreadsheets/d/1RKt4d46MwTjTm4N-hYdsyzjGVQ1d1zkUUd0F5awD17c/edit?gid=966856773#gid=966856773" target="_blank" class="niche-pill">Website Development</a>
 <a href="https://docs.google.com/spreadsheets/d/1RKt4d46MwTjTm4N-hYdsyzjGVQ1d1zkUUd0F5awD17c/edit?gid=476733979#gid=476733979" target="_blank" class="niche-pill">Weight Loss</a>
 <a href="https://docs.google.com/spreadsheets/d/1RKt4d46MwTjTm4N-hYdsyzjGVQ1d1zkUUd0F5awD17c/edit?gid=118207295#gid=118207295" target="_blank" class="niche-pill">Yoga</a>
+
 </div>
 </section>
 
+
+<!-- FOOTER -->
 <footer class="footer">
+
 <p class="footer-logo">
 LINK<span class="gold-text">LIFT</span><span class="red-text">PRO</span>
 </p>
+
 <p>
 Guest Posting • Link Building • Niche Edits • Authority Backlinks
 </p>
+
 <p>
 © 2026 LinkLiftPro SEO Agency. All Rights Reserved.
 </p>
+
 </footer>
 
-<script>
-const menuBtn=document.querySelector('.mobile-menu-btn');
-const mobileMenu=document.querySelector('.mobile-menu');
 
-if(menuBtn&&mobileMenu){
-menuBtn.addEventListener('click',function(){
+<script>
+const menuBtn = document.querySelector('.mobile-menu-btn');
+const mobileMenu = document.querySelector('.mobile-menu');
+
+if(menuBtn && mobileMenu){
+menuBtn.addEventListener('click', function(){
 mobileMenu.classList.toggle('active');
 });
 }
 
-document.addEventListener("DOMContentLoaded",function(){
-const searchInput=document.getElementById("nicheTableSearch");
-const tableRows=document.querySelectorAll("#nicheInventoryTable tbody tr");
+document.addEventListener("DOMContentLoaded", function(){
+
+const searchInput = document.getElementById("nicheTableSearch");
+const tableRows = document.querySelectorAll("#nicheInventoryTable tbody tr");
 
 if(searchInput){
-searchInput.addEventListener("keyup",function(){
-const searchValue=this.value.toLowerCase();
+
+searchInput.addEventListener("keyup", function(){
+
+const searchValue = this.value.toLowerCase().trim();
 
 tableRows.forEach(function(row){
-const rowText=row.innerText.toLowerCase();
-row.style.display=rowText.includes(searchValue)?"":"none";
+
+const rowText = row.innerText.toLowerCase();
+
+row.style.display =
+rowText.includes(searchValue) ? "" : "none";
+
 });
+
 });
+
 }
+
 });
 </script>
 
