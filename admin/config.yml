@@ -104,7 +104,6 @@ collections:
 
   - name: "pages"
     label: "Website Pages"
-
     files:
       - name: "homepage"
         label: "Home Page"
@@ -362,7 +361,8 @@ collections:
               - label: "FAQ Button URL"
                 name: "faq_button_url"
                 widget: "string"
-- name: "all_niches"
+
+      - name: "all_niches"
         label: "All Niches Page"
         file: "_data/all_niches.yml"
 
@@ -466,6 +466,7 @@ collections:
               - label: "Heading"
                 name: "heading"
                 widget: "string"
+
   - name: "portfolio"
     label: "Portfolio"
     label_singular: "Project"
