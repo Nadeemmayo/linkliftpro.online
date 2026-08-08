@@ -573,7 +573,7 @@ placeholder="{{ site.data.all_niches.inventory.search_placeholder | escape }}">
 
 <tbody>
 
-{% assign inventory = site.website_inventory | sort: "title" %}
+{% assign inventory = site.inventory | sort: "title" %}
 
 {% if inventory and inventory.size > 0 %}
 
