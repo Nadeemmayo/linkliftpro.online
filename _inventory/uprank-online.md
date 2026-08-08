@@ -1,6 +1,6 @@
 ---
 title: uprank.online
-url: https://uprank.online
+website_url: https://uprank.online
 niche: Digital
 dr: 33
 da: 33
