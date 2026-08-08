@@ -500,7 +500,7 @@ collections:
         widget: "text"
 
       - label: "Project URL"
-        name: "url"
+        name: "website_url"
         widget: "string"
         required: false
 
@@ -530,7 +530,7 @@ collections:
         hint: "Example: example.com"
 
       - label: "Website URL"
-        name: "url"
+        name: "website_url"
         widget: "string"
         hint: "Example: https://example.com"
 
