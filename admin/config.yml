@@ -104,6 +104,7 @@ collections:
 
   - name: "pages"
     label: "Website Pages"
+
     files:
       - name: "homepage"
         label: "Home Page"
@@ -511,3 +512,62 @@ collections:
       - label: "Body"
         name: "body"
         widget: "markdown"
+
+  - name: "website_inventory"
+    label: "Website Inventory"
+    label_singular: "Website"
+    folder: "_inventory"
+    create: true
+    slug: "{{slug}}"
+    extension: "md"
+    format: "frontmatter"
+    summary: "{{title}} | {{niche}} | DR {{dr}} | ${{price}}"
+
+    fields:
+      - label: "Website / Domain"
+        name: "title"
+        widget: "string"
+        hint: "Example: example.com"
+
+      - label: "Website URL"
+        name: "url"
+        widget: "string"
+        hint: "Example: https://example.com"
+
+      - label: "Niche"
+        name: "niche"
+        widget: "string"
+
+      - label: "DR"
+        name: "dr"
+        widget: "number"
+        value_type: "int"
+        min: 0
+        max: 100
+
+      - label: "DA"
+        name: "da"
+        widget: "number"
+        value_type: "int"
+        min: 0
+        max: 100
+
+      - label: "Country"
+        name: "country"
+        widget: "string"
+        required: false
+
+      - label: "Language"
+        name: "language"
+        widget: "string"
+        required: false
+
+      - label: "Traffic"
+        name: "traffic"
+        widget: "string"
+        hint: "Example: 125K or 2.5M"
+
+      - label: "Price (USD)"
+        name: "price"
+        widget: "string"
+        hint: "Example: 150 or Quote Available"
