@@ -1,6 +1,6 @@
 ---
 title: sajid.com
-url: https://sajid.com
+website_url: https://sajid.com
 niche: fashion
 dr: 31
 da: 33
