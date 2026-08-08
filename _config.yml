@@ -11,6 +11,9 @@ collections:
     output: true
     permalink: /portfolio/:name/
 
+  website_inventory:
+    output: false
+
 plugins: []
 
 exclude:
