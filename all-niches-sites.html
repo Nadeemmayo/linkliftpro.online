@@ -36,13 +36,8 @@ gtag('config', 'G-GB37RK3Z13');
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
-html{
-scroll-behavior:smooth;
-}
-
-*{
-box-sizing:border-box;
-}
+html{scroll-behavior:smooth;}
+*{box-sizing:border-box;}
 
 body{
 margin:0;
@@ -52,10 +47,7 @@ color:#180606;
 overflow-x:hidden;
 }
 
-a{
-text-decoration:none;
-color:inherit;
-}
+a{text-decoration:none;color:inherit;}
 
 .hero-bg{
 background:
@@ -64,21 +56,9 @@ radial-gradient(circle at bottom right,rgba(220,38,38,.28),transparent 35%),
 linear-gradient(135deg,#fffaf0 0%,#ffffff 45%,#fff0f0 100%);
 }
 
-.dark-bg{
-background:linear-gradient(135deg,#180606 0%,#4a0808 55%,#991b1b 100%);
-}
-
-.red-text{
-color:#dc2626;
-}
-
-.gold-text{
-color:#f5b700;
-}
-
-.deep-text{
-color:#180606;
-}
+.red-text{color:#dc2626;}
+.gold-text{color:#f5b700;}
+.deep-text{color:#180606;}
 
 .logo-mark{
 width:44px;
@@ -104,9 +84,7 @@ transition:.3s;
 box-shadow:0 16px 35px rgba(220,38,38,.25);
 }
 
-.main-btn:hover{
-transform:scale(1.05);
-}
+.main-btn:hover{transform:scale(1.05);}
 
 .outline-btn{
 border:2px solid #dc2626;
@@ -124,13 +102,8 @@ background:#dc2626;
 color:#fff;
 }
 
-.mobile-menu{
-display:none;
-}
-
-.mobile-menu.active{
-display:block;
-}
+.mobile-menu{display:none;}
+.mobile-menu.active{display:block;}
 
 .niche-inventory-section{
 padding:70px 6%;
@@ -277,7 +250,7 @@ max-width:820px;
 margin:auto;
 }
 
-.cta a{
+.cta>a{
 display:inline-block;
 margin-top:25px;
 background:#180606;
@@ -288,297 +261,8 @@ font-weight:900;
 transition:.3s;
 }
 
-.cta a:hover{
-transform:scale(1.05);
-}
+.cta>a:hover{transform:scale(1.05);}
 
-.niche-wrap{
-display:flex;
-flex-wrap:wrap;
-gap:14px;
-justify-content:center;
-margin-top:40px;
-}
-
-.niche-pill{
-background:#ffffff;
-border:1px dashed rgba(220,38,38,.45);
-color:#dc2626;
-padding:12px 20px;
-border-radius:40px;
-font-weight:900;
-font-size:14px;
-box-shadow:0 14px 35px rgba(80,10,10,.08);
-transition:.3s;
-}
-
-.niche-pill:hover{
-background:#dc2626;
-color:#ffffff;
-transform:translateY(-3px);
-}
-
-.footer{
-background:#180606;
-border-top:1px solid rgba(250,204,21,.20);
-padding:32px 20px;
-text-align:center;
-color:#fff;
-}
-
-.footer-logo{
-font-size:22px;
-font-weight:900;
-}
-
-.footer p{
-color:#ffd6d6;
-font-size:14px;
-margin-top:8px;
-}
-
-@media(max-width:768px){
-.desktop-menu{
-display:none!important;
-}
-
-.mobile-menu{
-background:#fffaf0;
-padding:18px 24px;
-border-top:1px solid rgba(220,38,38,.15);
-}
-
-.mobile-menu a{
-display:block;
-padding:12px 0;
-color:#180606;
-font-weight:bold;
-text-transform:uppercase;
-font-size:13px;
-border-bottom:1px solid rgba(220,38,38,.08);
-}
-
-.niche-inventory-section{
-padding:50px 18px;
-}
-
-.niche-inventory-section h2{
-font-size:30px;
-}
-
-.hero-title{
-font-size:38px!important;
-}
-}
-</style>
-
-<script type="application/ld+json">
-{
-"@context":"https://schema.org",
-"@type":"CollectionPage",
-"name":"All Niches",
-"url":"https://linkliftpro.online/all-niches-sites.html",
-"description":"{{ site.data.all_niches.seo.description | escape }}",
-"publisher":{
-"@type":"Organization",
-"name":"LinkLiftPro",
-"url":"https://linkliftpro.online/"
-},
-"provider":{
-"@type":"Organization",
-"name":"LinkLiftPro"
-}
-}
-</script>
-
-</head>
-
-<body>
-
-<nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-xl border-b border-red-200">
-<div class="max-w-7xl mx-auto flex justify-between items-center p-4">
-
-<a href="index.html" class="text-2xl font-black deep-text flex items-center">
-<span class="logo-mark">LL</span>
-LINK<span class="gold-text">LIFT</span><span class="red-text">PRO</span>
-</a>
-
-<div class="desktop-menu hidden md:flex gap-5 font-bold text-xs uppercase items-center">
-<a href="index.html" class="hover:text-red-600 transition">Home</a>
-<a href="about.html" class="hover:text-red-600 transition">About</a>
-<a href="services.html" class="hover:text-red-600 transition">Services</a>
-<a href="portfolio.html" class="hover:text-red-600 transition">Portfolio</a>
-<a href="all-niches-sites.html" class="red-text transition">All Niches</a>
-<a href="blog.html" class="hover:text-red-600 transition">Blog</a>
-<a href="FAQs.html" class="hover:text-red-600 transition">FAQ</a>
-<a href="contact.html" class="main-btn text-sm px-5 py-2">Contact</a>
-</div>
-
-<button class="mobile-menu-btn text-3xl md:hidden deep-text" type="button">
-<i class="fas fa-bars"></i>
-</button>
-
-</div>
-
-<div class="mobile-menu">
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="services.html">Services</a>
-<a href="portfolio.html">Portfolio</a>
-<a href="all-niches-sites.html" class="red-text">All Niches</a>
-<a href="blog.html">Blog</a>
-<a href="FAQs.html">FAQ</a>
-<a href="contact.html">Contact</a>
-</div>
-</nav>
-
-
-<!-- HERO -->
-<section class="hero-bg py-24 px-6 text-center">
-<div class="max-w-6xl mx-auto">
-
-<span class="inline-block border border-red-400/30 bg-white/70 text-red-700 text-xs font-black uppercase tracking-[4px] px-5 py-2 rounded-full mb-6">
-{{ site.data.all_niches.hero.badge | escape }}
-</span>
-
-<h1 class="hero-title text-4xl md:text-6xl font-black uppercase leading-tight mb-6 deep-text">
-{{ site.data.all_niches.hero.heading_before | escape }}
-<span class="red-text">
-{{ site.data.all_niches.hero.highlighted_heading | escape }}
-</span>
-</h1>
-
-<p class="text-[#5a2b2b] text-lg md:text-xl max-w-3xl mx-auto mb-9">
-{{ site.data.all_niches.hero.description | escape }}
-</p>
-
-<div class="flex justify-center gap-4 flex-wrap">
-
-<a href="{{ site.data.all_niches.hero.primary_button_url }}"
-class="main-btn">
-{{ site.data.all_niches.hero.primary_button_text | escape }}
-</a>
-
-<a href="{{ site.data.all_niches.hero.secondary_button_url }}"
-class="outline-btn">
-{{ site.data.all_niches.hero.secondary_button_text | escape }}
-</a>
-
-</div>
-
-</div>
-</section>
-
-
-<!-- DYNAMIC WEBSITE INVENTORY -->
-<section class="niche-inventory-section" id="inventory">
-
-<h2>
-{{ site.data.all_niches.inventory.heading_before | escape }}
-<span class="red-text">
-{{ site.data.all_niches.inventory.highlighted_heading | escape }}
-</span>
-</h2>
-
-<p class="niche-subtitle">
-{{ site.data.all_niches.inventory.description | escape }}
-</p>
-
-<div class="niche-search-wrap">
-<input
-type="text"
-id="nicheTableSearch"
-placeholder="{{ site.data.all_niches.inventory.search_placeholder | escape }}"
->
-</div>
-
-<div class="niche-table-wrap">
-
-<table class="niche-inventory-table" id="nicheInventoryTable">
-
-<thead>
-<tr>
-<th>Websites</th>
-<th>Niche</th>
-<th>DR</th>
-<th>DA</th>
-<th>Country</th>
-<th>Lang</th>
-<th>Traffic</th>
-<th>Price (USD)</th>
-</tr>
-</thead>
-
-<tbody>
-
-{% assign inventory = site.website_inventory | sort: "title" %}
-
-{% if inventory.size > 0 %}
-
-{% for website in inventory %}
-
-<tr>
-
-<td>
-<a
-href="{{ website.url | escape }}"
-target="_blank"
-rel="noopener noreferrer">
-{{ website.title | escape }}
-</a>
-</td>
-
-<td>
-{{ website.niche | escape }}
-</td>
-
-<td class="metric-cell">
-{{ website.dr }}
-</td>
-
-<td class="metric-cell">
-{{ website.da }}
-</td>
-
-<td>
-{{ website.country | default: "-" | escape }}
-</td>
-
-<td>
-{{ website.language | default: "-" | escape }}
-</td>
-
-<td class="traffic-cell">
-{{ website.traffic | escape }}
-</td>
-
-<td class="price-cell">
-{{ website.price | escape }}
-</td>
-
-</tr>
-
-{% endfor %}
-
-{% else %}
-
-<tr>
-<td colspan="8" class="empty-inventory">
-Website inventory is being updated.
-</td>
-</tr>
-
-{% endif %}
-
-</tbody>
-
-</table>
-
-</div>
-</section>
-
-
-<style>
 .database-buttons{
 margin-top:26px;
 display:flex;
@@ -588,40 +272,40 @@ gap:16px;
 }
 
 .database-btn{
-display:inline-flex;
+display:inline-flex!important;
 align-items:center;
 justify-content:center;
-padding:16px 30px;
-border-radius:999px 28px 999px 28px;
+padding:16px 30px!important;
+border-radius:999px 28px 999px 28px!important;
 font-size:15px;
 font-weight:900;
 text-decoration:none;
-color:#180606;
-background:linear-gradient(135deg,#dc2626,#facc15);
+color:#180606!important;
+background:linear-gradient(135deg,#dc2626,#facc15)!important;
 box-shadow:0 18px 38px rgba(220,38,38,.25);
 transition:.3s;
 border:1px solid rgba(255,255,255,.25);
 }
 
 .database-btn:hover{
-transform:translateY(-5px) scale(1.03);
-border-radius:28px 999px 28px 999px;
+transform:translateY(-5px) scale(1.03)!important;
+border-radius:28px 999px 28px 999px!important;
 box-shadow:0 24px 55px rgba(220,38,38,.35);
 }
 
 .database-btn.dark{
-background:linear-gradient(135deg,#180606,#991b1b);
-color:#ffffff;
+background:linear-gradient(135deg,#180606,#991b1b)!important;
+color:#ffffff!important;
 }
 
 .database-btn.gold{
-background:linear-gradient(135deg,#facc15,#dc2626);
-color:#180606;
+background:linear-gradient(135deg,#facc15,#dc2626)!important;
+color:#180606!important;
 }
 
 .database-btn.home{
-background:linear-gradient(135deg,#ff003c,#ff4b2b,#facc15);
-color:#ffffff;
+background:linear-gradient(135deg,#ff003c,#ff4b2b,#facc15)!important;
+color:#ffffff!important;
 }
 
 .section{
@@ -694,26 +378,60 @@ box-shadow:0 24px 48px rgba(250,204,21,.25);
 border-color:#facc15;
 }
 
-@media(max-width:1150px){
-.niche-wrap{
-grid-template-columns:repeat(4,1fr);
+.footer{
+background:#180606;
+border-top:1px solid rgba(250,204,21,.20);
+padding:32px 20px;
+text-align:center;
+color:#fff;
 }
+
+.footer-logo{
+font-size:22px;
+font-weight:900;
+}
+
+.footer p{
+color:#ffd6d6;
+font-size:14px;
+margin-top:8px;
+}
+
+@media(max-width:1150px){
+.niche-wrap{grid-template-columns:repeat(4,1fr);}
 }
 
 @media(max-width:850px){
-.niche-wrap{
-grid-template-columns:repeat(3,1fr);
+.niche-wrap{grid-template-columns:repeat(3,1fr);}
+.section h2{font-size:34px;}
 }
 
-.section h2{
-font-size:34px;
+@media(max-width:768px){
+.desktop-menu{display:none!important;}
+
+.mobile-menu{
+background:#fffaf0;
+padding:18px 24px;
+border-top:1px solid rgba(220,38,38,.15);
 }
+
+.mobile-menu a{
+display:block;
+padding:12px 0;
+color:#180606;
+font-weight:bold;
+text-transform:uppercase;
+font-size:13px;
+border-bottom:1px solid rgba(220,38,38,.08);
+}
+
+.niche-inventory-section{padding:50px 18px;}
+.niche-inventory-section h2{font-size:30px;}
+.hero-title{font-size:38px!important;}
 }
 
 @media(max-width:560px){
-.section{
-padding:60px 18px;
-}
+.section{padding:60px 18px;}
 
 .niche-wrap{
 grid-template-columns:repeat(2,1fr);
@@ -728,21 +446,207 @@ padding:10px;
 }
 </style>
 
+<script type="application/ld+json">
+{
+"@context":"https://schema.org",
+"@type":"CollectionPage",
+"name":"All Niches",
+"url":"https://linkliftpro.online/all-niches-sites.html",
+"description":"{{ site.data.all_niches.seo.description | escape }}",
+"publisher":{
+"@type":"Organization",
+"name":"LinkLiftPro",
+"url":"https://linkliftpro.online/"
+},
+"provider":{
+"@type":"Organization",
+"name":"LinkLiftPro"
+}
+}
+</script>
+</head>
+
+<body>
+
+<nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-xl border-b border-red-200">
+<div class="max-w-7xl mx-auto flex justify-between items-center p-4">
+
+<a href="index.html" class="text-2xl font-black deep-text flex items-center">
+<span class="logo-mark">LL</span>
+LINK<span class="gold-text">LIFT</span><span class="red-text">PRO</span>
+</a>
+
+<div class="desktop-menu hidden md:flex gap-5 font-bold text-xs uppercase items-center">
+<a href="index.html" class="hover:text-red-600 transition">Home</a>
+<a href="about.html" class="hover:text-red-600 transition">About</a>
+<a href="services.html" class="hover:text-red-600 transition">Services</a>
+<a href="portfolio.html" class="hover:text-red-600 transition">Portfolio</a>
+<a href="all-niches-sites.html" class="red-text transition">All Niches</a>
+<a href="blog.html" class="hover:text-red-600 transition">Blog</a>
+<a href="FAQs.html" class="hover:text-red-600 transition">FAQ</a>
+<a href="contact.html" class="main-btn text-sm px-5 py-2">Contact</a>
+</div>
+
+<button class="mobile-menu-btn text-3xl md:hidden deep-text" type="button">
+<i class="fas fa-bars"></i>
+</button>
+
+</div>
+
+<div class="mobile-menu">
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="services.html">Services</a>
+<a href="portfolio.html">Portfolio</a>
+<a href="all-niches-sites.html" class="red-text">All Niches</a>
+<a href="blog.html">Blog</a>
+<a href="FAQs.html">FAQ</a>
+<a href="contact.html">Contact</a>
+</div>
+</nav>
+
+<!-- HERO -->
+<section class="hero-bg py-24 px-6 text-center">
+<div class="max-w-6xl mx-auto">
+
+<span class="inline-block border border-red-400/30 bg-white/70 text-red-700 text-xs font-black uppercase tracking-[4px] px-5 py-2 rounded-full mb-6">
+{{ site.data.all_niches.hero.badge | escape }}
+</span>
+
+<h1 class="hero-title text-4xl md:text-6xl font-black uppercase leading-tight mb-6 deep-text">
+{{ site.data.all_niches.hero.heading_before | escape }}
+<span class="red-text">{{ site.data.all_niches.hero.highlighted_heading | escape }}</span>
+</h1>
+
+<p class="text-[#5a2b2b] text-lg md:text-xl max-w-3xl mx-auto mb-9">
+{{ site.data.all_niches.hero.description | escape }}
+</p>
+
+<div class="flex justify-center gap-4 flex-wrap">
+<a href="{{ site.data.all_niches.hero.primary_button_url }}" class="main-btn">
+{{ site.data.all_niches.hero.primary_button_text | escape }}
+</a>
+
+<a href="{{ site.data.all_niches.hero.secondary_button_url }}" class="outline-btn">
+{{ site.data.all_niches.hero.secondary_button_text | escape }}
+</a>
+</div>
+
+</div>
+</section>
+
+<!-- WEBSITE INVENTORY -->
+<section class="niche-inventory-section" id="inventory">
+
+<h2>
+{{ site.data.all_niches.inventory.heading_before | escape }}
+<span class="red-text">{{ site.data.all_niches.inventory.highlighted_heading | escape }}</span>
+</h2>
+
+<p class="niche-subtitle">
+{{ site.data.all_niches.inventory.description | escape }}
+</p>
+
+<div class="niche-search-wrap">
+<input
+type="text"
+id="nicheTableSearch"
+placeholder="{{ site.data.all_niches.inventory.search_placeholder | escape }}">
+</div>
+
+<div class="niche-table-wrap">
+
+<table class="niche-inventory-table" id="nicheInventoryTable">
+
+<thead>
+<tr>
+<th>Websites</th>
+<th>Niche</th>
+<th>DR</th>
+<th>DA</th>
+<th>Country</th>
+<th>Lang</th>
+<th>Traffic</th>
+<th>Price (USD)</th>
+</tr>
+</thead>
+
+<tbody>
+
+{% assign inventory = site.website_inventory | sort: "title" %}
+
+{% if inventory and inventory.size > 0 %}
+
+{% for website in inventory %}
+
+<tr>
+
+<td>
+{% if website.url and website.url != "" %}
+<a href="{{ website.url | escape }}"
+   target="_blank"
+   rel="noopener noreferrer">
+{{ website.title | escape }}
+</a>
+{% else %}
+{{ website.title | escape }}
+{% endif %}
+</td>
+
+<td>{{ website.niche | default: "-" | escape }}</td>
+
+<td class="metric-cell">
+{{ website.dr | default: "-" }}
+</td>
+
+<td class="metric-cell">
+{{ website.da | default: "-" }}
+</td>
+
+<td>
+{{ website.country | default: "-" | escape }}
+</td>
+
+<td>
+{{ website.language | default: "-" | escape }}
+</td>
+
+<td class="traffic-cell">
+{{ website.traffic | default: "-" | escape }}
+</td>
+
+<td class="price-cell">
+{{ website.price | default: "Quote Available" | escape }}
+</td>
+
+</tr>
+
+{% endfor %}
+
+{% else %}
+
+<tr>
+<td colspan="8" class="empty-inventory">
+Website inventory is being updated.
+</td>
+</tr>
+
+{% endif %}
+
+</tbody>
+</table>
+
+</div>
+</section>
 
 <!-- CTA / DATABASE -->
 <section class="cta">
 
-<h2>
-{{ site.data.all_niches.cta.heading | escape }}
-</h2>
+<h2>{{ site.data.all_niches.cta.heading | escape }}</h2>
 
-<p>
-{{ site.data.all_niches.cta.description | escape }}
-</p>
+<p>{{ site.data.all_niches.cta.description | escape }}</p>
 
-<a
-href="{{ site.data.all_niches.cta.button_url }}"
-target="_blank">
+<a href="{{ site.data.all_niches.cta.button_url }}" target="_blank" rel="noopener noreferrer">
 {{ site.data.all_niches.cta.button_text | escape }}
 </a>
 
@@ -753,46 +657,37 @@ target="_blank">
 <div class="database-buttons">
 
 <a href="https://docs.google.com/spreadsheets/d/1PzS0V_MzeLtbmC_Xn9WFVNpJtrO7ed61O8KdxY49rsg/edit?usp=drivesdk"
-target="_blank"
-class="database-btn">
+target="_blank" rel="noopener noreferrer" class="database-btn">
 🎯 VISIT NICHE DATABASE SET 1
 </a>
 
 <a href="https://docs.google.com/spreadsheets/d/1kktxEtGN5yJ9KjwLe63ZPQFzmvPgxwMB0oUPZeAH9g4/edit?usp=drivesdk"
-target="_blank"
-class="database-btn dark">
+target="_blank" rel="noopener noreferrer" class="database-btn dark">
 🚀 VISIT NICHE DATABASE SET 2
 </a>
 
 <a href="https://docs.google.com/spreadsheets/d/1I20GICqvUf1FDkpVF5hgrEWD5mW0_T9fzR8qZgJanws/edit?usp=drivesdk"
-target="_blank"
-class="database-btn gold">
+target="_blank" rel="noopener noreferrer" class="database-btn gold">
 💎 VISIT NICHE DATABASE SET 3
 </a>
 
 <a href="https://docs.google.com/spreadsheets/d/1RKt4d46MwTjTm4N-hYdsyzjGVQ1d1zkUUd0F5awD17c/edit?usp=drivesdk"
-target="_blank"
-class="database-btn">
+target="_blank" rel="noopener noreferrer" class="database-btn">
 🌟 VISIT NICHE DATABASE SET 4
 </a>
 
 <a href="https://docs.google.com/spreadsheets/d/1nY8wF-qPW7Z_yEfu7QbXU4nDbLo0QveuI8TjReium0Y/edit?usp=drivesdk"
-target="_blank"
-class="database-btn home">
+target="_blank" rel="noopener noreferrer" class="database-btn home">
 🏡 VISIT HOME IMPROVEMENT SHEET
 </a>
 
 </div>
-
 </section>
-
 
 <!-- NICHE DATABASE LINKS -->
 <section class="section">
 
-<h2>
-{{ site.data.all_niches.niches_section.heading | escape }}
-</h2>
+<h2>{{ site.data.all_niches.niches_section.heading | escape }}</h2>
 
 <div class="niche-wrap">
 
@@ -840,7 +735,7 @@ class="database-btn home">
 <a href="https://docs.google.com/spreadsheets/d/1kktxEtGN5yJ9KjwLe63ZPQFzmvPgxwMB0oUPZeAH9g4/edit?gid=0#gid=0" target="_blank" class="niche-pill">Digital Marketing</a>
 <a href="https://docs.google.com/spreadsheets/d/1kktxEtGN5yJ9KjwLe63ZPQFzmvPgxwMB0oUPZeAH9g4/edit?gid=1381166501#gid=1381166501" target="_blank" class="niche-pill">Education</a>
 <a href="https://docs.google.com/spreadsheets/d/1kktxEtGN5yJ9KjwLe63ZPQFzmvPgxwMB0oUPZeAH9g4/edit?gid=1026873680#gid=1026873680" target="_blank" class="niche-pill">Finance</a>
-<a href="https://docs.google.com/spreadsheets/d/1kktxEtGN5yJ9KjwLe63ZPQFzmvPgxwMB0oUPZeAH9g4/edit?gid=1527484432#gid=1527484432" target="_blank" class="niche-pill">Health & Fitness</a>
+<a href="https://docs.google.com/spreadsheets/d/1kktxEtGN5yJ9KjwLe63ZPQFzmvPgxwMB0oUPZeAH9g4/edit?gid=1527484432#gid=1527484432" target="_blank" class="niche-pill">Health &amp; Fitness</a>
 <a href="https://docs.google.com/spreadsheets/d/1kktxEtGN5yJ9KjwLe63ZPQFzmvPgxwMB0oUPZeAH9g4/edit?gid=476733979#gid=476733979" target="_blank" class="niche-pill">Home Improvement</a>
 
 <a href="https://docs.google.com/spreadsheets/d/1I20GICqvUf1FDkpVF5hgrEWD5mW0_T9fzR8qZgJanws/edit?gid=490479111#gid=490479111" target="_blank" class="niche-pill">SaaS</a>
@@ -855,7 +750,6 @@ class="database-btn home">
 
 </div>
 </section>
-
 
 <!-- FOOTER -->
 <footer class="footer">
@@ -874,7 +768,6 @@ Guest Posting • Link Building • Niche Edits • Authority Backlinks
 
 </footer>
 
-
 <script>
 const menuBtn = document.querySelector('.mobile-menu-btn');
 const mobileMenu = document.querySelector('.mobile-menu');
@@ -892,16 +785,19 @@ const tableRows = document.querySelectorAll("#nicheInventoryTable tbody tr");
 
 if(searchInput){
 
-searchInput.addEventListener("keyup", function(){
+searchInput.addEventListener("input", function(){
 
 const searchValue = this.value.toLowerCase().trim();
 
 tableRows.forEach(function(row){
 
+if(row.querySelector(".empty-inventory")){
+return;
+}
+
 const rowText = row.innerText.toLowerCase();
 
-row.style.display =
-rowText.includes(searchValue) ? "" : "none";
+row.style.display = rowText.includes(searchValue) ? "" : "none";
 
 });
 
