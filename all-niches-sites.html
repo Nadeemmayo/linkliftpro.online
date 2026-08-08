@@ -582,8 +582,8 @@ placeholder="{{ site.data.all_niches.inventory.search_placeholder | escape }}">
 <tr>
 
 <td>
-{% if website.url and website.url != "" %}
-<a href="{{ website.url | escape }}"
+{% if website.website_url and website.website_url != "" %}
+<a href="{{ website.website_url | escape }}"
    target="_blank"
    rel="noopener noreferrer">
 {{ website.title | escape }}
