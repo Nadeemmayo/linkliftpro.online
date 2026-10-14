@@ -5,1152 +5,270 @@ permalink: /
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <meta name="google-site-verification" content="NYLmtBzHeBQzpawn25_m9CjI0jkEw__1XOCxiye_-m8" />
-
-  <title>{{ site.data.home.seo.title | escape }}</title>
-
-  <meta
-    name="description"
-    content="{{ site.data.home.seo.description | escape }}"
-  />
-
-  <link
-    rel="canonical"
-    href="{{ site.data.home.seo.canonical_url | escape }}"
-  />
-
-  <link
-    rel="icon"
-    href="https://cdn-icons-png.flaticon.com/512/5968/5968875.png"
-    type="image/png"
-  />
-
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="{{ site.data.home.seo.title | escape }}" />
-  <meta property="og:description" content="{{ site.data.home.seo.description | escape }}" />
-  <meta property="og:url" content="{{ site.data.home.seo.canonical_url | escape }}" />
-  <meta property="og:site_name" content="LinkLiftPro" />
-
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="{{ site.data.home.seo.title | escape }}" />
-  <meta name="twitter:description" content="{{ site.data.home.seo.description | escape }}" />
-
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GB37RK3Z13"></script>
-
-  <script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-      dataLayer.push(arguments);
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ site.data.home.seo.title }}</title>
+<meta name="description" content="{{ site.data.home.seo.description }}">
+<link rel="canonical" href="https://linkliftpro.online/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#0A1020">
+<meta name="google-site-verification" content="NYLmtBzHeBQzpawn25_m9CjI0jkEw__1XOCxiye_-m8">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+<meta property="og:site_name" content="LinkLiftPro">
+<meta property="og:title" content="{{ site.data.home.seo.title }}">
+<meta property="og:description" content="{{ site.data.home.seo.description }}">
+<meta property="og:url" content="https://linkliftpro.online/">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://linkliftpro.online/assets/img/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ site.data.home.seo.title }}">
+<meta name="twitter:description" content="{{ site.data.home.seo.description }}">
+<meta name="twitter:image" content="https://linkliftpro.online/assets/img/og-image.png">
+<link rel="preload" href="/assets/fonts/space-grotesk-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/vendor/fontawesome/css/all.min.css">
+<link rel="stylesheet" href="/assets/css/site.css">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GB37RK3Z13"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-GB37RK3Z13');</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "ProfessionalService",
+   "@id": "https://linkliftpro.online/#organization",
+   "name": "LinkLiftPro",
+   "url": "https://linkliftpro.online/",
+   "logo": "https://linkliftpro.online/assets/img/logo.png",
+   "image": "https://linkliftpro.online/assets/img/og-image.png",
+   "description": "LinkLiftPro is a white-label fulfilment partner delivering SEO, link building, web development and paid advertising for marketing agencies.",
+   "email": "ceo@linkliftpro.online",
+   "telephone": "+923074646927",
+   "founder": {
+    "@type": "Person",
+    "name": "Nadeem Mayo"
+   },
+   "areaServed": [
+    "United States",
+    "United Kingdom",
+    "Canada",
+    "Australia"
+   ],
+   "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Lahore",
+    "addressCountry": "PK"
+   },
+   "sameAs": [
+    "https://www.linkedin.com/in/menadeemmayos/",
+    "https://www.facebook.com/share/19aDt6pcgh/",
+    "https://x.com/Nadeem_seo",
+    "https://www.instagram.com/menadeemmayo",
+    "https://www.fiverr.com/nadeem_mayo"
+   ]
+  },
+  {
+   "@type": "WebSite",
+   "@id": "https://linkliftpro.online/#website",
+   "url": "https://linkliftpro.online/",
+   "name": "LinkLiftPro",
+   "publisher": {
+    "@id": "https://linkliftpro.online/#organization"
+   }
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Will my clients know you exist?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. We work entirely behind the scenes with unbranded reports and never contact your clients unless you ask us to."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What does partner pricing look like?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "We offer wholesale rates on links, SEO retainers, websites and ad management so you keep a healthy margin. Pricing is sent within 24 hours of your brief."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Can I start with a small test order?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. Many partners start with a few guest posts or one SEO audit before scaling up."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How do we communicate?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "WhatsApp, email or a shared Slack channel. You'll have one direct contact."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Do you sign NDAs?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes, on request. Confidentiality is part of how we work by default."
+     }
     }
-
-    gtag('js', new Date());
-    gtag('config', 'G-GB37RK3Z13');
-  </script>
-
-  <script src="https://cdn.tailwindcss.com"></script>
-
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-  />
-
-  <style>
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      background: #fffaf0;
-      color: #180606;
-      font-family: Arial, Helvetica, sans-serif;
-      overflow-x: hidden;
-    }
-
-    .hero-bg {
-      background:
-        radial-gradient(circle at top left, rgba(250, 204, 21, .45), transparent 30%),
-        radial-gradient(circle at bottom right, rgba(220, 38, 38, .28), transparent 35%),
-        linear-gradient(135deg, #fffaf0 0%, #ffffff 45%, #fff0f0 100%);
-    }
-
-    .dark-bg {
-      background: linear-gradient(
-        135deg,
-        #180606 0%,
-        #4a0808 55%,
-        #991b1b 100%
-      );
-    }
-
-    .red-text {
-      color: #dc2626;
-    }
-
-    .gold-text {
-      color: #f5b700;
-    }
-
-    .deep-text {
-      color: #180606;
-    }
-
-    .glass-card {
-      background: rgba(255, 255, 255, .78);
-      border: 1px solid rgba(220, 38, 38, .14);
-      backdrop-filter: blur(14px);
-      box-shadow: 0 24px 70px rgba(80, 10, 10, .12);
-    }
-
-    .glass-dark {
-      background: rgba(255, 255, 255, .08);
-      border: 1px solid rgba(250, 204, 21, .18);
-      backdrop-filter: blur(14px);
-      box-shadow: 0 24px 70px rgba(0, 0, 0, .28);
-    }
-
-    .main-btn {
-      background: linear-gradient(135deg, #dc2626, #facc15);
-      color: #180606;
-      font-weight: 900;
-      border-radius: 999px;
-      padding: 14px 30px;
-      display: inline-block;
-      transition: .3s;
-      box-shadow: 0 16px 35px rgba(220, 38, 38, .25);
-    }
-
-    .main-btn:hover {
-      transform: scale(1.05);
-    }
-
-    .outline-btn {
-      border: 2px solid #dc2626;
-      color: #dc2626;
-      font-weight: 900;
-      border-radius: 999px;
-      padding: 14px 30px;
-      display: inline-block;
-      transition: .3s;
-      background: #fff;
-    }
-
-    .outline-btn:hover {
-      background: #dc2626;
-      color: #fff;
-    }
-
-    .logo-mark {
-      width: 44px;
-      height: 44px;
-      border-radius: 14px;
-      background: linear-gradient(135deg, #dc2626, #facc15);
-      color: #180606;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: 900;
-      margin-right: 10px;
-    }
-
-    .service-card {
-      background: #fff;
-      border: 1px solid rgba(220, 38, 38, .14);
-      border-radius: 26px;
-      padding: 32px;
-      transition: .35s;
-      box-shadow: 0 18px 45px rgba(80, 10, 10, .10);
-    }
-
-    .service-card:hover {
-      transform: translateY(-10px);
-      border-color: #dc2626;
-      box-shadow: 0 28px 70px rgba(220, 38, 38, .20);
-    }
-
-    .icon-box {
-      width: 66px;
-      height: 66px;
-      border-radius: 20px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: linear-gradient(135deg, #dc2626, #facc15);
-      color: #180606;
-      font-size: 27px;
-      margin-bottom: 20px;
-    }
-
-    .floating-contact {
-      position: fixed;
-      bottom: 22px;
-      right: 22px;
-      z-index: 9999;
-    }
-
-    .contact-options {
-      display: none;
-      flex-direction: column;
-      gap: 10px;
-      margin-bottom: 12px;
-    }
-
-    .floating-contact:hover .contact-options {
-      display: flex;
-    }
-
-    .float-btn {
-      width: 54px;
-      height: 54px;
-      border-radius: 999px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      box-shadow: 0 12px 28px rgba(0, 0, 0, .30);
-      transition: .3s;
-    }
-
-    .float-btn:hover {
-      transform: scale(1.12);
-    }
-
-    .mobile-menu {
-      display: none;
-    }
-
-    .mobile-menu.active {
-      display: block;
-    }
-
-    @media (max-width: 768px) {
-      .desktop-menu {
-        display: none !important;
-      }
-
-      .mobile-menu {
-        background: #fffaf0;
-        padding: 18px 24px;
-        border-top: 1px solid rgba(220, 38, 38, .15);
-      }
-
-      .mobile-menu a {
-        display: block;
-        padding: 12px 0;
-        color: #180606;
-        font-weight: bold;
-        text-transform: uppercase;
-        font-size: 13px;
-        border-bottom: 1px solid rgba(220, 38, 38, .08);
-      }
-    }
-  </style>
+   ]
+  }
+ ]
+}
+</script>
 </head>
-
-<body>
-
-<nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-xl border-b border-red-200">
-  <div class="max-w-7xl mx-auto flex justify-between items-center p-4">
-
-    <a href="/" class="text-2xl font-black deep-text flex items-center">
-      <span class="logo-mark">LL</span>
-      LINK<span class="gold-text">LIFT</span><span class="red-text">PRO</span>
-    </a>
-
-    <div class="desktop-menu hidden md:flex gap-5 font-bold text-xs uppercase items-center">
-      <a href="/" class="red-text">Home</a>
-      <a href="about.html" class="hover:text-red-600">About</a>
-      <a href="services.html" class="hover:text-red-600">Services</a>
-      <a href="portfolio.html" class="hover:text-red-600">Portfolio</a>
-      <a href="all-niches-sites.html" class="hover:text-red-600">All Niches</a>
-      <a href="blog.html" class="hover:text-red-600">Blog</a>
-      <a href="FAQs.html" class="hover:text-red-600">FAQ</a>
-      <a href="contact.html" class="main-btn text-sm px-5 py-2">Contact</a>
+<body class="dark">
+<header class="site-header">
+  <div class="topbar"><div class="wrap">
+    <span>The fulfilment team behind agencies in the US, UK & Canada: SEO, links, web & ads</span>
+    <div class="topbar-links"><a href="mailto:ceo@linkliftpro.online"><i class="fas fa-envelope"></i>ceo@linkliftpro.online</a><a href="https://wa.me/923074646927" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i>+92 307 4646927</a></div>
+  </div></div>
+  <div class="wrap nav">
+    <a href="/" class="brand" aria-label="LinkLiftPro home"><svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true"><defs><linearGradient id="lgh" x1="0" y1="0" x2="48" y2="48" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#2563EB"/><stop offset="1" stop-color="#1D4ED8"/></linearGradient></defs><rect width="48" height="48" rx="6" fill="url(#lgh)"/><path d="M14 34h20" fill="none" stroke="#fff" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M24 29V13" fill="none" stroke="#fff" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/><path d="m17 20 7-7 7 7" fill="none" stroke="#fff" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="brand-text"><span class="brand-name">LinkLift<span>Pro</span></span><span class="brand-tag">White-label growth partner</span></span></a>
+    <nav class="nav-links" aria-label="Main">
+      <a class="nav-link active" href="/">Home</a>
+      <div class="has-menu">
+        <button class="nav-link" type="button" aria-expanded="false">Services <i class="fas fa-chevron-down"></i></button>
+        <div class="menu"><div class="mega"><div class="menu-col"><h4>Search (SEO)</h4><a href="/complete-seo.html"><i class="fas fa-magnifying-glass-chart" aria-hidden="true"></i>Complete SEO</a><a href="/on-page-seo.html"><i class="fas fa-file-lines" aria-hidden="true"></i>On-Page SEO</a><a href="/off-page-seo.html"><i class="fas fa-link" aria-hidden="true"></i>Off-Page SEO</a><a href="/technical-seo.html"><i class="fas fa-gears" aria-hidden="true"></i>Technical SEO</a><a href="/local-seo.html"><i class="fas fa-location-dot" aria-hidden="true"></i>Local SEO</a><a href="/link-building.html"><i class="fas fa-newspaper" aria-hidden="true"></i>Link Building & Guest Posting</a><a href="/content-writing.html"><i class="fas fa-pen-nib" aria-hidden="true"></i>SEO Content Writing</a></div><div class="menu-col"><h4>Web Development</h4><a href="/web-development.html"><i class="fas fa-code" aria-hidden="true"></i>Web Development</a><a href="/custom-website.html"><i class="fas fa-laptop-code" aria-hidden="true"></i>Custom Website Design</a></div><div class="menu-col"><h4>Paid Ads</h4><a href="/google-ads.html"><i class="fa-brands fa-google" aria-hidden="true"></i>Google Ads</a><a href="/meta-ads.html"><i class="fa-brands fa-meta" aria-hidden="true"></i>Meta Ads</a><a href="/facebook-ads.html"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i>Facebook Ads</a><a href="/instagram-ads.html"><i class="fa-brands fa-instagram" aria-hidden="true"></i>Instagram Ads</a><a href="/tiktok-ads.html"><i class="fa-brands fa-tiktok" aria-hidden="true"></i>TikTok Ads</a></div></div>
+          <a href="/services.html" style="margin-top:14px;justify-content:center;background:var(--bg-tint);color:var(--brand)">View all services <i class="fas fa-arrow-right"></i></a></div>
+      </div>
+      <div class="has-menu"><button class="nav-link" type="button" aria-expanded="false">Inventory <i class="fas fa-chevron-down"></i></button><div class="menu menu-simple"><a href="/all-niches-sites.html"><i class="fas fa-layer-group" aria-hidden="true"></i>Publisher Inventory</a></div></div>
+      <a class="nav-link" href="/portfolio.html">Portfolio</a>
+      <a class="nav-link" href="/about.html">About</a>
+      <a class="nav-link" href="/blog.html">Blog</a>
+      <a class="nav-link" href="/FAQs.html">FAQ</a>
+      <a class="nav-link" href="/contact.html">Contact</a>
+      <a class="btn btn-accent mobile-cta" href="/contact.html">Become a Partner</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="btn btn-primary btn-sm btn-header" href="/contact.html">Become a Partner</a>
+      <button class="burger" type="button" aria-label="Open menu" aria-expanded="false"><i class="fas fa-bars"></i></button>
     </div>
-
-    <button
-      class="mobile-menu-btn deep-text text-3xl font-bold md:hidden"
-      type="button"
-      aria-label="Open navigation menu"
-      aria-expanded="false"
-    >
-      ☰
-    </button>
-  </div>
-
-  <div class="mobile-menu">
-    <a href="/">Home</a>
-    <a href="about.html">About</a>
-    <a href="services.html">Services</a>
-    <a href="portfolio.html">Portfolio</a>
-    <a href="all-niches-sites.html">All Niches</a>
-    <a href="blog.html">Blog</a>
-    <a href="FAQs.html">FAQ</a>
-    <a href="contact.html">Contact</a>
-  </div>
-</nav>
-
-<header class="hero-bg py-28 px-6">
-  <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
-
-    <div>
-      <span class="inline-block border border-red-400/30 text-red-700 bg-white/70 text-xs font-bold uppercase tracking-[4px] px-5 py-2 rounded-full mb-6">
-        {{ site.data.home.hero.badge }}
-      </span>
-
-      <h1 class="text-4xl md:text-6xl font-black uppercase leading-tight mb-6 deep-text">
-        {{ site.data.home.hero.heading_before }}
-        <span class="red-text">
-          {{ site.data.home.hero.highlighted_heading }}
-        </span>
-      </h1>
-
-      <p class="text-[#5a2b2b] text-lg md:text-xl max-w-3xl mb-10 leading-8">
-        {{ site.data.home.hero.description }}
-      </p>
-
-      <div class="flex gap-4 flex-wrap mb-10">
-        <a
-          href="{{ site.data.home.hero.primary_button_url | escape }}"
-          class="main-btn"
-        >
-          {{ site.data.home.hero.primary_button_text }}
-        </a>
-
-        <a
-          href="{{ site.data.home.hero.secondary_button_url | escape }}"
-          class="outline-btn"
-        >
-          {{ site.data.home.hero.secondary_button_text }}
-        </a>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-2xl">
-        <a
-          href="{{ site.data.home.hero.portfolio_button_url | escape }}"
-          class="glass-card rounded-2xl p-5 font-black hover:scale-105 transition"
-        >
-          {{ site.data.home.hero.portfolio_button_text }}
-        </a>
-
-        <a
-          href="{{ site.data.home.hero.niches_button_url | escape }}"
-          class="glass-card rounded-2xl p-5 font-black hover:scale-105 transition"
-        >
-          {{ site.data.home.hero.niches_button_text }}
-        </a>
-      </div>
-    </div>
-
-    <div class="glass-card rounded-[40px] p-8">
-      <p class="uppercase tracking-[4px] text-red-600 font-black text-sm mb-4">
-        {{ site.data.home.statistics.section_label }}
-      </p>
-
-      <h2 class="text-4xl font-black deep-text mb-6">
-        {{ site.data.home.statistics.heading }}
-      </h2>
-
-      <div class="grid grid-cols-2 gap-4 mb-6">
-
-        <div class="rounded-2xl p-5 bg-white border border-red-100">
-          <h3 class="text-3xl font-black red-text">
-            {{ site.data.home.statistics.website_count }}
-          </h3>
-          <p class="text-gray-600 text-sm">
-            {{ site.data.home.statistics.website_label }}
-          </p>
-        </div>
-
-        <div class="rounded-2xl p-5 bg-white border border-red-100">
-          <h3 class="text-3xl font-black red-text">
-            {{ site.data.home.statistics.campaign_count }}
-          </h3>
-          <p class="text-gray-600 text-sm">
-            {{ site.data.home.statistics.campaign_label }}
-          </p>
-        </div>
-
-        <div class="rounded-2xl p-5 bg-white border border-red-100">
-          <h3 class="text-3xl font-black red-text">
-            {{ site.data.home.statistics.niche_count }}
-          </h3>
-          <p class="text-gray-600 text-sm">
-            {{ site.data.home.statistics.niche_label }}
-          </p>
-        </div>
-
-        <div class="rounded-2xl p-5 bg-white border border-red-100">
-          <h3 class="text-3xl font-black red-text">
-            {{ site.data.home.statistics.outreach_count }}
-          </h3>
-          <p class="text-gray-600 text-sm">
-            {{ site.data.home.statistics.outreach_label }}
-          </p>
-        </div>
-
-      </div>
-
-      <div
-        class="rounded-3xl p-6 text-white"
-        style="background:linear-gradient(135deg,#991b1b,#dc2626);"
-      >
-        <p class="font-bold leading-7">
-          {{ site.data.home.statistics.bottom_text }}
-        </p>
-      </div>
-    </div>
-
   </div>
 </header>
-
-<section class="dark-bg py-24 px-6">
-  <div class="max-w-7xl mx-auto">
-
-    <div class="glass-dark rounded-[38px] p-8 md:p-12">
-      <div class="grid lg:grid-cols-[320px_1fr] gap-10 items-center">
-
-        <div class="text-center">
-          <div class="relative inline-block">
-
-            <div class="absolute inset-0 rounded-full bg-yellow-400 blur-3xl opacity-25"></div>
-
-            <div
-              class="relative w-72 h-72 mx-auto rounded-full p-[5px]"
-              style="background:linear-gradient(135deg,#dc2626,#facc15);"
-            >
-              <img
-                src="{{ site.data.home.founder.image | escape }}"
-                alt="{{ site.data.home.founder.image_alt | escape }}"
-                class="w-full h-full rounded-full object-cover object-top"
-                style="border:5px solid #180606;"
-              />
-            </div>
-
-          </div>
-        </div>
-
-        <div>
-          <p class="uppercase tracking-[5px] gold-text font-bold text-sm mb-3">
-            {{ site.data.home.founder.section_label }}
-          </p>
-
-          <h2 class="text-5xl lg:text-6xl font-black text-white mb-4">
-            {{ site.data.home.founder.name }}
-          </h2>
-
-          <span
-            class="inline-block px-7 py-3 rounded-full font-bold text-sm mb-6 text-[#180606]"
-            style="background:#facc15;"
-          >
-            {{ site.data.home.founder.position }}
-          </span>
-
-          <p class="text-red-50 text-lg leading-8 max-w-3xl mb-8">
-            {{ site.data.home.founder.description }}
-          </p>
-
-          <div class="flex flex-wrap gap-4">
-
-            <a
-              href="https://www.linkedin.com/in/menadeemmayos/"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="LinkedIn"
-              class="w-14 h-14 rounded-full bg-[#0077B5] flex items-center justify-center text-white text-xl hover:scale-110 transition"
-            >
-              <i class="fab fa-linkedin-in"></i>
-            </a>
-
-            <a
-              href="{{ site.data.home.founder.facebook_url | escape }}"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Facebook"
-              class="w-14 h-14 rounded-full bg-blue-600 flex items-center justify-center text-white text-xl hover:scale-110 transition"
-            >
-              <i class="fab fa-facebook-f"></i>
-            </a>
-
-            <a
-              href="{{ site.data.home.founder.whatsapp_url | escape }}"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="WhatsApp"
-              class="w-14 h-14 rounded-full bg-green-500 flex items-center justify-center text-white text-xl hover:scale-110 transition"
-            >
-              <i class="fab fa-whatsapp"></i>
-            </a>
-
-            <a
-              href="mailto:{{ site.data.home.founder.email | escape }}"
-              aria-label="Email"
-              class="w-14 h-14 rounded-full bg-red-500 flex items-center justify-center text-white text-xl hover:scale-110 transition"
-            >
-              <i class="fas fa-envelope"></i>
-            </a>
-
-            <a href="contact.html" class="main-btn ml-2">
-              Work With Me
-            </a>
-
-          </div>
-        </div>
-
-      </div>
-    </div>
-
+<main>
+<section class="hero"><div class="wrap hero-grid">
+  <div>
+    <span class="hero-badge"><b>PARTNER</b> {{ site.data.home.hero.badge }}</span>
+    <h1>{{ site.data.home.hero.heading_before }} <span class="grad-text">{{ site.data.home.hero.highlighted_heading }}</span></h1>
+    <p class="lead">{{ site.data.home.hero.description }}</p>
+    <div class="hero-actions"><a class="btn btn-accent" href="/contact.html">Start a Partnership <i class="fas fa-arrow-right"></i></a><a class="btn btn-outline-light" href="/all-niches-sites.html"><i class="fas fa-table-list"></i> Publisher Inventory</a></div>
+    <div class="hero-points"><span><i class="fas fa-circle-check"></i>Unbranded reports</span><span><i class="fas fa-circle-check"></i>NDA-friendly</span><span><i class="fas fa-circle-check"></i>Partner pricing</span></div>
   </div>
-</section>
-
-<section class="py-20 px-6 bg-white text-gray-900">
-  <div class="max-w-7xl mx-auto">
-
-    <div class="text-center mb-14">
-      <p class="uppercase tracking-[3px] text-sm font-black text-red-600 mb-3">
-        {{ site.data.home.services_section.label }}
-      </p>
-
-      <h2 class="text-4xl md:text-5xl font-black uppercase mb-4 deep-text">
-        {{ site.data.home.services_section.heading_before }}
-        <span class="red-text">
-          {{ site.data.home.services_section.highlighted_heading }}
-        </span>
-      </h2>
-
-      <p class="text-gray-600 max-w-3xl mx-auto">
-        {{ site.data.home.services_section.description }}
-      </p>
-    </div>
-
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-
-      <div class="service-card">
-        <div class="icon-box">
-          <i class="fas fa-newspaper"></i>
-        </div>
-
-        <h3 class="text-2xl font-black uppercase mb-3">
-          Guest Posting
-        </h3>
-
-        <p class="text-gray-600 mb-5">
-          Publish SEO-friendly articles on relevant websites with quality backlinks and live URL reporting.
-        </p>
-
-        <ul class="text-sm text-gray-700 space-y-2">
-          <li>✔ Real websites</li>
-          <li>✔ Niche relevant blogs</li>
-          <li>✔ Traffic-based placements</li>
-        </ul>
+  <div class="panel" aria-label="Services overview">
+    <div class="panel-head"><strong>{{ site.data.home.statistics.heading }}</strong><div class="dots"><i></i><i></i><i></i></div></div>
+    <div class="panel-chart"><small>{{ site.data.home.statistics.bottom_text }}</small><svg viewBox="0 0 320 110" width="100%" height="110" aria-hidden="true"><defs><linearGradient id="cg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="var(--accent)" stop-opacity=".45"/><stop offset="1" stop-color="var(--accent)" stop-opacity="0"/></linearGradient><linearGradient id="cl" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="var(--brand-300)"/><stop offset="1" stop-color="var(--accent)"/></linearGradient></defs>
+<g stroke="rgba(127,127,127,.15)"><line x1="0" y1="25" x2="320" y2="25"/><line x1="0" y1="55" x2="320" y2="55"/><line x1="0" y1="85" x2="320" y2="85"/></g>
+<path d="M0 96 C30 92 50 90 75 84 S120 80 145 70 190 62 215 48 260 36 285 24 310 14 320 10 L320 110 L0 110Z" fill="url(#cg)"/>
+<path d="M0 96 C30 92 50 90 75 84 S120 80 145 70 190 62 215 48 260 36 285 24 310 14 320 10" fill="none" stroke="url(#cl)" stroke-width="3" stroke-linecap="round"/>
+<circle cx="320" cy="10" r="5" fill="var(--accent)"/></svg></div>
+    <div class="panel-grid"><div class="kpi"><b>{{ site.data.home.statistics.website_count }}</b><span>{{ site.data.home.statistics.website_label }}</span></div><div class="kpi"><b>{{ site.data.home.statistics.campaign_count }}</b><span>{{ site.data.home.statistics.campaign_label }}</span></div><div class="kpi"><b>{{ site.data.home.statistics.outreach_count }}</b><span>{{ site.data.home.statistics.outreach_label }}</span></div></div>
+    <div class="chips"><span class="chip"><i class="fas fa-magnifying-glass-chart"></i>SEO</span><span class="chip"><i class="fas fa-link"></i>Link Building</span><span class="chip"><i class="fas fa-code"></i>Web Dev</span><span class="chip"><i class="fab fa-google"></i>Google Ads</span><span class="chip"><i class="fab fa-meta"></i>Meta Ads</span><span class="chip"><i class="fab fa-tiktok"></i>TikTok Ads</span></div>
+  </div>
+</div></section>
+<div class="trust"><div class="wrap"><small>Partner campaigns featured on</small><div class="trust-list"><span>Forbes</span><span>Yahoo Finance</span><span>AP News</span><span>Business Insider</span><span>Benzinga</span><span>LiveMint</span><span>Khaleej Times</span></div></div></div>
+<section class="section"><div class="wrap">
+  <div class="section-head"><span class="eyebrow">{{ site.data.home.services_section.label }}</span><h2>{{ site.data.home.services_section.heading_before }} <span class="grad-text">{{ site.data.home.services_section.highlighted_heading }}</span></h2><p>{{ site.data.home.services_section.description }}</p></div>
+  <div class="grid g-3">
+    <div class="pillar featured reveal"><div class="pillar-top"><div class="icon"><i class="fas fa-magnifying-glass-chart" aria-hidden="true"></i></div><h3>SEO</h3></div>
+<p>Audits, on-page, technical, local SEO, content and link building delivered to your spec, ready for your client report.</p><div class="pillar-list"><a href="/complete-seo.html">Complete SEO <i class="fas fa-arrow-right"></i></a><a href="/on-page-seo.html">On-Page SEO <i class="fas fa-arrow-right"></i></a><a href="/off-page-seo.html">Off-Page SEO <i class="fas fa-arrow-right"></i></a><a href="/technical-seo.html">Technical SEO <i class="fas fa-arrow-right"></i></a><a href="/local-seo.html">Local SEO <i class="fas fa-arrow-right"></i></a><a href="/link-building.html">Link Building & Guest Posting <i class="fas fa-arrow-right"></i></a><a href="/content-writing.html">SEO Content Writing <i class="fas fa-arrow-right"></i></a></div><a class="btn btn-accent btn-sm" href="/services.html#seo">Explore SEO <i class="fas fa-arrow-right"></i></a></div>
+    <div class="pillar reveal"><div class="pillar-top"><div class="icon"><i class="fas fa-code" aria-hidden="true"></i></div><h3>Web Development</h3></div>
+<p>WordPress, Shopify and custom websites designed and built for your clients, launched under your agency name.</p><div class="pillar-list"><a href="/web-development.html">Web Development <i class="fas fa-arrow-right"></i></a><a href="/custom-website.html">Custom Website Design <i class="fas fa-arrow-right"></i></a></div><a class="btn btn-primary btn-sm" href="/services.html#web">Explore Web Development <i class="fas fa-arrow-right"></i></a></div>
+    <div class="pillar reveal"><div class="pillar-top"><div class="icon"><i class="fas fa-bullhorn" aria-hidden="true"></i></div><h3>Paid Ads</h3></div>
+<p>Google, Meta, Facebook, Instagram and TikTok campaigns managed inside your clients' accounts.</p><div class="pillar-list"><a href="/google-ads.html">Google Ads <i class="fas fa-arrow-right"></i></a><a href="/meta-ads.html">Meta Ads <i class="fas fa-arrow-right"></i></a><a href="/facebook-ads.html">Facebook Ads <i class="fas fa-arrow-right"></i></a><a href="/instagram-ads.html">Instagram Ads <i class="fas fa-arrow-right"></i></a><a href="/tiktok-ads.html">TikTok Ads <i class="fas fa-arrow-right"></i></a></div><a class="btn btn-primary btn-sm" href="/services.html#ads">Explore Paid Ads <i class="fas fa-arrow-right"></i></a></div>
+  </div>
+</div></section>
+<section class="section section-dark"><div class="wrap split">
+  <div class="reveal">
+    <span class="eyebrow">{{ site.data.home.why_choose.label }}</span>
+    <h2>{{ site.data.home.why_choose.heading_before }} {{ site.data.home.why_choose.highlighted_heading }}</h2>
+    <p class="lead" style="color:var(--d-muted2)">{{ site.data.home.why_choose.description }}</p>
+    <a class="btn btn-accent" href="/about.html" style="margin-top:12px">About LinkLiftPro</a>
+  </div>
+  <div class="grid g-2"><div class="feature reveal"><div class="icon"><i class="fas fa-user-secret" aria-hidden="true"></i></div><div><h3>Fully white-label</h3><p>Your logo on reports. We never contact your clients.</p></div></div><div class="feature reveal"><div class="icon"><i class="fas fa-file-signature" aria-hidden="true"></i></div><div><h3>NDA on request</h3><p>Confidentiality is standard; NDAs signed on request.</p></div></div><div class="feature reveal"><div class="icon"><i class="fas fa-stopwatch" aria-hidden="true"></i></div><div><h3>Predictable turnaround</h3><p>Quotes in 24 hours and agreed delivery dates.</p></div></div><div class="feature reveal"><div class="icon"><i class="fas fa-tags" aria-hidden="true"></i></div><div><h3>Partner pricing</h3><p>Wholesale rates that leave room for your margin.</p></div></div><div class="feature reveal"><div class="icon"><i class="fas fa-list-check" aria-hidden="true"></i></div><div><h3>Quality control</h3><p>Every deliverable checked before it reaches you.</p></div></div><div class="feature reveal"><div class="icon"><i class="fas fa-headset" aria-hidden="true"></i></div><div><h3>Direct line</h3><p>One contact on WhatsApp, email or Slack.</p></div></div></div>
+</div></section>
+<section class="section"><div class="wrap"><div class="founder">
+  <div class="founder-photo reveal"><img src="{{ site.data.home.founder.image | default: '/assets/img/nadeem-mayo.jpeg' }}" alt="Nadeem Mayo, founder of LinkLiftPro" width="720" height="900" loading="lazy">
+    <div class="founder-tag"><b>Nadeem Mayo</b><span>{{ site.data.home.founder.position }}</span></div></div>
+  <div class="reveal">
+    <span class="eyebrow">Meet the founder</span>
+    <h2>Built by a fulfilment specialist</h2>
+    <p class="lead">{{ site.data.home.founder.description }}</p>
+    <p style="color:var(--muted)">Partners deal with me directly, so problems get solved quickly and nothing gets lost in hand-offs.</p>
+    <div class="stats" style="margin:28px 0"><div class="stat"><b>50K+</b><span>Publisher network</span></div><div class="stat"><b>200+</b><span>Campaigns delivered</span></div><div class="stat"><b>20+</b><span>Niches covered</span></div><div class="stat"><b>24h</b><span>Quote turnaround</span></div></div>
+    <div style="display:flex;gap:14px;flex-wrap:wrap;align-items:center">
+      <a class="btn btn-primary" href="/contact.html">Work with us</a>
+      <div class="socials">
+        <a href="https://www.linkedin.com/in/menadeemmayos/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.facebook.com/share/19aDt6pcgh/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://wa.me/923074646927" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        <a href="mailto:ceo@linkliftpro.online" aria-label="Email"><i class="fas fa-envelope"></i></a>
       </div>
-
-      <div class="service-card">
-        <div class="icon-box">
-          <i class="fas fa-link"></i>
-        </div>
-
-        <h3 class="text-2xl font-black uppercase mb-3">
-          Link Building
-        </h3>
-
-        <p class="text-gray-600 mb-5">
-          High-quality backlinks from trusted websites to improve authority, rankings and visibility.
-        </p>
-
-        <ul class="text-sm text-gray-700 space-y-2">
-          <li>✔ Authority backlinks</li>
-          <li>✔ Contextual links</li>
-          <li>✔ Manual outreach</li>
-        </ul>
-      </div>
-
-      <div class="service-card">
-        <div class="icon-box">
-          <i class="fas fa-chart-line"></i>
-        </div>
-
-        <h3 class="text-2xl font-black uppercase mb-3">
-          Niche Edits
-        </h3>
-
-        <p class="text-gray-600 mb-5">
-          Contextual backlinks placed inside existing indexed articles for faster authority building.
-        </p>
-
-        <ul class="text-sm text-gray-700 space-y-2">
-          <li>✔ Indexed pages</li>
-          <li>✔ Relevant content</li>
-          <li>✔ Natural placement</li>
-        </ul>
-      </div>
-
-      <div class="service-card">
-        <div class="icon-box">
-          <i class="fas fa-pen-fancy"></i>
-        </div>
-
-        <h3 class="text-2xl font-black uppercase mb-3">
-          Content Writing
-        </h3>
-
-        <p class="text-gray-600 mb-5">
-          Human-written SEO content for guest posts, blogs, landing pages and ranking campaigns.
-        </p>
-
-        <ul class="text-sm text-gray-700 space-y-2">
-          <li>✔ SEO optimized</li>
-          <li>✔ Human readable</li>
-          <li>✔ Guest post ready</li>
-        </ul>
-      </div>
-
-      <div class="service-card">
-        <div class="icon-box">
-          <i class="fas fa-search"></i>
-        </div>
-
-        <h3 class="text-2xl font-black uppercase mb-3">
-          Complete SEO
-        </h3>
-
-        <p class="text-gray-600 mb-5">
-          On-page, off-page, technical SEO, content and backlink strategy for long-term growth.
-        </p>
-
-        <ul class="text-sm text-gray-700 space-y-2">
-          <li>✔ SEO audit</li>
-          <li>✔ Ranking strategy</li>
-          <li>✔ Growth plan</li>
-        </ul>
-      </div>
-
-      <div class="service-card">
-        <div class="icon-box">
-          <i class="fas fa-map-marker-alt"></i>
-        </div>
-
-        <h3 class="text-2xl font-black uppercase mb-3">
-          Local SEO
-        </h3>
-
-        <p class="text-gray-600 mb-5">
-          Local citations, authority links and business visibility optimization for local ranking growth.
-        </p>
-
-        <ul class="text-sm text-gray-700 space-y-2">
-          <li>✔ Maps ranking</li>
-          <li>✔ Local citations</li>
-          <li>✔ Local backlinks</li>
-        </ul>
-      </div>
-
     </div>
   </div>
-</section>
-
-<section class="dark-bg py-20 px-6">
-  <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-
-    <div>
-      <p class="uppercase tracking-[3px] text-sm font-bold gold-text mb-4">
-        {{ site.data.home.why_choose.label }}
-      </p>
-
-      <h2 class="text-4xl md:text-5xl font-black uppercase mb-6">
-        {{ site.data.home.why_choose.heading_before }}
-        <span class="gold-text">
-          {{ site.data.home.why_choose.highlighted_heading }}
-        </span>
-      </h2>
-
-      <p class="text-red-50 mb-7 leading-8">
-        {{ site.data.home.why_choose.description }}
-      </p>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <div class="glass-dark rounded-2xl p-5">
-          ✔ Manual Outreach
-        </div>
-
-        <div class="glass-dark rounded-2xl p-5">
-          ✔ Real Traffic Sites
-        </div>
-
-        <div class="glass-dark rounded-2xl p-5">
-          ✔ Niche Relevant Links
-        </div>
-
-        <div class="glass-dark rounded-2xl p-5">
-          ✔ White-Hat Strategy
-        </div>
-
-        <div class="glass-dark rounded-2xl p-5">
-          ✔ Transparent Reports
-        </div>
-
-        <div class="glass-dark rounded-2xl p-5">
-          ✔ Fast Communication
-        </div>
-      </div>
-    </div>
-
-    <div class="glass-dark rounded-3xl p-8">
-      <h3 class="text-2xl font-black mb-5 gold-text">
-        Placement Quality Checklist
-      </h3>
-
-      <ul class="space-y-4 text-red-50">
-        <li>✔ Website niche relevance</li>
-        <li>✔ Organic traffic quality</li>
-        <li>✔ DR / DA and authority signals</li>
-        <li>✔ Spam score and backlink profile</li>
-        <li>✔ Indexing and content quality</li>
-        <li>✔ Anchor text and target URL safety</li>
-      </ul>
-    </div>
-
-  </div>
-</section>
-
-<section class="py-20 px-6">
-  <div class="max-w-7xl mx-auto">
-
-    <div class="text-center mb-14">
-      <h2 class="text-4xl md:text-5xl font-black uppercase mb-4 deep-text">
-        {{ site.data.home.process.heading_before }}
-        <span class="red-text">
-          {{ site.data.home.process.highlighted_heading }}
-        </span>
-      </h2>
-
-      <p class="text-[#5a2b2b] max-w-3xl mx-auto">
-        {{ site.data.home.process.description }}
-      </p>
-    </div>
-
-    <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-5 text-center">
-
-      <div class="glass-card rounded-2xl p-6">
-        <div class="text-3xl font-black red-text mb-3">01</div>
-        <h3 class="font-black mb-2">Audit</h3>
-        <p class="text-sm text-gray-600">
-          We review your website.
-        </p>
-      </div>
-
-      <div class="glass-card rounded-2xl p-6">
-        <div class="text-3xl font-black red-text mb-3">02</div>
-        <h3 class="font-black mb-2">Strategy</h3>
-        <p class="text-sm text-gray-600">
-          We plan links and anchors.
-        </p>
-      </div>
-
-      <div class="glass-card rounded-2xl p-6">
-        <div class="text-3xl font-black red-text mb-3">03</div>
-        <h3 class="font-black mb-2">Outreach</h3>
-        <p class="text-sm text-gray-600">
-          We find quality websites.
-        </p>
-      </div>
-
-      <div class="glass-card rounded-2xl p-6">
-        <div class="text-3xl font-black red-text mb-3">04</div>
-        <h3 class="font-black mb-2">Content</h3>
-        <p class="text-sm text-gray-600">
-          We create SEO content.
-        </p>
-      </div>
-
-      <div class="glass-card rounded-2xl p-6">
-        <div class="text-3xl font-black red-text mb-3">05</div>
-        <h3 class="font-black mb-2">Placement</h3>
-        <p class="text-sm text-gray-600">
-          Links go live.
-        </p>
-      </div>
-
-      <div class="glass-card rounded-2xl p-6">
-        <div class="text-3xl font-black red-text mb-3">06</div>
-        <h3 class="font-black mb-2">Report</h3>
-        <p class="text-sm text-gray-600">
-          You receive URLs.
-        </p>
-      </div>
-
+</div></div></section>
+<section class="section section-soft"><div class="wrap">
+  <div class="section-head"><span class="eyebrow">How it works</span><h2>{{ site.data.home.process.heading_before }} {{ site.data.home.process.highlighted_heading }}</h2><p>{{ site.data.home.process.description }}</p></div>
+  <div class="steps"><div class="step reveal"><h3>Send the brief</h3><p>Client URL, goals, budget and any brand rules.</p></div><div class="step reveal"><h3>Get a quote</h3><p>A scoped plan and partner price within 24 hours.</p></div><div class="step reveal"><h3>We deliver</h3><p>Specialists do the work; you approve key steps.</p></div><div class="step reveal"><h3>Forward the report</h3><p>Unbranded reports ready to send to your client.</p></div></div>
+</div></section>
+<section class="section"><div class="wrap">
+  <div class="section-head"><span class="eyebrow">Link building inventory</span><h2>Order placements for your clients</h2><p>Browse our live publisher inventory or ask for a custom list matched to your client's niche.</p></div>
+  <div class="grid g-2"><a class="inv-card reveal" href="/all-niches-sites.html"><div class="icon"><i class="fas fa-layer-group" aria-hidden="true"></i></div><h3>Publisher Inventory</h3><p>Live publisher inventory managed in our CMS, with niche, DR, DA, country and traffic for every site.</p><span class="card-link">Open list <i class="fas fa-arrow-right"></i></span></a><div class="inv-card reveal" style="background:var(--bg-soft)"><div class="icon alt"><i class="fas fa-wand-magic-sparkles" aria-hidden="true"></i></div><h3>Custom outreach</h3><p>Need a niche or country that isn't listed? We pitch new publishers for you and send a matched list.</p><a class="card-link" href="/contact.html">Request a list <i class="fas fa-arrow-right"></i></a></div></div>
+</div></section>
+<section class="section section-soft"><div class="wrap">
+  <div class="section-head"><span class="eyebrow">FAQ</span><h2>Questions agencies ask us</h2></div>
+  <div class="faq-list"><details class="faq-item" open><summary>Will my clients know you exist?</summary><div class="answer"><p>No. We work entirely behind the scenes with unbranded reports and never contact your clients unless you ask us to.</p></div></details><details class="faq-item"><summary>What does partner pricing look like?</summary><div class="answer"><p>We offer wholesale rates on links, SEO retainers, websites and ad management so you keep a healthy margin. Pricing is sent within 24 hours of your brief.</p></div></details><details class="faq-item"><summary>Can I start with a small test order?</summary><div class="answer"><p>Yes. Many partners start with a few guest posts or one SEO audit before scaling up.</p></div></details><details class="faq-item"><summary>How do we communicate?</summary><div class="answer"><p>WhatsApp, email or a shared Slack channel. You&#x27;ll have one direct contact.</p></div></details><details class="faq-item"><summary>Do you sign NDAs?</summary><div class="answer"><p>Yes, on request. Confidentiality is part of how we work by default.</p></div></details></div>
+  <p style="text-align:center;margin-top:28px"><a class="btn btn-ghost" href="/FAQs.html">See all FAQs</a></p>
+</div></section>
+<section class="section-sm"><div class="wrap">
+  <div class="cta-band reveal">
+    <div><span class="eyebrow">Partner with us</span><h2>{{ site.data.home.cta.heading }}</h2><p>{{ site.data.home.cta.description }}</p></div>
+    <div class="cta-actions">
+      <a class="btn btn-accent" href="/contact.html">Start a Partnership <i class="fas fa-arrow-right"></i></a>
+      <a class="btn btn-outline-light" href="https://wa.me/923074646927" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> WhatsApp Us</a>
     </div>
   </div>
-</section>
-
-<section class="py-20 px-6">
-  <div
-    class="max-w-6xl mx-auto p-10 md:p-14 text-center rounded-[34px]"
-    style="background:linear-gradient(135deg,#dc2626,#facc15);color:#180606;"
-  >
-
-    <h2 class="text-4xl md:text-5xl font-black uppercase mb-5">
-      {{ site.data.home.cta.heading }}
-    </h2>
-
-    <p class="text-lg max-w-3xl mx-auto mb-8 font-semibold">
-      {{ site.data.home.cta.description }}
-    </p>
-
-    <div class="flex justify-center gap-4 flex-wrap">
-
-      <a
-        href="{{ site.data.home.cta.contact_button_url | escape }}"
-        class="bg-[#180606] text-white px-8 py-4 rounded-full font-black hover:scale-105 transition"
-      >
-        {{ site.data.home.cta.contact_button_text }}
-      </a>
-
-      <a
-        href="{{ site.data.home.cta.services_button_url | escape }}"
-        class="bg-white text-[#180606] px-8 py-4 rounded-full font-black hover:scale-105 transition"
-      >
-        {{ site.data.home.cta.services_button_text }}
-      </a>
-
-      <a
-        href="{{ site.data.home.cta.faq_button_url | escape }}"
-        class="bg-red-900 text-white px-8 py-4 rounded-full font-black hover:scale-105 transition"
-      >
-        {{ site.data.home.cta.faq_button_text }}
-      </a>
-
-    </div>
-  </div>
-</section>
-
-<div class="floating-contact">
-
-  <div class="contact-options">
-
-    <a
-      href="{{ site.data.home.founder.whatsapp_url | escape }}"
-      target="_blank"
-      rel="noopener noreferrer"
-      class="float-btn bg-green-500"
-      aria-label="WhatsApp"
-    >
-      <i class="fab fa-whatsapp text-2xl"></i>
-    </a>
-
-    <a
-      href="mailto:{{ site.data.home.founder.email | escape }}"
-      class="float-btn bg-red-600"
-      aria-label="Email"
-    >
-      <i class="fas fa-envelope text-2xl"></i>
-    </a>
-
-    <a
-      href="https://t.me/Nadeemmayos"
-      target="_blank"
-      rel="noopener noreferrer"
-      class="float-btn bg-sky-500"
-      aria-label="Telegram"
-    >
-      <i class="fab fa-telegram-plane text-2xl"></i>
-    </a>
-
-    <a
-      href="https://www.linkedin.com/in/menadeemmayos/"
-      target="_blank"
-      rel="noopener noreferrer"
-      class="float-btn bg-blue-700"
-      aria-label="LinkedIn"
-    >
-      <i class="fab fa-linkedin-in text-2xl"></i>
-    </a>
-
-    <a
-      href="https://x.com/Nadeem_seo"
-      target="_blank"
-      rel="noopener noreferrer"
-      class="float-btn bg-black"
-      aria-label="X"
-    >
-      <i class="fab fa-x-twitter text-2xl"></i>
-    </a>
-
-  </div>
-
-  <button
-    type="button"
-    aria-label="Open contact options"
-    class="text-[#180606] w-16 h-16 rounded-full flex items-center justify-center shadow-2xl hover:rotate-12 transition"
-    style="background:#facc15;"
-  >
-    <i class="fas fa-comments text-3xl"></i>
-  </button>
-
-</div>
-
-<footer
-  class="pt-16 pb-8 px-6 text-white"
-  style="background:#180606;border-top:1px solid rgba(250,204,21,.20);"
->
-  <div class="max-w-7xl mx-auto grid md:grid-cols-4 gap-10 border-b border-yellow-400/10 pb-12">
-
-    <div>
-      <h3 class="text-2xl font-black mb-5">
-        LINK<span class="gold-text">LIFT</span><span class="red-text">PRO</span>
-      </h3>
-
-      <p class="text-red-100 mb-5">
-        Premium guest posting, link building, niche edits and authority backlink services for businesses worldwide.
-      </p>
-
-      <div class="flex gap-4 text-2xl mb-5">
-
-        <a
-          href="https://www.linkedin.com/in/menadeemmayos/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="hover:text-yellow-300"
-          aria-label="LinkedIn"
-        >
-          <i class="fab fa-linkedin"></i>
-        </a>
-
-        <a
-          href="{{ site.data.home.founder.whatsapp_url | escape }}"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="hover:text-green-400"
-          aria-label="WhatsApp"
-        >
-          <i class="fab fa-whatsapp"></i>
-        </a>
-
-        <a
-          href="https://t.me/Nadeemmayos"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="hover:text-sky-400"
-          aria-label="Telegram"
-        >
-          <i class="fab fa-telegram"></i>
-        </a>
-
-        <a
-          href="{{ site.data.home.founder.facebook_url | escape }}"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="hover:text-blue-400"
-          aria-label="Facebook"
-        >
-          <i class="fab fa-facebook"></i>
-        </a>
-
-        <a
-          href="https://x.com/Nadeem_seo"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="hover:text-white"
-          aria-label="X"
-        >
-          <i class="fab fa-x-twitter"></i>
-        </a>
-
+</div></section>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-about">
+        <a href="/" class="brand" aria-label="LinkLiftPro home"><svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true"><defs><linearGradient id="lgf" x1="0" y1="0" x2="48" y2="48" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#2563EB"/><stop offset="1" stop-color="#1D4ED8"/></linearGradient></defs><rect width="48" height="48" rx="6" fill="url(#lgf)"/><path d="M14 34h20" fill="none" stroke="#fff" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M24 29V13" fill="none" stroke="#fff" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/><path d="m17 20 7-7 7 7" fill="none" stroke="#fff" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="brand-text"><span class="brand-name">LinkLift<span>Pro</span></span><span class="brand-tag">White-label growth partner</span></span></a>
+        <p>LinkLiftPro is the white-label delivery team behind marketing agencies: SEO, link building, websites and paid ads under your brand.</p>
+        <div class="socials"><a href="https://www.linkedin.com/in/menadeemmayos/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a><a href="https://www.facebook.com/share/19aDt6pcgh/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a><a href="https://www.instagram.com/menadeemmayo" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a><a href="https://x.com/Nadeem_seo" target="_blank" rel="noopener" aria-label="X"><i class="fab fa-x-twitter"></i></a><a href="https://t.me/Nadeemmayos" target="_blank" rel="noopener" aria-label="Telegram"><i class="fab fa-telegram"></i></a></div>
+        <div class="market-btns"><a href="https://www.fiverr.com/nadeem_mayo" target="_blank" rel="noopener">Hire on Fiverr</a><a href="https://upwork.com/freelancers/~01929269c0cf45d7c1" target="_blank" rel="noopener">Hire on Upwork</a></div>
       </div>
-
-      <div class="flex flex-wrap gap-3">
-        <a
-          href="https://www.fiverr.com/nadeem_mayo"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="bg-[#1dbf73] text-white text-sm font-bold py-2 px-4 rounded-md"
-        >
-          Fiverr
-        </a>
-
-        <a
-          href="https://upwork.com/freelancers/~01929269c0cf45d7c1"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="bg-[#14a800] text-white text-sm font-bold py-2 px-4 rounded-md"
-        >
-          Upwork
-        </a>
+      <div><h4>SEO Services</h4><div class="footer-links"><a href="/complete-seo.html">Complete SEO</a><a href="/on-page-seo.html">On-Page SEO</a><a href="/off-page-seo.html">Off-Page SEO</a><a href="/technical-seo.html">Technical SEO</a><a href="/local-seo.html">Local SEO</a><a href="/link-building.html">Link Building & Guest Posting</a><a href="/content-writing.html">SEO Content Writing</a></div></div>
+      <div><h4>Web &amp; Ads</h4><div class="footer-links"><a href="/web-development.html">Web Development</a><a href="/custom-website.html">Custom Website Design</a><a href="/google-ads.html">Google Ads</a><a href="/meta-ads.html">Meta Ads</a><a href="/facebook-ads.html">Facebook Ads</a><a href="/instagram-ads.html">Instagram Ads</a><a href="/tiktok-ads.html">TikTok Ads</a></div></div>
+      <div><h4>Company</h4><div class="footer-links">
+        <a href="/about.html">About</a><a href="/portfolio.html">Portfolio</a><a href="/all-niches-sites.html">Publisher Inventory</a><a href="/blog.html">Blog</a><a href="/FAQs.html">FAQ</a><a href="/contact.html">Contact</a>
+      </div></div>
+      <div><h4>Get in touch</h4>
+        <div class="footer-contact">
+          <a href="mailto:ceo@linkliftpro.online"><i class="fas fa-envelope"></i>ceo@linkliftpro.online</a><a href="mailto:nadeemonlin@gmail.com"><i class="fas fa-envelope-open"></i>nadeemonlin@gmail.com</a>
+          <a href="https://wa.me/923074646927" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i>+92 307 4646927</a>
+        </div>
+        <div class="pay"><span>PayPal</span><span>Payoneer</span><span>Wise</span><span>Visa</span><span>Mastercard</span></div>
       </div>
     </div>
-
-    <div>
-      <h3 class="text-xl font-bold mb-5 gold-text">
-        Quick Links
-      </h3>
-
-      <ul class="text-red-100 space-y-3">
-        <li>
-          <a href="services.html" class="hover:text-yellow-300">
-            Services
-          </a>
-        </li>
-
-        <li>
-          <a href="portfolio.html" class="hover:text-yellow-300">
-            Portfolio
-          </a>
-        </li>
-
-        <li>
-          <a href="all-niches-sites.html" class="hover:text-yellow-300">
-            All Niches
-          </a>
-        </li>
-
-        <li>
-          <a href="blog.html" class="hover:text-yellow-300">
-            Blog
-          </a>
-        </li>
-
-        <li>
-          <a href="FAQs.html" class="hover:text-yellow-300">
-            FAQ
-          </a>
-        </li>
-
-        <li>
-          <a href="contact.html" class="hover:text-yellow-300">
-            Order Now
-          </a>
-        </li>
-      </ul>
+    <div class="footer-bottom">
+      <span>&copy; 2026 LinkLiftPro. All rights reserved.</span>
+      <nav aria-label="Legal"><a href="/privacy-policy.html">Privacy Policy</a><a href="/terms-of-use.html">Terms of Service</a><a href="/refund-policy.html">Refund Policy</a><a href="/sitemap.xml">Sitemap</a></nav>
     </div>
-
-    <div>
-      <h3 class="text-xl font-bold mb-5 gold-text">
-        Legal
-      </h3>
-
-      <ul class="text-red-100 space-y-3">
-        <li>
-          <a href="privacy-policy.html" class="hover:text-yellow-300">
-            Privacy Policy
-          </a>
-        </li>
-
-        <li>
-          <a href="terms-of-use.html" class="hover:text-yellow-300">
-            Terms of Use
-          </a>
-        </li>
-
-        <li>
-          <a href="refund-policy.html" class="hover:text-yellow-300">
-            Refund Policy
-          </a>
-        </li>
-      </ul>
-    </div>
-
-    <div>
-      <h3 class="text-xl font-bold mb-5 gold-text">
-        Contact Info
-      </h3>
-
-      <p class="text-red-100 mb-3">
-        <i class="fas fa-envelope mr-2 gold-text"></i>
-
-        <a
-          href="mailto:{{ site.data.home.founder.email | escape }}"
-          class="hover:text-yellow-300"
-        >
-          {{ site.data.home.founder.email }}
-        </a>
-      </p>
-
-      <p class="text-red-100 mb-3">
-        <i class="fas fa-envelope mr-2 gold-text"></i>
-
-        <a
-          href="mailto:nadeemonlin@gmail.com"
-          class="hover:text-yellow-300"
-        >
-          nadeemonlin@gmail.com
-        </a>
-      </p>
-
-      <p class="text-red-100 mb-6">
-        <i class="fab fa-whatsapp mr-2 gold-text"></i>
-
-        <a
-          href="{{ site.data.home.founder.whatsapp_url | escape }}"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="hover:text-green-400"
-        >
-          +92 307 4646927
-        </a>
-      </p>
-
-      <p class="text-xs font-bold uppercase text-red-200 mb-3 tracking-widest">
-        We Accept
-      </p>
-
-      <div class="flex flex-wrap gap-3 items-center">
-
-        <img
-          src="https://img.icons8.com/color/96/paypal.png"
-          alt="PayPal"
-          class="h-7"
-          loading="lazy"
-        />
-
-        <img
-          src="https://img.icons8.com/color/96/payoneer.png"
-          alt="Payoneer"
-          class="h-7"
-          loading="lazy"
-        />
-
-        <img
-          src="https://img.icons8.com/color/96/visa.png"
-          alt="Visa"
-          class="h-6"
-          loading="lazy"
-        />
-
-        <img
-          src="https://img.icons8.com/color/96/mastercard-logo.png"
-          alt="Mastercard"
-          class="h-7"
-          loading="lazy"
-        />
-
-      </div>
-    </div>
-
   </div>
-
-  <p class="text-center mt-8 text-red-200 text-sm">
-    © 2026 LinkLiftPro SEO Agency. All Rights Reserved.
-  </p>
 </footer>
-
-<script>
-  const menuBtn = document.querySelector('.mobile-menu-btn');
-  const mobileMenu = document.querySelector('.mobile-menu');
-
-  if (menuBtn && mobileMenu) {
-    menuBtn.addEventListener('click', function () {
-      mobileMenu.classList.toggle('active');
-
-      const isOpen = mobileMenu.classList.contains('active');
-      menuBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
-      menuBtn.textContent = isOpen ? '✕' : '☰';
-    });
-  }
-</script>
-
+<a class="wa-float" href="https://wa.me/923074646927?text=Hi%20LinkLiftPro%2C%20I%27d%20like%20to%20discuss%20a%20project" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+<script src="/assets/js/site.js" defer></script>
 </body>
 </html>

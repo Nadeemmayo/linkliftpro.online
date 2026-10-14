@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 215 56" role="img" aria-label="LinkLiftPro">
+<g transform="translate(0 4)"><svg viewBox="0 0 48 48" width="48" height="48"><defs><linearGradient id="lgL" x1="0" y1="0" x2="48" y2="48" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#2563EB"/><stop offset="1" stop-color="#1D4ED8"/></linearGradient></defs><rect width="48" height="48" rx="6" fill="url(#lgL)"/><path d="M14 34h20" fill="none" stroke="#fff" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M24 29V13" fill="none" stroke="#fff" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/><path d="m17 20 7-7 7 7" fill="none" stroke="#fff" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/></svg></g>
+<text x="62" y="29" font-family="Space Grotesk, Segoe UI, Arial, sans-serif" font-size="22" font-weight="700" fill="#0A1020" letter-spacing="-.4">LinkLift<tspan fill="#2563EB">Pro</tspan></text>
+<text x="63" y="47" font-family="DM Sans, Segoe UI, Arial, sans-serif" font-size="9.5" font-weight="700" fill="#5A6081" letter-spacing="2.4">WHITE-LABEL GROWTH PARTNER</text>
+</svg>

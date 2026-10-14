@@ -1,71 +1,65 @@
 seo:
-  title: LinkLiftPro | Premium Link Building & Guest Posting Agency
-  description: LinkLiftPro provides premium guest posting, link building, niche
-    edits, authority backlinks, content writing and off-page SEO services
-    worldwide.
+  title: LinkLiftPro | White-Label SEO, Link Building, Web & Ads for Agencies
+  description: 'LinkLiftPro is the white-label fulfilment partner for agencies: SEO, guest posting, link building, web development
+    and Google, Meta & TikTok ads delivered under your brand.'
   canonical_url: https://linkliftpro.online/
 hero:
-  portfolio_button_text: 🏆 View Portfolio
-  badge: Premium Link Building & Guest Posting
-  niches_button_text: 🚀 Browse All Niches
-  secondary_button_url: contact.html
-  secondary_button_text: Get Free Consultation
-  niches_button_url: all-niches-sites.html
-  highlighted_heading: Authority Backlinks
-  portfolio_button_url: portfolio.html
-  heading_before: Lift Your Rankings With
-  description: LinkLiftPro helps businesses and agencies grow organic visibility
-    with premium guest posting, niche edits, authority backlinks, SEO content
-    and white-hat off-page SEO campaigns.
+  badge: White-label fulfilment for agencies
+  heading_before: Sell more services.
+  highlighted_heading: We'll deliver them under your brand.
+  description: LinkLiftPro is the behind-the-scenes team for marketing agencies. SEO, link building, websites and paid ads,
+    delivered on time with unbranded reports, so you can grow without hiring.
   primary_button_text: Explore Services
   primary_button_url: services.html
+  secondary_button_text: Start a Partnership
+  secondary_button_url: contact.html
+  portfolio_button_text: View Portfolio
+  portfolio_button_url: portfolio.html
+  niches_button_text: Publisher Inventory
+  niches_button_url: all-niches-sites.html
 statistics:
-  campaign_count: 200+
-  bottom_text: Relevant websites, safe anchors, clean reporting and real
-    ranking-focused execution.
-  heading: SEO Growth System
-  campaign_label: Campaigns
+  section_label: Partner snapshot
+  heading: Agency delivery engine
   website_count: 50K+
-  website_label: Websites Access
+  website_label: Publishers
+  campaign_count: 200+
+  campaign_label: Campaigns
   niche_count: 20+
-  outreach_count: Global
-  section_label: Authority Engine
-  outreach_label: Outreach
   niche_label: Niches
+  outreach_count: 24h
+  outreach_label: Turnaround on quotes
+  bottom_text: Unbranded reports, NDA-friendly and no contact with your clients.
 founder:
-  whatsapp_url: https://wa.me/923074646927
-  image_alt: Nadeem Mayo
-  position: Founder • LinkLiftPro SEO Agency
-  name: Nadeem Mayo
-  linkedin_url: https://www.linkedin.com/in/menadeemmayo
-  facebook_url: https://www.facebook.com/share/19aDt6pcgh/
   section_label: Meet The Founder
-  image: https://raw.githubusercontent.com/Nadeemmayo/offpageseoexpert.com/main/WhatsApp%20Image%202026-04-07%20at%205.28.39%20AM.jpeg
+  name: Nadeem Mayo
+  position: Founder, LinkLiftPro
+  image: /assets/img/nadeem-mayo.jpeg
+  image_alt: Nadeem Mayo
+  description: 'I have spent years as the silent fulfilment partner for SEO agencies across the US, UK and Canada. LinkLiftPro
+    brings that experience to every partner: reliable delivery, honest communication and work you can put your name on.'
   email: ceo@linkliftpro.online
-  description: Helping agencies, brands and businesses scale through premium guest
-    posting, authority backlinks, niche edits and strategic off-page SEO
-    campaigns designed for long-term organic growth.
+  whatsapp_url: https://wa.me/923074646927
+  linkedin_url: https://www.linkedin.com/in/menadeemmayos/
+  facebook_url: https://www.facebook.com/share/19aDt6pcgh/
 services_section:
-  label: Our Premium Services
-  heading_before: SEO Services Built For
-  highlighted_heading: Authority Growth
-  description: Complete off-page SEO, guest posting, content and backlink
-    solutions to grow trust, rankings and organic traffic.
+  label: What we deliver
+  heading_before: A full service menu
+  highlighted_heading: for your agency
+  description: Add SEO, links, websites and paid ads to your offer without adding headcount. Pick individual services or bundle
+    them for your clients.
 why_choose:
-  label: Why Choose LinkLiftPro
-  heading_before: We Build Links That Support
-  highlighted_heading: Real SEO Growth
-  description: We focus on relevant websites, real traffic, clean metrics, natural
-    anchor strategy and transparent link placement reports.
+  label: Why agencies choose LinkLiftPro
+  heading_before: Reliable delivery
+  highlighted_heading: you can resell with confidence
+  description: We treat your clients like our own and your brand like it's on the line, because it is. Clear timelines, quality
+    checks and reports ready to forward.
 process:
-  heading_before: Simple
-  highlighted_heading: Work Process
-  description: A clear process for guest posting, link building, SEO audit and
-    authority growth.
+  heading_before: How a partnership
+  highlighted_heading: works
+  description: Simple handoffs, predictable delivery and reports ready for your client.
 cta:
-  heading: Ready To Improve Your Website Authority?
-  description: Share your website URL and target keywords. We will suggest the
-    best guest posting, link building or SEO growth strategy.
+  heading: Ready to add a delivery team overnight?
+  description: Tell us about your agency and the services your clients ask for. We'll send partner pricing within 24 hours.
   contact_button_text: Contact Us
   contact_button_url: contact.html
   services_button_text: View Services

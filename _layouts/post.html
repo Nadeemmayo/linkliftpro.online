@@ -1,391 +1,146 @@
----
----
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  {% assign seo_title = page.meta_title | default: page.title %}
-  {% assign seo_description = page.meta_description | default: page.description | default: page.excerpt | strip_html | strip_newlines | truncate: 160 %}
-  {% assign seo_image = page.thumbnail | default: '/preview.jpg' %}
-  {% assign canonical = page.canonical_url | default: page.url | absolute_url %}
-  {% assign post_author = page.author | default: 'LinkLiftPro Team' %}
-  {% assign schema = page.schema_type | default: 'BlogPosting' %}
-
-  <title>{{ seo_title | escape }} | LinkLiftPro</title>
-
-  <meta name="description" content="{{ seo_description | escape }}">
-  <meta name="author" content="{{ post_author | escape }}">
-  <meta name="robots" content="index, follow, max-image-preview:large">
-  <link rel="canonical" href="{{ canonical }}">
-
-  <meta property="og:type" content="article">
-  <meta property="og:site_name" content="LinkLiftPro">
-  <meta property="og:title" content="{{ seo_title | escape }}">
-  <meta property="og:description" content="{{ seo_description | escape }}">
-  <meta property="og:url" content="{{ canonical }}">
-  <meta property="og:image" content="{{ seo_image | absolute_url }}">
-  <meta property="og:image:alt" content="{{ page.thumbnail_alt | default: page.title | escape }}">
-
-  {% if page.date %}
-  <meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">
-  {% endif %}
-
-  {% if page.category %}
-  <meta property="article:section" content="{{ page.category | escape }}">
-  {% endif %}
-
-  {% if page.tags %}
-    {% for tag in page.tags %}
-  <meta property="article:tag" content="{{ tag | escape }}">
-    {% endfor %}
-  {% endif %}
-
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="{{ seo_title | escape }}">
-  <meta name="twitter:description" content="{{ seo_description | escape }}">
-  <meta name="twitter:image" content="{{ seo_image | absolute_url }}">
-
-  <link rel="icon" href="{{ '/favicon.ico' | relative_url }}">
-
-  <script type="application/ld+json">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ page.meta_title | default: page.title | escape }} | LinkLiftPro</title>
+<meta name="description" content="{{ page.meta_description | default: page.description | escape }}">
+<link rel="canonical" href="{{ page.url | absolute_url }}">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#0A1020">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+<meta property="og:site_name" content="LinkLiftPro">
+<meta property="og:title" content="{{ page.meta_title | default: page.title | escape }}">
+<meta property="og:description" content="{{ page.meta_description | default: page.description | escape }}">
+<meta property="og:url" content="{{ page.url | absolute_url }}">
+<meta property="og:type" content="article">
+<meta property="og:image" {% if page.thumbnail %}content="{{ page.thumbnail | absolute_url }}"{% else %}content="https://linkliftpro.online/assets/img/og-image.png"{% endif %}>
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ page.meta_title | default: page.title | escape }}">
+<meta name="twitter:description" content="{{ page.meta_description | default: page.description | escape }}">
+<meta name="twitter:image" {% if page.thumbnail %}content="{{ page.thumbnail | absolute_url }}"{% else %}content="https://linkliftpro.online/assets/img/og-image.png"{% endif %}>
+<link rel="preload" href="/assets/fonts/space-grotesk-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/vendor/fontawesome/css/all.min.css">
+<link rel="stylesheet" href="/assets/css/site.css">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GB37RK3Z13"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-GB37RK3Z13');</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
   {
-    "@context": "https://schema.org",
-    "@type": {{ schema | jsonify }},
-    "headline": {{ page.title | jsonify }},
-    "description": {{ seo_description | jsonify }},
-    "url": {{ canonical | jsonify }},
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": {{ canonical | jsonify }}
-    },
-    "image": {
-      "@type": "ImageObject",
-      "url": {{ seo_image | absolute_url | jsonify }}
-    },
-    "author": {
-      "@type": "Organization",
-      "name": {{ post_author | jsonify }},
-      "url": "https://linkliftpro.online/"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "LinkLiftPro",
-      "url": "https://linkliftpro.online/",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://linkliftpro.online/favicon.ico"
-      }
-    },
-    "datePublished": {{ page.date | date_to_xmlschema | jsonify }},
-    "dateModified": {{ page.last_modified_at | default: page.date | date_to_xmlschema | jsonify }}
-    {% if page.category %},
-    "articleSection": {{ page.category | jsonify }}
-    {% endif %}
-    {% if page.tags %},
-    "keywords": {{ page.tags | join: ", " | jsonify }}
-    {% endif %}
+   "@type": "ProfessionalService",
+   "@id": "https://linkliftpro.online/#organization",
+   "name": "LinkLiftPro",
+   "url": "https://linkliftpro.online/",
+   "logo": "https://linkliftpro.online/assets/img/logo.png",
+   "image": "https://linkliftpro.online/assets/img/og-image.png",
+   "description": "LinkLiftPro is a white-label fulfilment partner delivering SEO, link building, web development and paid advertising for marketing agencies.",
+   "email": "ceo@linkliftpro.online",
+   "telephone": "+923074646927",
+   "founder": {
+    "@type": "Person",
+    "name": "Nadeem Mayo"
+   },
+   "areaServed": [
+    "United States",
+    "United Kingdom",
+    "Canada",
+    "Australia"
+   ],
+   "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Lahore",
+    "addressCountry": "PK"
+   },
+   "sameAs": [
+    "https://www.linkedin.com/in/menadeemmayos/",
+    "https://www.facebook.com/share/19aDt6pcgh/",
+    "https://x.com/Nadeem_seo",
+    "https://www.instagram.com/menadeemmayo",
+    "https://www.fiverr.com/nadeem_mayo"
+   ]
   }
-  </script>
-
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-  <style>
-    html{scroll-behavior:smooth}
-    body{
-      margin:0;
-      background:#fffaf0;
-      color:#180606;
-      font-family:Arial,Helvetica,sans-serif;
-    }
-
-    .hero-bg{
-      background:
-      radial-gradient(circle at top left,rgba(250,204,21,.42),transparent 30%),
-      radial-gradient(circle at bottom right,rgba(220,38,38,.25),transparent 35%),
-      linear-gradient(135deg,#fffaf0 0%,#fff 50%,#fff0f0 100%);
-    }
-
-    .logo-mark{
-      width:44px;
-      height:44px;
-      border-radius:14px;
-      background:linear-gradient(135deg,#dc2626,#facc15);
-      display:inline-flex;
-      align-items:center;
-      justify-content:center;
-      font-weight:900;
-      margin-right:10px;
-    }
-
-    .red-text{color:#dc2626}
-    .gold-text{color:#f5b700}
-
-    .main-btn{
-      background:linear-gradient(135deg,#dc2626,#facc15);
-      color:#180606;
-      font-weight:900;
-      padding:13px 26px;
-      border-radius:999px;
-      display:inline-block;
-      transition:.3s;
-    }
-
-    .main-btn:hover{transform:scale(1.04)}
-
-    .category-pill{
-      display:inline-block;
-      background:#fff3d4;
-      color:#dc2626;
-      padding:8px 15px;
-      border-radius:999px;
-      font-size:12px;
-      font-weight:900;
-      text-transform:uppercase;
-      letter-spacing:1px;
-    }
-
-    .article-content{
-      font-size:18px;
-      line-height:1.85;
-      color:#3f2525;
-    }
-
-    .article-content h1,
-    .article-content h2,
-    .article-content h3{
-      color:#180606;
-      font-weight:900;
-      line-height:1.25;
-      margin-top:36px;
-      margin-bottom:16px;
-    }
-
-    .article-content h1{font-size:36px}
-    .article-content h2{font-size:30px}
-    .article-content h3{font-size:24px}
-
-    .article-content p{margin:18px 0}
-
-    .article-content ul,
-    .article-content ol{
-      margin:20px 0;
-      padding-left:28px;
-    }
-
-    .article-content ul{list-style:disc}
-    .article-content ol{list-style:decimal}
-    .article-content li{margin-bottom:10px}
-
-    .article-content a{
-      color:#dc2626;
-      font-weight:700;
-      text-decoration:underline;
-    }
-
-    .article-content img{
-      width:100%;
-      height:auto;
-      border-radius:20px;
-      margin:28px 0;
-    }
-
-    .article-content blockquote{
-      border-left:5px solid #dc2626;
-      background:#fff3d4;
-      padding:18px 24px;
-      border-radius:12px;
-      margin:28px 0;
-    }
-
-    .mobile-menu{display:none}
-    .mobile-menu.active{display:block}
-
-    @media(max-width:768px){
-      .desktop-menu{display:none!important}
-
-      .mobile-menu{
-        background:#fffaf0;
-        padding:18px 24px;
-        border-top:1px solid rgba(220,38,38,.15);
-      }
-
-      .mobile-menu a{
-        display:block;
-        padding:12px 0;
-        font-weight:bold;
-        text-transform:uppercase;
-        font-size:13px;
-        border-bottom:1px solid rgba(220,38,38,.08);
-      }
-
-      .article-content{font-size:17px}
-    }
-  </style>
+ ]
+}
+</script>
 </head>
-
-<body>
-
-<nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-xl border-b border-red-200">
-  <div class="max-w-7xl mx-auto flex justify-between items-center p-4">
-
-    <a href="{{ '/index.html' | relative_url }}" class="text-2xl font-black flex items-center">
-      <span class="logo-mark">LL</span>
-      LINK<span class="gold-text">LIFT</span><span class="red-text">PRO</span>
-    </a>
-
-    <div class="desktop-menu hidden md:flex gap-5 font-bold text-xs uppercase items-center">
-      <a href="{{ '/index.html' | relative_url }}">Home</a>
-      <a href="{{ '/about.html' | relative_url }}">About</a>
-      <a href="{{ '/services.html' | relative_url }}">Services</a>
-      <a href="{{ '/portfolio.html' | relative_url }}">Portfolio</a>
-      <a href="{{ '/all-niches-sites.html' | relative_url }}">All Niches</a>
-      <a href="{{ '/blog.html' | relative_url }}" class="red-text">Blog</a>
-      <a href="{{ '/FAQs.html' | relative_url }}">FAQ</a>
-      <a href="{{ '/contact.html' | relative_url }}" class="main-btn">Contact</a>
-    </div>
-
-    <button class="mobile-menu-btn text-3xl md:hidden" type="button">
-      <i class="fas fa-bars"></i>
-    </button>
-  </div>
-
-  <div class="mobile-menu">
-    <a href="{{ '/index.html' | relative_url }}">Home</a>
-    <a href="{{ '/about.html' | relative_url }}">About</a>
-    <a href="{{ '/services.html' | relative_url }}">Services</a>
-    <a href="{{ '/portfolio.html' | relative_url }}">Portfolio</a>
-    <a href="{{ '/all-niches-sites.html' | relative_url }}">All Niches</a>
-    <a href="{{ '/blog.html' | relative_url }}">Blog</a>
-    <a href="{{ '/FAQs.html' | relative_url }}">FAQ</a>
-    <a href="{{ '/contact.html' | relative_url }}">Contact</a>
-  </div>
-</nav>
-
-<header class="hero-bg py-16 px-6">
-  <div class="max-w-4xl mx-auto text-center">
-
-    {% if page.category %}
-    <span class="category-pill">{{ page.category }}</span>
-    {% endif %}
-
-    <h1 class="text-4xl md:text-6xl font-black uppercase leading-tight mt-6 mb-6">
-      {{ page.title }}
-    </h1>
-
-    {% if page.description %}
-    <p class="text-lg md:text-xl text-[#5a2b2b] max-w-3xl mx-auto mb-6">
-      {{ page.description }}
-    </p>
-    {% endif %}
-
-    <div class="flex justify-center flex-wrap gap-4 text-sm font-bold text-gray-600">
-      <span>
-        <i class="fas fa-user red-text mr-1"></i>
-        {{ post_author }}
-      </span>
-
-      {% if page.date %}
-      <span>
-        <i class="fas fa-calendar red-text mr-1"></i>
-        {{ page.date | date: "%B %d, %Y" }}
-      </span>
-      {% endif %}
-
-      {% assign word_count = content | number_of_words %}
-      {% assign reading_time = word_count | divided_by: 200 | plus: 1 %}
-
-      <span>
-        <i class="fas fa-clock red-text mr-1"></i>
-        {{ reading_time }} min read
-      </span>
+<body class="dark">
+<header class="site-header">
+  <div class="topbar"><div class="wrap">
+    <span>The fulfilment team behind agencies in the US, UK & Canada: SEO, links, web & ads</span>
+    <div class="topbar-links"><a href="mailto:ceo@linkliftpro.online"><i class="fas fa-envelope"></i>ceo@linkliftpro.online</a><a href="https://wa.me/923074646927" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i>+92 307 4646927</a></div>
+  </div></div>
+  <div class="wrap nav">
+    <a href="/" class="brand" aria-label="LinkLiftPro home"><svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true"><defs><linearGradient id="lgh" x1="0" y1="0" x2="48" y2="48" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#2563EB"/><stop offset="1" stop-color="#1D4ED8"/></linearGradient></defs><rect width="48" height="48" rx="6" fill="url(#lgh)"/><path d="M14 34h20" fill="none" stroke="#fff" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M24 29V13" fill="none" stroke="#fff" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/><path d="m17 20 7-7 7 7" fill="none" stroke="#fff" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="brand-text"><span class="brand-name">LinkLift<span>Pro</span></span><span class="brand-tag">White-label growth partner</span></span></a>
+    <nav class="nav-links" aria-label="Main">
+      <a class="nav-link" href="/">Home</a>
+      <div class="has-menu">
+        <button class="nav-link" type="button" aria-expanded="false">Services <i class="fas fa-chevron-down"></i></button>
+        <div class="menu"><div class="mega"><div class="menu-col"><h4>Search (SEO)</h4><a href="/complete-seo.html"><i class="fas fa-magnifying-glass-chart" aria-hidden="true"></i>Complete SEO</a><a href="/on-page-seo.html"><i class="fas fa-file-lines" aria-hidden="true"></i>On-Page SEO</a><a href="/off-page-seo.html"><i class="fas fa-link" aria-hidden="true"></i>Off-Page SEO</a><a href="/technical-seo.html"><i class="fas fa-gears" aria-hidden="true"></i>Technical SEO</a><a href="/local-seo.html"><i class="fas fa-location-dot" aria-hidden="true"></i>Local SEO</a><a href="/link-building.html"><i class="fas fa-newspaper" aria-hidden="true"></i>Link Building & Guest Posting</a><a href="/content-writing.html"><i class="fas fa-pen-nib" aria-hidden="true"></i>SEO Content Writing</a></div><div class="menu-col"><h4>Web Development</h4><a href="/web-development.html"><i class="fas fa-code" aria-hidden="true"></i>Web Development</a><a href="/custom-website.html"><i class="fas fa-laptop-code" aria-hidden="true"></i>Custom Website Design</a></div><div class="menu-col"><h4>Paid Ads</h4><a href="/google-ads.html"><i class="fa-brands fa-google" aria-hidden="true"></i>Google Ads</a><a href="/meta-ads.html"><i class="fa-brands fa-meta" aria-hidden="true"></i>Meta Ads</a><a href="/facebook-ads.html"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i>Facebook Ads</a><a href="/instagram-ads.html"><i class="fa-brands fa-instagram" aria-hidden="true"></i>Instagram Ads</a><a href="/tiktok-ads.html"><i class="fa-brands fa-tiktok" aria-hidden="true"></i>TikTok Ads</a></div></div>
+          <a href="/services.html" style="margin-top:14px;justify-content:center;background:var(--bg-tint);color:var(--brand)">View all services <i class="fas fa-arrow-right"></i></a></div>
+      </div>
+      <div class="has-menu"><button class="nav-link" type="button" aria-expanded="false">Inventory <i class="fas fa-chevron-down"></i></button><div class="menu menu-simple"><a href="/all-niches-sites.html"><i class="fas fa-layer-group" aria-hidden="true"></i>Publisher Inventory</a></div></div>
+      <a class="nav-link" href="/portfolio.html">Portfolio</a>
+      <a class="nav-link" href="/about.html">About</a>
+      <a class="nav-link active" href="/blog.html">Blog</a>
+      <a class="nav-link" href="/FAQs.html">FAQ</a>
+      <a class="nav-link" href="/contact.html">Contact</a>
+      <a class="btn btn-accent mobile-cta" href="/contact.html">Become a Partner</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="btn btn-primary btn-sm btn-header" href="/contact.html">Become a Partner</a>
+      <button class="burger" type="button" aria-label="Open menu" aria-expanded="false"><i class="fas fa-bars"></i></button>
     </div>
   </div>
 </header>
-
-<main class="py-14 px-6">
-  <article class="max-w-4xl mx-auto bg-white rounded-[30px] shadow-xl overflow-hidden">
-
-    {% if page.thumbnail %}
-    <img
-      src="{{ page.thumbnail | relative_url }}"
-      alt="{{ page.thumbnail_alt | default: page.title | escape }}"
-      class="w-full max-h-[520px] object-cover"
-    >
-    {% endif %}
-
-    <div class="p-7 md:p-12 article-content">
-      {{ content }}
-    </div>
-
-    {% if page.tags %}
-    <div class="px-7 md:px-12 pb-10">
-      <p class="font-black uppercase mb-3">Article Tags</p>
-
-      <div class="flex flex-wrap gap-2">
-        {% for tag in page.tags %}
-        <span class="bg-red-50 text-red-700 text-sm font-bold px-4 py-2 rounded-full">
-          {{ tag }}
-        </span>
-        {% endfor %}
+<main>
+<section class="hero page-hero"><div class="wrap" style="max-width:860px">
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a><span>/</span><a href="/blog.html">Blog</a>{% if page.category %}<span>/</span><b>{{ page.category | escape }}</b>{% endif %}</nav>
+  {% if page.category %}<span class="eyebrow">{{ page.category | escape }}</span>{% endif %}
+  <h1 style="font-size:clamp(2rem,4vw,3rem)">{{ page.title | escape }}</h1>
+  {% if page.description %}<p class="lead">{{ page.description | escape }}</p>{% endif %}
+  <div class="post-meta" style="margin-top:18px"><span><i class="fas fa-user"></i> {{ page.author | default: "Nadeem Mayo" }}</span><span>·</span><span>{{ page.date | date: "%B %d, %Y" }}</span></div>
+</div></section>
+<section class="section"><article class="wrap article">
+  {% if page.thumbnail %}<img src="{{ page.thumbnail | relative_url }}" alt="{{ page.thumbnail_alt | default: page.title | escape }}">{% endif %}
+  {{ content }}
+  <div class="article-cta"><div><h3>Want this done for your website?</h3><p>Get a free audit and a practical plan from the LinkLiftPro team.</p></div><a class="btn btn-primary" href="/contact.html">Become a Partner</a></div>
+  <p style="margin-top:32px"><a href="/blog.html" style="text-decoration:none;font-weight:700"><i class="fas fa-arrow-left"></i> Back to all articles</a></p>
+</article></section>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-about">
+        <a href="/" class="brand" aria-label="LinkLiftPro home"><svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true"><defs><linearGradient id="lgf" x1="0" y1="0" x2="48" y2="48" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#2563EB"/><stop offset="1" stop-color="#1D4ED8"/></linearGradient></defs><rect width="48" height="48" rx="6" fill="url(#lgf)"/><path d="M14 34h20" fill="none" stroke="#fff" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M24 29V13" fill="none" stroke="#fff" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/><path d="m17 20 7-7 7 7" fill="none" stroke="#fff" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="brand-text"><span class="brand-name">LinkLift<span>Pro</span></span><span class="brand-tag">White-label growth partner</span></span></a>
+        <p>LinkLiftPro is the white-label delivery team behind marketing agencies: SEO, link building, websites and paid ads under your brand.</p>
+        <div class="socials"><a href="https://www.linkedin.com/in/menadeemmayos/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a><a href="https://www.facebook.com/share/19aDt6pcgh/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a><a href="https://www.instagram.com/menadeemmayo" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a><a href="https://x.com/Nadeem_seo" target="_blank" rel="noopener" aria-label="X"><i class="fab fa-x-twitter"></i></a><a href="https://t.me/Nadeemmayos" target="_blank" rel="noopener" aria-label="Telegram"><i class="fab fa-telegram"></i></a></div>
+        <div class="market-btns"><a href="https://www.fiverr.com/nadeem_mayo" target="_blank" rel="noopener">Hire on Fiverr</a><a href="https://upwork.com/freelancers/~01929269c0cf45d7c1" target="_blank" rel="noopener">Hire on Upwork</a></div>
+      </div>
+      <div><h4>SEO Services</h4><div class="footer-links"><a href="/complete-seo.html">Complete SEO</a><a href="/on-page-seo.html">On-Page SEO</a><a href="/off-page-seo.html">Off-Page SEO</a><a href="/technical-seo.html">Technical SEO</a><a href="/local-seo.html">Local SEO</a><a href="/link-building.html">Link Building & Guest Posting</a><a href="/content-writing.html">SEO Content Writing</a></div></div>
+      <div><h4>Web &amp; Ads</h4><div class="footer-links"><a href="/web-development.html">Web Development</a><a href="/custom-website.html">Custom Website Design</a><a href="/google-ads.html">Google Ads</a><a href="/meta-ads.html">Meta Ads</a><a href="/facebook-ads.html">Facebook Ads</a><a href="/instagram-ads.html">Instagram Ads</a><a href="/tiktok-ads.html">TikTok Ads</a></div></div>
+      <div><h4>Company</h4><div class="footer-links">
+        <a href="/about.html">About</a><a href="/portfolio.html">Portfolio</a><a href="/all-niches-sites.html">Publisher Inventory</a><a href="/blog.html">Blog</a><a href="/FAQs.html">FAQ</a><a href="/contact.html">Contact</a>
+      </div></div>
+      <div><h4>Get in touch</h4>
+        <div class="footer-contact">
+          <a href="mailto:ceo@linkliftpro.online"><i class="fas fa-envelope"></i>ceo@linkliftpro.online</a><a href="mailto:nadeemonlin@gmail.com"><i class="fas fa-envelope-open"></i>nadeemonlin@gmail.com</a>
+          <a href="https://wa.me/923074646927" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i>+92 307 4646927</a>
+        </div>
+        <div class="pay"><span>PayPal</span><span>Payoneer</span><span>Wise</span><span>Visa</span><span>Mastercard</span></div>
       </div>
     </div>
-    {% endif %}
-  </article>
-
-  <div class="max-w-4xl mx-auto mt-10 text-center">
-    <a href="{{ '/blog.html' | relative_url }}" class="main-btn">
-      <i class="fas fa-arrow-left mr-2"></i>
-      Back to Blog
-    </a>
+    <div class="footer-bottom">
+      <span>&copy; 2026 LinkLiftPro. All rights reserved.</span>
+      <nav aria-label="Legal"><a href="/privacy-policy.html">Privacy Policy</a><a href="/terms-of-use.html">Terms of Service</a><a href="/refund-policy.html">Refund Policy</a><a href="/sitemap.xml">Sitemap</a></nav>
+    </div>
   </div>
-</main>
-
-<section class="px-6 pb-16">
-  <div class="max-w-5xl mx-auto rounded-[34px] p-10 text-center"
-       style="background:linear-gradient(135deg,#dc2626,#facc15);color:#180606;">
-
-    <h2 class="text-3xl md:text-4xl font-black uppercase mb-4">
-      Need Professional Link Building?
-    </h2>
-
-    <p class="text-lg font-semibold max-w-3xl mx-auto mb-7">
-      Build website authority with professional guest posting, niche edits and contextual backlinks.
-    </p>
-
-    <a href="{{ '/contact.html' | relative_url }}"
-       class="inline-block bg-[#180606] text-white px-8 py-4 rounded-full font-black">
-      Get Free Consultation
-    </a>
-  </div>
-</section>
-
-<footer class="bg-[#180606] py-8 px-6 text-center text-white">
-  <p class="font-black text-lg">
-    LINK<span class="gold-text">LIFT</span><span class="red-text">PRO</span>
-  </p>
-
-  <p class="text-red-100 text-sm mt-2">
-    Guest Posting • Link Building • Niche Edits • SEO Insights
-  </p>
-
-  <p class="text-red-200 text-sm mt-4">
-    © 2026 LinkLiftPro SEO Agency. All Rights Reserved.
-  </p>
 </footer>
-
-<script>
-  const menuButton = document.querySelector('.mobile-menu-btn');
-  const mobileMenu = document.querySelector('.mobile-menu');
-
-  if (menuButton && mobileMenu) {
-    menuButton.addEventListener('click', function () {
-      mobileMenu.classList.toggle('active');
-    });
-  }
-</script>
-
+<a class="wa-float" href="https://wa.me/923074646927?text=Hi%20LinkLiftPro%2C%20I%27d%20like%20to%20discuss%20a%20project" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+<script src="/assets/js/site.js" defer></script>
 </body>
 </html>

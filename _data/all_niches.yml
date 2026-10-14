@@ -1,29 +1,27 @@
 seo:
-  title: "All Niche Sites | LinkLiftPro Guest Posting & Backlink Inventory"
-  description: "Explore all niche guest posting websites, niche edit opportunities, authority backlinks and SEO placements across multiple high demand categories worldwide."
-
+  title: Publisher Inventory | LinkLiftPro Guest Posting Sites
+  description: 'LinkLiftPro''s live guest posting inventory for agencies: publishers by niche, DR, DA, country, language and
+    traffic, with white-label ordering.'
 hero:
-  badge: "Premium Guest Posting Inventory"
-  heading_before: "All"
-  highlighted_heading: "Niche Sites"
-  description: "Browse premium guest posting websites by niche and choose the most relevant backlink placements for authority, visibility and SEO growth."
-  primary_button_text: "View Inventory"
-  primary_button_url: "#inventory"
-  secondary_button_text: "Get Quote"
-  secondary_button_url: "contact.html"
-
+  badge: Publisher inventory
+  heading_before: Guest post
+  highlighted_heading: publisher inventory
+  description: Vetted publishers for your clients' link building campaigns. Search, filter and order with white-label reporting.
+  primary_button_text: View Inventory
+  primary_button_url: '#inventory'
+  secondary_button_text: Get Partner Pricing
+  secondary_button_url: contact.html
 inventory:
-  heading_before: "Premium"
-  highlighted_heading: "Inventory Table"
-  description: "Search websites by niche, country, language, traffic, DR, DA and placement availability."
-  search_placeholder: "Search websites, niche, country, language..."
-
+  heading_before: Live
+  highlighted_heading: inventory
+  description: Search publishers by niche, country, language, traffic, DR and DA.
+  search_placeholder: Search website, niche, country…
 cta:
-  heading: "1500+ High-Authority Sites"
-  description: "Instant access to our complete backlink inventory for bulk guest posting and niche-based link building orders."
-  button_text: "Contact For Pricing"
-  button_url: "https://wa.me/923074646927"
-  bottom_text: "Access our complete niche-wise database across multiple high-demand categories."
-
+  heading: Need publishers that aren't listed?
+  description: We work with thousands more publishers across niches and countries. Send your client's niche and we'll return
+    a matched list.
+  button_text: Contact For Pricing
+  button_url: https://wa.me/923074646927
+  bottom_text: Bulk and agency pricing available.
 niches_section:
-  heading: "Explore All Niches"
+  heading: Explore All Niches

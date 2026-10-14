@@ -6,450 +6,186 @@ permalink: /blog.html
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LinkLiftPro Blog | Insights for SEO &amp; Marketing Agencies</title>
+<meta name="description" content="Guides and insights for agencies on link building, SEO, AI search, websites and paid ads from the LinkLiftPro team.">
 <link rel="canonical" href="https://linkliftpro.online/blog.html">
-<link rel="icon" href="https://cdn-icons-png.flaticon.com/512/5968/5968875.png" type="image/png">
-
-<title>SEO Blog | LinkLiftPro Guest Posting & Link Building Insights</title>
-<meta name="description" content="Read LinkLiftPro SEO insights about guest posting, link building, niche edits, authority backlinks, AI search, E-E-A-T and off-page SEO growth strategies.">
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-GB37RK3Z13"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-GB37RK3Z13');
-</script>
-<meta property="og:title" content="LinkLiftPro SEO Blog | Guest Posting & Link Building Insights">
-<meta property="og:description" content="Read practical SEO guides about authority backlinks, niche edits, guest posting, link building and off-page SEO growth.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#0A1020">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+<meta property="og:site_name" content="LinkLiftPro">
+<meta property="og:title" content="LinkLiftPro Blog | Insights for SEO &amp; Marketing Agencies">
+<meta property="og:description" content="Guides and insights for agencies on link building, SEO, AI search, websites and paid ads from the LinkLiftPro team.">
 <meta property="og:url" content="https://linkliftpro.online/blog.html">
 <meta property="og:type" content="website">
-<meta property="og:image" content="https://linkliftpro.online/preview.jpg">
-
-<script src="https://cdn.tailwindcss.com"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-<style>
-html{scroll-behavior:smooth}
-body{background:#fffaf0;color:#180606;font-family:Arial,Helvetica,sans-serif;overflow-x:hidden}
-
-.hero-bg{
-background:
-radial-gradient(circle at top left,rgba(250,204,21,.45),transparent 30%),
-radial-gradient(circle at bottom right,rgba(220,38,38,.28),transparent 35%),
-linear-gradient(135deg,#fffaf0 0%,#ffffff 45%,#fff0f0 100%);
-}
-
-.dark-bg{
-background:linear-gradient(135deg,#180606 0%,#4a0808 55%,#991b1b 100%);
-}
-
-.red-text{color:#dc2626}
-.gold-text{color:#f5b700}
-.deep-text{color:#180606}
-
-.logo-mark{
-width:44px;
-height:44px;
-border-radius:14px;
-background:linear-gradient(135deg,#dc2626,#facc15);
-color:#180606;
-display:inline-flex;
-align-items:center;
-justify-content:center;
-font-weight:900;
-margin-right:10px;
-}
-
-.main-btn{
-background:linear-gradient(135deg,#dc2626,#facc15);
-color:#180606;
-font-weight:900;
-border-radius:999px;
-padding:14px 30px;
-display:inline-block;
-transition:.3s;
-box-shadow:0 16px 35px rgba(220,38,38,.25);
-}
-
-.main-btn:hover{transform:scale(1.05)}
-
-.outline-btn{
-border:2px solid #dc2626;
-color:#dc2626;
-font-weight:900;
-border-radius:999px;
-padding:14px 30px;
-display:inline-block;
-transition:.3s;
-background:#fff;
-}
-
-.outline-btn:hover{background:#dc2626;color:#fff}
-
-.glass-card{
-background:rgba(255,255,255,.08);
-border:1px solid rgba(250,204,21,.18);
-backdrop-filter:blur(14px);
-box-shadow:0 24px 70px rgba(0,0,0,.28);
-}
-
-.blog-card{
-background:#ffffff;
-color:#180606;
-border:1px solid rgba(220,38,38,.14);
-border-radius:26px;
-overflow:hidden;
-transition:.35s;
-box-shadow:0 18px 45px rgba(80,10,10,.10);
-}
-
-.blog-card:hover{
-transform:translateY(-10px);
-border-color:#dc2626;
-box-shadow:0 28px 70px rgba(220,38,38,.20);
-}
-
-.blog-image{
-height:205px;
-background:linear-gradient(135deg,#dc2626,#facc15);
-display:flex;
-align-items:center;
-justify-content:center;
-position:relative;
-}
-
-.blog-image:after{
-content:"LINKLIFTPRO INSIGHTS";
-position:absolute;
-right:14px;
-bottom:14px;
-background:#180606;
-color:#fff;
-font-size:10px;
-font-weight:900;
-letter-spacing:1px;
-padding:7px 12px;
-border-radius:999px;
-}
-
-.blog-image i{
-font-size:58px;
-color:#180606;
-opacity:.9;
-}
-
-.category-pill{
-display:inline-block;
-background:#fff3d4;
-color:#dc2626;
-padding:7px 14px;
-border-radius:999px;
-font-size:11px;
-font-weight:900;
-text-transform:uppercase;
-letter-spacing:1px;
-}
-
-.read-link{
-color:#dc2626;
-font-weight:900;
-text-transform:uppercase;
-font-size:12px;
-border-bottom:2px solid #dc2626;
-padding-bottom:4px;
-}
-
-.mobile-menu{display:none}
-.mobile-menu.active{display:block}
-
-@media(max-width:768px){
-.desktop-menu{display:none!important}
-.mobile-menu{
-background:#fffaf0;
-padding:18px 24px;
-border-top:1px solid rgba(220,38,38,.15);
-}
-.mobile-menu a{
-display:block;
-padding:12px 0;
-color:#180606;
-font-weight:bold;
-text-transform:uppercase;
-font-size:13px;
-border-bottom:1px solid rgba(220,38,38,.08);
-}
-}
-</style>
-
+<meta property="og:image" content="https://linkliftpro.online/assets/img/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="LinkLiftPro Blog | Insights for SEO &amp; Marketing Agencies">
+<meta name="twitter:description" content="Guides and insights for agencies on link building, SEO, AI search, websites and paid ads from the LinkLiftPro team.">
+<meta name="twitter:image" content="https://linkliftpro.online/assets/img/og-image.png">
+<link rel="preload" href="/assets/fonts/space-grotesk-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/vendor/fontawesome/css/all.min.css">
+<link rel="stylesheet" href="/assets/css/site.css">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GB37RK3Z13"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-GB37RK3Z13');</script>
 <script type="application/ld+json">
 {
-"@context":"https://schema.org",
-"@type":"Blog",
-"name":"LinkLiftPro SEO Blog",
-"url":"https://linkliftpro.online/blog.html",
-"description":"SEO blog by LinkLiftPro covering guest posting, link building, niche edits, authority backlinks and off-page SEO strategies.",
-"publisher":{
-"@type":"Organization",
-"name":"LinkLiftPro",
-"url":"https://linkliftpro.online/"
-}
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "ProfessionalService",
+   "@id": "https://linkliftpro.online/#organization",
+   "name": "LinkLiftPro",
+   "url": "https://linkliftpro.online/",
+   "logo": "https://linkliftpro.online/assets/img/logo.png",
+   "image": "https://linkliftpro.online/assets/img/og-image.png",
+   "description": "LinkLiftPro is a white-label fulfilment partner delivering SEO, link building, web development and paid advertising for marketing agencies.",
+   "email": "ceo@linkliftpro.online",
+   "telephone": "+923074646927",
+   "founder": {
+    "@type": "Person",
+    "name": "Nadeem Mayo"
+   },
+   "areaServed": [
+    "United States",
+    "United Kingdom",
+    "Canada",
+    "Australia"
+   ],
+   "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Lahore",
+    "addressCountry": "PK"
+   },
+   "sameAs": [
+    "https://www.linkedin.com/in/menadeemmayos/",
+    "https://www.facebook.com/share/19aDt6pcgh/",
+    "https://x.com/Nadeem_seo",
+    "https://www.instagram.com/menadeemmayo",
+    "https://www.fiverr.com/nadeem_mayo"
+   ]
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Home",
+     "item": "https://linkliftpro.online/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Blog",
+     "item": "https://linkliftpro.online/blog.html"
+    }
+   ]
+  },
+  {
+   "@type": "Blog",
+   "url": "https://linkliftpro.online/blog.html",
+   "name": "LinkLiftPro Blog"
+  }
+ ]
 }
 </script>
 </head>
-
-<body>
-
-<nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-xl border-b border-red-200">
-<div class="max-w-7xl mx-auto flex justify-between items-center p-4">
-
-<a href="index.html" class="text-2xl font-black deep-text flex items-center">
-<span class="logo-mark">LL</span>
-LINK<span class="gold-text">LIFT</span><span class="red-text">PRO</span>
+<body class="dark">
+<header class="site-header">
+  <div class="topbar"><div class="wrap">
+    <span>The fulfilment team behind agencies in the US, UK & Canada: SEO, links, web & ads</span>
+    <div class="topbar-links"><a href="mailto:ceo@linkliftpro.online"><i class="fas fa-envelope"></i>ceo@linkliftpro.online</a><a href="https://wa.me/923074646927" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i>+92 307 4646927</a></div>
+  </div></div>
+  <div class="wrap nav">
+    <a href="/" class="brand" aria-label="LinkLiftPro home"><svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true"><defs><linearGradient id="lgh" x1="0" y1="0" x2="48" y2="48" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#2563EB"/><stop offset="1" stop-color="#1D4ED8"/></linearGradient></defs><rect width="48" height="48" rx="6" fill="url(#lgh)"/><path d="M14 34h20" fill="none" stroke="#fff" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M24 29V13" fill="none" stroke="#fff" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/><path d="m17 20 7-7 7 7" fill="none" stroke="#fff" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="brand-text"><span class="brand-name">LinkLift<span>Pro</span></span><span class="brand-tag">White-label growth partner</span></span></a>
+    <nav class="nav-links" aria-label="Main">
+      <a class="nav-link" href="/">Home</a>
+      <div class="has-menu">
+        <button class="nav-link" type="button" aria-expanded="false">Services <i class="fas fa-chevron-down"></i></button>
+        <div class="menu"><div class="mega"><div class="menu-col"><h4>Search (SEO)</h4><a href="/complete-seo.html"><i class="fas fa-magnifying-glass-chart" aria-hidden="true"></i>Complete SEO</a><a href="/on-page-seo.html"><i class="fas fa-file-lines" aria-hidden="true"></i>On-Page SEO</a><a href="/off-page-seo.html"><i class="fas fa-link" aria-hidden="true"></i>Off-Page SEO</a><a href="/technical-seo.html"><i class="fas fa-gears" aria-hidden="true"></i>Technical SEO</a><a href="/local-seo.html"><i class="fas fa-location-dot" aria-hidden="true"></i>Local SEO</a><a href="/link-building.html"><i class="fas fa-newspaper" aria-hidden="true"></i>Link Building & Guest Posting</a><a href="/content-writing.html"><i class="fas fa-pen-nib" aria-hidden="true"></i>SEO Content Writing</a></div><div class="menu-col"><h4>Web Development</h4><a href="/web-development.html"><i class="fas fa-code" aria-hidden="true"></i>Web Development</a><a href="/custom-website.html"><i class="fas fa-laptop-code" aria-hidden="true"></i>Custom Website Design</a></div><div class="menu-col"><h4>Paid Ads</h4><a href="/google-ads.html"><i class="fa-brands fa-google" aria-hidden="true"></i>Google Ads</a><a href="/meta-ads.html"><i class="fa-brands fa-meta" aria-hidden="true"></i>Meta Ads</a><a href="/facebook-ads.html"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i>Facebook Ads</a><a href="/instagram-ads.html"><i class="fa-brands fa-instagram" aria-hidden="true"></i>Instagram Ads</a><a href="/tiktok-ads.html"><i class="fa-brands fa-tiktok" aria-hidden="true"></i>TikTok Ads</a></div></div>
+          <a href="/services.html" style="margin-top:14px;justify-content:center;background:var(--bg-tint);color:var(--brand)">View all services <i class="fas fa-arrow-right"></i></a></div>
+      </div>
+      <div class="has-menu"><button class="nav-link" type="button" aria-expanded="false">Inventory <i class="fas fa-chevron-down"></i></button><div class="menu menu-simple"><a href="/all-niches-sites.html"><i class="fas fa-layer-group" aria-hidden="true"></i>Publisher Inventory</a></div></div>
+      <a class="nav-link" href="/portfolio.html">Portfolio</a>
+      <a class="nav-link" href="/about.html">About</a>
+      <a class="nav-link active" href="/blog.html">Blog</a>
+      <a class="nav-link" href="/FAQs.html">FAQ</a>
+      <a class="nav-link" href="/contact.html">Contact</a>
+      <a class="btn btn-accent mobile-cta" href="/contact.html">Become a Partner</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="btn btn-primary btn-sm btn-header" href="/contact.html">Become a Partner</a>
+      <button class="burger" type="button" aria-label="Open menu" aria-expanded="false"><i class="fas fa-bars"></i></button>
+    </div>
+  </div>
+</header>
+<main>
+<section class="hero page-hero"><div class="wrap">
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a><span>/</span><b>Blog</b></nav>
+  <span class="eyebrow">Blog</span>
+  <h1 style="max-width:880px">Insights for <span class="grad-text">growing agencies</span></h1>
+  <p class="lead">Practical thinking on link building, SEO, AI search and selling digital services.</p>
+  
+</div></section>
+<section class="section"><div class="wrap">
+  <div class="section-head left"><span class="eyebrow">Latest articles</span><h2>From the blog</h2></div>
+  <div class="grid g-3">{% for post in site.posts %}
+<a class="post-card reveal" href="{{ post.url | relative_url }}">
+  {% if post.thumbnail and post.thumbnail != "" %}<div class="post-thumb"><img src="{{ post.thumbnail | relative_url }}" alt="{{ post.thumbnail_alt | default: post.title | escape }}" loading="lazy"></div>{% else %}<div class="post-thumb art"><i class="fas fa-chart-line"></i></div>{% endif %}
+  <div class="post-body">
+    <div class="post-meta">{% if post.category %}<span class="tag">{{ post.category | escape }}</span>{% endif %}<span>{{ post.date | date: "%B %d, %Y" }}</span></div>
+    <h3>{{ post.title | escape }}</h3>
+    <p>{% if post.description %}{{ post.description | strip_html | truncate: 160 }}{% else %}{{ post.excerpt | strip_html | truncate: 160 }}{% endif %}</p>
+    <span class="card-link">Read article <i class="fas fa-arrow-right"></i></span>
+  </div>
 </a>
-
-<div class="desktop-menu hidden md:flex gap-5 font-bold text-xs uppercase items-center">
-<a href="index.html" class="hover:text-red-600 transition">Home</a>
-<a href="about.html" class="hover:text-red-600 transition">About</a>
-<a href="services.html" class="hover:text-red-600 transition">Services</a>
-<a href="portfolio.html" class="hover:text-red-600 transition">Portfolio</a>
-<a href="all-niches-sites.html" class="hover:text-red-600 transition">All Niches</a>
-<a href="blog.html" class="red-text transition">Blog</a>
-<a href="FAQs.html" class="hover:text-red-600 transition">FAQ</a>
-<a href="contact.html" class="main-btn text-sm px-5 py-2">Contact</a>
-</div>
-
-<button class="mobile-menu-btn text-3xl md:hidden deep-text" type="button">
-<i class="fas fa-bars"></i>
-</button>
-
-</div>
-
-<div class="mobile-menu">
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="services.html">Services</a>
-<a href="portfolio.html">Portfolio</a>
-<a href="all-niches-sites.html">All Niches</a>
-<a href="blog.html" class="red-text">Blog</a>
-<a href="FAQs.html">FAQ</a>
-<a href="contact.html">Contact</a>
-</div>
-</nav>
-
-<section class="hero-bg py-24 px-6 text-center">
-<div class="max-w-6xl mx-auto">
-
-<span class="inline-block border border-red-400/30 text-red-700 bg-white/70 text-xs font-bold uppercase tracking-[4px] px-5 py-2 rounded-full mb-6">
-SEO Knowledge Hub
-</span>
-
-<h1 class="text-4xl md:text-6xl font-black uppercase leading-tight mb-6 deep-text">
-SEO Insights For <span class="red-text">Authority Growth</span>
-</h1>
-
-<p class="text-[#5a2b2b] text-lg md:text-xl max-w-3xl mx-auto mb-9">
-Read practical guides on guest posting, link building, niche edits, authority backlinks, AI search, E-E-A-T and off-page SEO strategies.
-</p>
-
-<div class="flex justify-center gap-4 flex-wrap">
-<a href="services.html" class="main-btn">Explore Services</a>
-<a href="contact.html" class="outline-btn">Get Free Consultation</a>
-</div>
-
-</div>
-</section>
-
-<section class="dark-bg py-12 px-6">
-<div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-5 text-center">
-
-<div class="glass-card rounded-2xl p-6">
-<i class="fas fa-link text-3xl gold-text mb-3"></i>
-<h3 class="font-black uppercase text-white">Link Building</h3>
-<p class="text-red-50 text-sm mt-2">Backlink strategies that support real authority growth.</p>
-</div>
-
-<div class="glass-card rounded-2xl p-6">
-<i class="fas fa-chart-line text-3xl gold-text mb-3"></i>
-<h3 class="font-black uppercase text-white">SEO Growth</h3>
-<p class="text-red-50 text-sm mt-2">Ranking insights for long-term organic visibility.</p>
-</div>
-
-<div class="glass-card rounded-2xl p-6">
-<i class="fas fa-shield-halved text-3xl gold-text mb-3"></i>
-<h3 class="font-black uppercase text-white">Authority Building</h3>
-<p class="text-red-50 text-sm mt-2">Trusted content and quality link sources for SEO.</p>
-</div>
-
-</div>
-</section>
-
-<section class="py-20 px-6 bg-white text-gray-900">
-<div class="max-w-7xl mx-auto">
-
-<div class="text-center mb-14">
-<p class="uppercase tracking-[3px] text-sm font-black text-red-600 mb-3">
-Latest SEO Articles
-</p>
-
-<h2 class="text-4xl md:text-5xl font-black uppercase mb-4 deep-text">
-Expert <span class="red-text">SEO Guides</span>
-</h2>
-
-<p class="text-gray-600 max-w-3xl mx-auto">
-Read practical guides on guest posting, authority backlinks, niche edits, off-page SEO and ranking strategies.
-</p>
-</div>
-
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-
-{% for post in site.posts %}
-<article class="blog-card">
-{% if post.thumbnail %}
-<a href="{{ post.url | relative_url }}"><img src="{{ post.thumbnail }}" alt="{{ post.title | escape }}" class="w-full h-52 object-cover"></a>
-{% else %}
-<div class="blog-image"><i class="fas fa-pen-nib"></i></div>
-{% endif %}
-<div class="p-7">
-<span class="category-pill">{{ post.category | default: "SEO" }}</span>
-<h3 class="text-2xl font-black mt-5 mb-4 leading-tight uppercase">{{ post.title }}</h3>
-<p class="text-gray-600 text-sm mb-6 leading-7">{{ post.description | default: post.excerpt | strip_html | truncate: 170 }}</p>
-<a href="{{ post.url | relative_url }}" class="read-link">Read Full Guide</a>
-</div>
-</article>
-{% endfor %}
-
-<article class="blog-card">
-<div class="blog-image"><i class="fas fa-brain"></i></div>
-<div class="p-7">
-<span class="category-pill">Authority Building</span>
-<h3 class="text-2xl font-black mt-5 mb-4 leading-tight uppercase">
-How To Survive Google AI Overviews
-</h3>
-<p class="text-gray-600 text-sm mb-6 leading-7">
-Learn how information gain, brand authority and trusted backlinks can help your website stay visible in AI-driven search results.
-</p>
-<a href="blog-post-1.html" class="read-link">Read Case Study</a>
-</div>
-</article>
-
-<article class="blog-card">
-<div class="blog-image"><i class="fas fa-link"></i></div>
-<div class="p-7">
-<span class="category-pill">Link Building</span>
-<h3 class="text-2xl font-black mt-5 mb-4 leading-tight uppercase">
-Backlink Strategies That Still Work
-</h3>
-<p class="text-gray-600 text-sm mb-6 leading-7">
-Discover why guest posting, niche edits, digital PR and contextual backlinks remain powerful for authority growth.
-</p>
-<a href="blog-post-2.html" class="read-link">Read Full Guide</a>
-</div>
-</article>
-
-<article class="blog-card">
-<div class="blog-image"><i class="fas fa-chart-line"></i></div>
-<div class="p-7">
-<span class="category-pill">E-E-A-T SEO</span>
-<h3 class="text-2xl font-black mt-5 mb-4 leading-tight uppercase">
-E-E-A-T & Real SEO Experience
-</h3>
-<p class="text-gray-600 text-sm mb-6 leading-7">
-Understand why Google values trust, expertise, real content, author signals and quality link sources.
-</p>
-<a href="blog-post-3.html" class="read-link">Read Full Guide</a>
-</div>
-</article>
-
-<article class="blog-card">
-<div class="blog-image"><i class="fas fa-newspaper"></i></div>
-<div class="p-7">
-<span class="category-pill">Guest Posting</span>
-<h3 class="text-2xl font-black mt-5 mb-4 leading-tight uppercase">
-What Makes A Guest Post Valuable?
-</h3>
-<p class="text-gray-600 text-sm mb-6 leading-7">
-A practical guide to choosing guest post sites based on niche relevance, traffic, indexing and authority.
-</p>
-<a href="blog-post-1.html" class="read-link">Read Full Guide</a>
-</div>
-</article>
-
-<article class="blog-card">
-<div class="blog-image"><i class="fas fa-search"></i></div>
-<div class="p-7">
-<span class="category-pill">SEO Audit</span>
-<h3 class="text-2xl font-black mt-5 mb-4 leading-tight uppercase">
-Why Every Website Needs SEO Audit
-</h3>
-<p class="text-gray-600 text-sm mb-6 leading-7">
-Learn how technical SEO, content gaps, backlink gaps and authority signals affect rankings and conversion.
-</p>
-<a href="blog-post-2.html" class="read-link">Read Full Guide</a>
-</div>
-</article>
-
-<article class="blog-card">
-<div class="blog-image"><i class="fas fa-bullseye"></i></div>
-<div class="p-7">
-<span class="category-pill">Niche Edits</span>
-<h3 class="text-2xl font-black mt-5 mb-4 leading-tight uppercase">
-Niche Edits Vs Guest Posts
-</h3>
-<p class="text-gray-600 text-sm mb-6 leading-7">
-Compare niche edits and guest posts to understand which backlink type is better for authority and relevance.
-</p>
-<a href="blog-post-3.html" class="read-link">Read Full Guide</a>
-</div>
-</article>
-
-</div>
-</div>
-</section>
-
-<section class="py-20 px-6">
-<div class="max-w-6xl mx-auto p-10 md:p-14 text-center rounded-[34px]" style="background:linear-gradient(135deg,#dc2626,#facc15);color:#180606;">
-
-<h2 class="text-4xl md:text-5xl font-black uppercase mb-5">
-Ready To Grow Your Rankings?
-</h2>
-
-<p class="text-lg max-w-3xl mx-auto mb-8 font-semibold">
-Let LinkLiftPro help you build authority with guest posting, link building, niche edits, content strategy and professional off-page SEO campaigns.
-</p>
-
-<div class="flex justify-center gap-4 flex-wrap">
-<a href="contact.html" class="bg-[#180606] text-white px-8 py-4 rounded-full font-black hover:scale-105 transition">Contact Us</a>
-<a href="services.html" class="bg-white text-[#180606] px-8 py-4 rounded-full font-black hover:scale-105 transition">View Services</a>
-<a href="FAQs.html" class="bg-red-900 text-white px-8 py-4 rounded-full font-black hover:scale-105 transition">Read FAQ</a>
-</div>
-
-</div>
-</section>
-
-<footer class="bg-[#180606] border-t border-yellow-400/20 py-8 px-6 text-center">
-<p class="font-black text-lg">
-LINK<span class="gold-text">LIFT</span><span class="red-text">PRO</span>
-</p>
-<p class="text-red-100 text-sm mt-2">
-Guest Posting • Link Building • Niche Edits • SEO Insights
-</p>
-<p class="text-red-200 text-sm mt-4">
-© 2026 LinkLiftPro SEO Agency. All Rights Reserved.
-</p>
+{% endfor %}<a class="post-card reveal" href="/blog-post-3.html"><div class="post-thumb art"><i class="fas fa-award"></i></div>
+<div class="post-body"><div class="post-meta"><span class="tag">E-E-A-T SEO</span><span>May 8, 2026</span></div><h3>An E-E-A-T Checklist Agencies Can Run on Every Client Site</h3><p>A practical checklist for auditing Experience, Expertise, Authoritativeness and Trust signals on client websites.</p><span class="card-link">Read article <i class="fas fa-arrow-right"></i></span></div></a><a class="post-card reveal" href="/blog-post-2.html"><div class="post-thumb art"><i class="fas fa-link"></i></div>
+<div class="post-body"><div class="post-meta"><span class="tag">Link Building</span><span>April 24, 2026</span></div><h3>5 Link Building Services Agencies Can Resell Profitably</h3><p>The link building products that sell well to agency clients, deliver results and leave healthy margins when fulfilled white-label.</p><span class="card-link">Read article <i class="fas fa-arrow-right"></i></span></div></a><a class="post-card reveal" href="/blog-post-1.html"><div class="post-thumb art"><i class="fas fa-robot"></i></div>
+<div class="post-body"><div class="post-meta"><span class="tag">AI Search</span><span>April 10, 2026</span></div><h3>How Agencies Should Explain AI Overviews to Clients</h3><p>Clients are asking why traffic changed. Here's how to explain Google's AI Overviews and the strategy that keeps their visibility growing.</p><span class="card-link">Read article <i class="fas fa-arrow-right"></i></span></div></a></div>
+</div></section><section class="section-sm"><div class="wrap">
+  <div class="cta-band reveal">
+    <div><span class="eyebrow">Partner with us</span><h2>Need a team to deliver this for your clients?</h2><p>Tell us about your agency and the services your clients ask for. Partner pricing within 24 hours.</p></div>
+    <div class="cta-actions">
+      <a class="btn btn-accent" href="/contact.html">Start a Partnership <i class="fas fa-arrow-right"></i></a>
+      <a class="btn btn-outline-light" href="https://wa.me/923074646927" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> WhatsApp Us</a>
+    </div>
+  </div>
+</div></section>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-about">
+        <a href="/" class="brand" aria-label="LinkLiftPro home"><svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true"><defs><linearGradient id="lgf" x1="0" y1="0" x2="48" y2="48" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#2563EB"/><stop offset="1" stop-color="#1D4ED8"/></linearGradient></defs><rect width="48" height="48" rx="6" fill="url(#lgf)"/><path d="M14 34h20" fill="none" stroke="#fff" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M24 29V13" fill="none" stroke="#fff" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/><path d="m17 20 7-7 7 7" fill="none" stroke="#fff" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="brand-text"><span class="brand-name">LinkLift<span>Pro</span></span><span class="brand-tag">White-label growth partner</span></span></a>
+        <p>LinkLiftPro is the white-label delivery team behind marketing agencies: SEO, link building, websites and paid ads under your brand.</p>
+        <div class="socials"><a href="https://www.linkedin.com/in/menadeemmayos/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a><a href="https://www.facebook.com/share/19aDt6pcgh/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a><a href="https://www.instagram.com/menadeemmayo" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a><a href="https://x.com/Nadeem_seo" target="_blank" rel="noopener" aria-label="X"><i class="fab fa-x-twitter"></i></a><a href="https://t.me/Nadeemmayos" target="_blank" rel="noopener" aria-label="Telegram"><i class="fab fa-telegram"></i></a></div>
+        <div class="market-btns"><a href="https://www.fiverr.com/nadeem_mayo" target="_blank" rel="noopener">Hire on Fiverr</a><a href="https://upwork.com/freelancers/~01929269c0cf45d7c1" target="_blank" rel="noopener">Hire on Upwork</a></div>
+      </div>
+      <div><h4>SEO Services</h4><div class="footer-links"><a href="/complete-seo.html">Complete SEO</a><a href="/on-page-seo.html">On-Page SEO</a><a href="/off-page-seo.html">Off-Page SEO</a><a href="/technical-seo.html">Technical SEO</a><a href="/local-seo.html">Local SEO</a><a href="/link-building.html">Link Building & Guest Posting</a><a href="/content-writing.html">SEO Content Writing</a></div></div>
+      <div><h4>Web &amp; Ads</h4><div class="footer-links"><a href="/web-development.html">Web Development</a><a href="/custom-website.html">Custom Website Design</a><a href="/google-ads.html">Google Ads</a><a href="/meta-ads.html">Meta Ads</a><a href="/facebook-ads.html">Facebook Ads</a><a href="/instagram-ads.html">Instagram Ads</a><a href="/tiktok-ads.html">TikTok Ads</a></div></div>
+      <div><h4>Company</h4><div class="footer-links">
+        <a href="/about.html">About</a><a href="/portfolio.html">Portfolio</a><a href="/all-niches-sites.html">Publisher Inventory</a><a href="/blog.html">Blog</a><a href="/FAQs.html">FAQ</a><a href="/contact.html">Contact</a>
+      </div></div>
+      <div><h4>Get in touch</h4>
+        <div class="footer-contact">
+          <a href="mailto:ceo@linkliftpro.online"><i class="fas fa-envelope"></i>ceo@linkliftpro.online</a><a href="mailto:nadeemonlin@gmail.com"><i class="fas fa-envelope-open"></i>nadeemonlin@gmail.com</a>
+          <a href="https://wa.me/923074646927" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i>+92 307 4646927</a>
+        </div>
+        <div class="pay"><span>PayPal</span><span>Payoneer</span><span>Wise</span><span>Visa</span><span>Mastercard</span></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 LinkLiftPro. All rights reserved.</span>
+      <nav aria-label="Legal"><a href="/privacy-policy.html">Privacy Policy</a><a href="/terms-of-use.html">Terms of Service</a><a href="/refund-policy.html">Refund Policy</a><a href="/sitemap.xml">Sitemap</a></nav>
+    </div>
+  </div>
 </footer>
-
-<script>
-const menuBtn=document.querySelector('.mobile-menu-btn');
-const mobileMenu=document.querySelector('.mobile-menu');
-if(menuBtn&&mobileMenu){
-menuBtn.addEventListener('click',function(){
-mobileMenu.classList.toggle('active');
-});
-}
-</script>
-
+<a class="wa-float" href="https://wa.me/923074646927?text=Hi%20LinkLiftPro%2C%20I%27d%20like%20to%20discuss%20a%20project" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+<script src="/assets/js/site.js" defer></script>
 </body>
 </html>
